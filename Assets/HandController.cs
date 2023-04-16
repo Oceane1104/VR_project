@@ -1,4 +1,5 @@
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class HandController : MonoBehaviour
 {
@@ -8,12 +9,9 @@ public class HandController : MonoBehaviour
 	[Header("Hand Properties")]
 	public HandType handType;
 
-
-	// Store the player controller to forward it to the object
-	[Header("Player Controller")]
+    // Store the player controller to forward it to the object
+    [Header("Player Controller")]
 	public MainPlayerController playerController;
-
-
 
 	// Store all gameobjects containing an Anchor
 	// N.B. This list is static as it is the same list for all hands controller
@@ -45,9 +43,26 @@ public class HandController : MonoBehaviour
 			&& OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.5; // Check that the index finger is pressing
 	}
 
+    protected bool is_hand_open()
+    {
+        if (handType == HandType.LeftHand) return
+                !OVRInput.Get(OVRInput.Button.Three)
+                | !OVRInput.Get(OVRInput.Button.Four)
+                | !(OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0.5)
+                | !(OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5);
+        else return
+                !OVRInput.Get(OVRInput.Button.Three)
+                | !OVRInput.Get(OVRInput.Button.Four)
+                | !(OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0.5)
+                | !(OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5);
+    }
 
-	// Automatically called at each frame
-	void Update() { handle_controller_behavior(); }
+
+    // Automatically called at each frame
+    void Update() 
+	{
+        handle_controller_behavior();
+	}
 
 
 	// Store the previous state of triggers to detect edges
@@ -68,12 +83,10 @@ public class HandController : MonoBehaviour
 		if (hand_closed == is_hand_closed_previous_frame) return;
 		is_hand_closed_previous_frame = hand_closed;
 
-
-
-		//==============================================//
-		// Define the behavior when the hand get closed //
-		//==============================================//
-		if (hand_closed)
+        //==============================================//
+        // Define the behavior when the hand get closed //
+        //==============================================//
+        if (hand_closed)
 		{
 
 			// Log hand action detection
@@ -115,7 +128,7 @@ public class HandController : MonoBehaviour
 
 				// Grab this object
 				object_grasped.attach_to(this);
-			}
+            }
 
 
 
@@ -128,8 +141,8 @@ public class HandController : MonoBehaviour
 			// Log the release
 			Debug.LogWarningFormat("{0} released {1}", this.transform.parent.name, object_grasped.name);
 
-			// Release the object
-			object_grasped.detach_from(this);
+            // Release the object
+            object_grasped.detach_from(this);
 		}
 	}
 }
