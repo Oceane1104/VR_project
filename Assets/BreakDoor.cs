@@ -28,6 +28,7 @@ public class BreakDoor : MonoBehaviour
             float vel = collision.relativeVelocity.magnitude;
             if (vel > 2) // if fast enough else probably no real force
             {
+                gameObject.GetComponent<Renderer>().material.color = new Color(255,0,0);
                 // minus xp wrt velocity
                 Resistance -= vel * 5;
 
@@ -42,6 +43,16 @@ public class BreakDoor : MonoBehaviour
                     HitSound.Play(); // some damage => provide feedback
                 }
             }
+            else
+            {
+                gameObject.GetComponent<Renderer>().material.color = new Color(0, 255, 0);
+
+            }
+        }
+        else
+        {
+            gameObject.GetComponent<Renderer>().material.color = new Color(0,0,255);
+
         }
         // not being hit with correct object => ignore
     }

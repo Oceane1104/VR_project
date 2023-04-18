@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ObjectAnchor : MonoBehaviour
+public class ObjectAnchorSpecial : MonoBehaviour
 {
 
 	[Header("Grasping Properties")]
@@ -15,9 +15,9 @@ public class ObjectAnchor : MonoBehaviour
 
 
 	// Store the hand controller this object will be attached to
-	protected HandController hand_controller = null;
+	protected GrabTeleport hand_controller = null;
 
-	public void attach_to(HandController hand_controller)
+	public void attach_to(GrabTeleport hand_controller)
 	{
 		// Store the hand controller in memory
 		this.hand_controller = hand_controller;
@@ -26,7 +26,7 @@ public class ObjectAnchor : MonoBehaviour
 		transform.SetParent(hand_controller.transform);
 	}
 
-	public void detach_from(HandController hand_controller)
+	public void detach_from(GrabTeleport hand_controller)
 	{
 		// Make sure that the right hand controller ask for the release
 		if (this.hand_controller != hand_controller) return;
