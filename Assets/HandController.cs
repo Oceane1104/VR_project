@@ -1,3 +1,4 @@
+using System.Threading;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
@@ -13,10 +14,17 @@ public class HandController : MonoBehaviour
     [Header("Player Controller")]
 	public MainPlayerController playerController;
 
-	// Store all gameobjects containing an Anchor
-	// N.B. This list is static as it is the same list for all hands controller
-	// thus there is no need to duplicate it for each instance
-	static protected ObjectAnchor[] anchors_in_the_scene;
+	//The variable for the calculator of the velocity of the controller
+	public Vector3 velocity;
+	public Vector3 lastPosition;
+	public Vector3 throwVelocity;
+	public Vector3 currentPosition;
+
+
+    // Store all gameobjects containing an Anchor
+    // N.B. This list is static as it is the same list for all hands controller
+    // thus there is no need to duplicate it for each instance
+    static protected ObjectAnchor[] anchors_in_the_scene;
 	void Start()
 	{
 		// Prevent multiple fetch
@@ -43,24 +51,29 @@ public class HandController : MonoBehaviour
 			&& OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.5; // Check that the index finger is pressing
 	}
 
-    protected bool is_hand_open()
-    {
-        if (handType == HandType.LeftHand) return
-                !OVRInput.Get(OVRInput.Button.Three)
-                | !OVRInput.Get(OVRInput.Button.Four)
-                | !(OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0.5)
-                | !(OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5);
-        else return
-                !OVRInput.Get(OVRInput.Button.Three)
-                | !OVRInput.Get(OVRInput.Button.Four)
-                | !(OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0.5)
-                | !(OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5);
+	protected Vector3 calculatorVelocity()
+	{
+		// get the current position of the controller
+		currentPosition = this.transform.position;
+		// calculate the throw direction and force based on the controller movement
+		throwVelocity = (currentPosition - lastPosition)/Time.deltaTime;
+		// set the last position to the current position of the controller
+		lastPosition = this.transform.position;
+
+		return throwVelocity;
+	}
+
+
+	void FixedUpdate()
+	{
+		//Before update, calculate each time the velocity of the controller
+        velocity = calculatorVelocity();
     }
 
-
-    // Automatically called at each frame
-    void Update() 
+	// Automatically called at each frame
+	void Update() 
 	{
+		//Check if we grab something
         handle_controller_behavior();
 	}
 
@@ -142,7 +155,7 @@ public class HandController : MonoBehaviour
 			Debug.LogWarningFormat("{0} released {1}", this.transform.parent.name, object_grasped.name);
 
             // Release the object
-            object_grasped.detach_from(this);
+            object_grasped.detach_from(this, velocity);
 		}
 	}
 }
