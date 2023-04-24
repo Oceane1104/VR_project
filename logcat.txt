@@ -1,0 +1,1348 @@
+--------- beginning of system
+--------- beginning of tracking
+--------- beginning of main
+04-24 16:58:04.439 14785 14785 I Unity   : windowFocusChanged: false
+04-24 16:58:04.471 14785 14896 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
+04-24 16:58:04.501 14785 14785 I Unity   : onPause
+04-24 16:58:10.349 14785 14807 I Unity   : Unable to process a controller whose SampleRateHz is 0 now.
+04-24 16:58:10.349 14785 14807 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:10.349 14785 14807 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:10.349 14785 14807 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:10.349 14785 14807 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:10.349 14785 14807 I Unity   : OVRHaptics/OVRHapticsOutput:Process () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRHaptics.cs:177)
+04-24 16:58:10.349 14785 14807 I Unity   : OVRHaptics:Process () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRHaptics.cs:407)
+04-24 16:58:10.349 14785 14807 I Unity   : OVRManager:LateUpdate () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2471)
+04-24 16:58:10.349 14785 14807 I Unity   : 
+04-24 16:58:10.472 14785 14807 W Unity   : Ignoring depth surface store action as it is memoryless
+04-24 16:58:23.086 14785 14807 W Unity   : RightHandAnchor get closed
+04-24 16:58:23.086 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:23.086 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:23.086 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:23.086 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:23.086 14785 14807 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:104)
+04-24 16:58:23.086 14785 14807 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 16:58:23.086 14785 14807 W Unity   : 
+04-24 16:58:23.088 14785 14807 W Unity   : RightHandAnchor grasped axe
+04-24 16:58:23.088 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:23.088 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:23.088 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:23.088 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:23.088 14785 14807 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:138)
+04-24 16:58:23.088 14785 14807 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 16:58:23.088 14785 14807 W Unity   : 
+04-24 16:58:23.089 14785 14807 W Unity   : RightHandAnchor get closed
+04-24 16:58:23.089 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:23.089 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:23.089 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:23.089 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:23.089 14785 14807 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:104)
+04-24 16:58:23.089 14785 14807 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 16:58:23.089 14785 14807 W Unity   : 
+04-24 16:58:25.603 14785 14807 W Unity   : RightHandAnchor released axe
+04-24 16:58:25.603 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.603 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.603 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.603 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.603 14785 14807 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:153)
+04-24 16:58:25.603 14785 14807 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 16:58:25.603 14785 14807 W Unity   : 
+04-24 16:58:25.618 14785 14807 W Unity   : Collision! Resistance remaining: 30
+04-24 16:58:25.618 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.618 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.618 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.618 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.618 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 16:58:25.618 14785 14807 W Unity   : 
+04-24 16:58:25.619 14785 14807 W Unity   : Collider (child) name: blade
+04-24 16:58:25.619 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.619 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.619 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.619 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.619 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 16:58:25.619 14785 14807 W Unity   : 
+04-24 16:58:25.620 14785 14807 W Unity   : Velocity: 2.004962
+04-24 16:58:25.620 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.620 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.620 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.620 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.620 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 16:58:25.620 14785 14807 W Unity   : 
+04-24 16:58:25.620 14785 14807 W Unity   : New resistance: 19.97519
+04-24 16:58:25.620 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.620 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.620 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.620 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.620 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 16:58:25.620 14785 14807 W Unity   : 
+04-24 16:58:25.622 14785 14807 W Unity   : Collision! Resistance remaining: 19.97519
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.622 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 16:58:25.622 14785 14807 W Unity   : 
+04-24 16:58:25.622 14785 14807 W Unity   : Collider (child) name: blade
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.622 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 16:58:25.622 14785 14807 W Unity   : 
+04-24 16:58:25.622 14785 14807 W Unity   : Velocity: 2.004962
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.622 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 16:58:25.622 14785 14807 W Unity   : 
+04-24 16:58:25.622 14785 14807 W Unity   : New resistance: 9.950379
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.622 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.622 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 16:58:25.622 14785 14807 W Unity   : 
+04-24 16:58:25.641 14785 14807 W Unity   : Collision! Resistance remaining: 9.950379
+04-24 16:58:25.641 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.641 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.641 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.641 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.641 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 16:58:25.641 14785 14807 W Unity   : 
+04-24 16:58:25.642 14785 14807 W Unity   : Collider (child) name: blade
+04-24 16:58:25.642 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.642 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.642 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.642 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.642 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 16:58:25.642 14785 14807 W Unity   : 
+04-24 16:58:25.642 14785 14807 W Unity   : Velocity: 11.96384
+04-24 16:58:25.642 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.642 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.642 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.642 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.642 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 16:58:25.642 14785 14807 W Unity   : 
+04-24 16:58:25.642 14785 14807 W Unity   : New resistance: -49.8688
+04-24 16:58:25.642 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.642 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.642 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.642 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.642 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 16:58:25.642 14785 14807 W Unity   : 
+04-24 16:58:25.643 14785 14807 W Unity   : Destroying...
+04-24 16:58:25.643 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.643 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.643 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.643 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.643 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 16:58:25.643 14785 14807 W Unity   : 
+04-24 16:58:25.644 14785 14807 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 16:58:25.644 14785 14807 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.644 14785 14807 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 16:58:25.644 14785 14807 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 16:58:25.644 14785 14807 E Unity   : 
+04-24 16:58:25.644 14785 14807 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 16:58:25.644 14785 14807 E Unity   : 
+04-24 16:58:25.644 14785 14807 W Unity   : Collision! Resistance remaining: -49.8688
+04-24 16:58:25.644 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.644 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.644 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.644 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.644 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 16:58:25.644 14785 14807 W Unity   : 
+04-24 16:58:25.645 14785 14807 W Unity   : Collider (child) name: blade
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.645 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 16:58:25.645 14785 14807 W Unity   : 
+04-24 16:58:25.645 14785 14807 W Unity   : Velocity: 11.96384
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.645 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 16:58:25.645 14785 14807 W Unity   : 
+04-24 16:58:25.645 14785 14807 W Unity   : New resistance: -109.688
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.645 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 16:58:25.645 14785 14807 W Unity   : 
+04-24 16:58:25.645 14785 14807 W Unity   : Destroying...
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.645 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.645 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 16:58:25.645 14785 14807 W Unity   : 
+04-24 16:58:25.646 14785 14807 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 16:58:25.646 14785 14807 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.646 14785 14807 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 16:58:25.646 14785 14807 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 16:58:25.646 14785 14807 E Unity   : 
+04-24 16:58:25.646 14785 14807 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 16:58:25.646 14785 14807 E Unity   : 
+04-24 16:58:25.723 14785 14807 W Unity   : Collision! Resistance remaining: -109.688
+04-24 16:58:25.723 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.723 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.723 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.723 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.723 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 16:58:25.723 14785 14807 W Unity   : 
+04-24 16:58:25.723 14785 14807 W Unity   : Collider (child) name: blade
+04-24 16:58:25.723 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.723 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.723 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.723 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.723 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 16:58:25.723 14785 14807 W Unity   : 
+04-24 16:58:25.724 14785 14807 W Unity   : Velocity: 2.24821
+04-24 16:58:25.724 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.724 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.724 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.724 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.724 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 16:58:25.724 14785 14807 W Unity   : 
+04-24 16:58:25.724 14785 14807 W Unity   : New resistance: -120.929
+04-24 16:58:25.724 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.724 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.724 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.724 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.724 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 16:58:25.724 14785 14807 W Unity   : 
+04-24 16:58:25.724 14785 14807 W Unity   : Destroying...
+04-24 16:58:25.724 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.724 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.724 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.724 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.724 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 16:58:25.724 14785 14807 W Unity   : 
+04-24 16:58:25.724 14785 14807 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 16:58:25.724 14785 14807 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.724 14785 14807 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 16:58:25.724 14785 14807 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 16:58:25.724 14785 14807 E Unity   : 
+04-24 16:58:25.724 14785 14807 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 16:58:25.724 14785 14807 E Unity   : 
+04-24 16:58:25.725 14785 14807 W Unity   : Collision! Resistance remaining: -120.929
+04-24 16:58:25.725 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.725 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.725 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.725 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.725 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 16:58:25.725 14785 14807 W Unity   : 
+04-24 16:58:25.725 14785 14807 W Unity   : Collider (child) name: blade
+04-24 16:58:25.725 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.725 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.725 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.725 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.725 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 16:58:25.725 14785 14807 W Unity   : 
+04-24 16:58:25.725 14785 14807 W Unity   : Velocity: 2.24821
+04-24 16:58:25.725 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.725 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.725 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.725 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.725 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 16:58:25.725 14785 14807 W Unity   : 
+04-24 16:58:25.726 14785 14807 W Unity   : New resistance: -132.1701
+04-24 16:58:25.726 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.726 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.726 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.726 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.726 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 16:58:25.726 14785 14807 W Unity   : 
+04-24 16:58:25.726 14785 14807 W Unity   : Destroying...
+04-24 16:58:25.726 14785 14807 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.726 14785 14807 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:25.726 14785 14807 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:25.726 14785 14807 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:25.726 14785 14807 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 16:58:25.726 14785 14807 W Unity   : 
+04-24 16:58:25.726 14785 14807 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 16:58:25.726 14785 14807 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:25.726 14785 14807 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 16:58:25.726 14785 14807 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 16:58:25.726 14785 14807 E Unity   : 
+04-24 16:58:25.726 14785 14807 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 16:58:25.726 14785 14807 E Unity   : 
+04-24 16:58:31.981 14785 14807 I Unity   : [OVRManager] InputFocusLost event
+04-24 16:58:31.981 14785 14807 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:31.981 14785 14807 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:31.981 14785 14807 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:31.981 14785 14807 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:31.981 14785 14807 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2174)
+04-24 16:58:31.981 14785 14807 I Unity   : 
+04-24 16:58:32.017 14785 14785 I Unity   : windowFocusChanged: false
+04-24 16:58:32.028 14785 14807 I Unity   : [OVRManager] OnApplicationFocus(false)
+04-24 16:58:32.028 14785 14807 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:32.028 14785 14807 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:32.028 14785 14807 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:32.028 14785 14807 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:32.028 14785 14807 I Unity   : OVRManager:OnApplicationFocus (bool) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2516)
+04-24 16:58:32.028 14785 14807 I Unity   : 
+04-24 16:58:32.158 14785 14785 I Unity   : windowFocusChanged: true
+04-24 16:58:32.166 14785 14807 I Unity   : [OVRManager] OnApplicationFocus(true)
+04-24 16:58:32.166 14785 14807 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:32.166 14785 14807 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:32.166 14785 14807 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:32.166 14785 14807 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:32.166 14785 14807 I Unity   : OVRManager:OnApplicationFocus (bool) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2512)
+04-24 16:58:32.166 14785 14807 I Unity   : 
+04-24 16:58:32.186 14785 14807 I Unity   : [OVRManager] InputFocusAcquired event
+04-24 16:58:32.186 14785 14807 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:32.186 14785 14807 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:32.186 14785 14807 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:32.186 14785 14807 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:32.186 14785 14807 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2188)
+04-24 16:58:32.186 14785 14807 I Unity   : 
+04-24 16:58:32.243 14785 14807 I Unity   : [OVRManager] InputFocusLost event
+04-24 16:58:32.243 14785 14807 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:32.243 14785 14807 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:32.243 14785 14807 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:32.243 14785 14807 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:32.243 14785 14807 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2174)
+04-24 16:58:32.243 14785 14807 I Unity   : 
+04-24 16:58:32.246 14785 14807 I Unity   : Unable to process a controller whose SampleRateHz is 0 now.
+04-24 16:58:32.246 14785 14807 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:32.246 14785 14807 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:32.246 14785 14807 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:32.246 14785 14807 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:32.246 14785 14807 I Unity   : OVRHaptics/OVRHapticsOutput:Process () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRHaptics.cs:177)
+04-24 16:58:32.246 14785 14807 I Unity   : OVRHaptics:Process () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRHaptics.cs:407)
+04-24 16:58:32.246 14785 14807 I Unity   : OVRManager:LateUpdate () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2471)
+04-24 16:58:32.246 14785 14807 I Unity   : 
+04-24 16:58:32.246 14785 14807 I Unity   : Unable to process a controller whose SampleRateHz is 0 now.
+04-24 16:58:32.246 14785 14807 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:32.246 14785 14807 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:32.246 14785 14807 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:32.246 14785 14807 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:32.246 14785 14807 I Unity   : OVRHaptics/OVRHapticsOutput:Process () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRHaptics.cs:177)
+04-24 16:58:32.246 14785 14807 I Unity   : OVRHaptics:Process () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRHaptics.cs:407)
+04-24 16:58:32.246 14785 14807 I Unity   : OVRManager:LateUpdate () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2471)
+04-24 16:58:32.246 14785 14807 I Unity   : 
+04-24 16:58:32.336 14785 14785 I Unity   : windowFocusChanged: false
+04-24 16:58:32.343 14785 14807 I Unity   : [OVRManager] OnApplicationFocus(false)
+04-24 16:58:32.343 14785 14807 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:32.343 14785 14807 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:32.343 14785 14807 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:32.343 14785 14807 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:32.343 14785 14807 I Unity   : OVRManager:OnApplicationFocus (bool) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2516)
+04-24 16:58:32.343 14785 14807 I Unity   : 
+04-24 16:58:34.246 14785 14785 I Unity   : onPause
+04-24 16:58:34.351 14785 14807 I Unity   : [OVRManager] OnApplicationPause(true)
+04-24 16:58:34.351 14785 14807 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:34.351 14785 14807 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:34.351 14785 14807 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:34.351 14785 14807 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:34.351 14785 14807 I Unity   : OVRManager:OnApplicationPause (bool) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2500)
+04-24 16:58:34.351 14785 14807 I Unity   : 
+04-24 16:58:35.495 14785 14785 I Unity   : onDestroy
+04-24 16:58:40.051 15171 15171 I Unity   : onResume
+04-24 16:58:40.568 15171 15171 I Unity   : windowFocusChanged: true
+04-24 16:58:40.579 15171 15197 I Unity   : MemoryManager: Using 'Dynamic Heap' Allocator.
+04-24 16:58:40.644 15171 15197 I Unity   : SystemInfo CPU = ARM64 FP ASIMD AES, Cores = 3, Memory = 3808mb
+04-24 16:58:40.644 15171 15197 I Unity   : SystemInfo ARM big.LITTLE configuration: 3 big (mask: 0xe0), 0 little (mask: 0x0)
+04-24 16:58:40.644 15171 15197 I Unity   : XR UsableCoreMask: 0xe0
+04-24 16:58:40.646 15171 15197 I Unity   : ApplicationInfo com.VR_project04.H02 version 0.1
+04-24 16:58:40.646 15171 15197 I Unity   : Built from '2021.3/staging' branch, Version '2021.3.20f1 (577897200b8b)', Build type 'Development', Scripting Backend 'mono', CPU 'armeabi-v7a', Stripping 'Disabled'
+04-24 16:58:40.806 15171 15197 I Unity   : Company Name: VR_project04
+04-24 16:58:40.806 15171 15197 I Unity   : Product Name: H02
+04-24 16:58:42.250 15171 15197 I Unity   : XRGeneral Settings awakening...
+04-24 16:58:42.250 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:42.250 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:42.250 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:42.250 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:42.250 15171 15197 I Unity   : UnityEngine.XR.Management.XRGeneralSettings:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Library/PackageCache/com.unity.xr.management@4.3.3/Runtime/XRGeneralSettings.cs:91)
+04-24 16:58:42.250 15171 15197 I Unity   : 
+04-24 16:58:43.398 15171 15242 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
+04-24 16:58:48.085 15171 15197 E Unity   : DllNotFoundException: AudioPluginOculusSpatializer assembly:<unknown assembly> type:<unknown type> member:(null)
+04-24 16:58:48.085 15171 15197 E Unity   :   at (wrapper managed-to-native) ONSPAudioSource.OSP_SetGlobalVoiceLimit(int)
+04-24 16:58:48.085 15171 15197 E Unity   :   at ONSPAudioSource.OnBeforeSceneLoadRuntimeMethod () [0x00001] in C:\Users\kisan\OneDrive\Bureau\VR_project\Assets\Oculus\Spatializer\scripts\ONSPAudioSource.cs:50 
+04-24 16:58:48.085 15171 15197 E Unity   : 
+04-24 16:58:48.126 15171 15197 I Unity   : Unity v2021.3.20f1, Oculus Utilities v1.82.0, OVRPlugin v1.82.0, SDK v1.0.26.
+04-24 16:58:48.126 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.126 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.126 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:48.126 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:48.126 15171 15197 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1691)
+04-24 16:58:48.126 15171 15197 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:58:48.126 15171 15197 I Unity   : 
+04-24 16:58:48.138 15171 15197 I Unity   : SystemHeadset Oculus_Quest, API OpenXR
+04-24 16:58:48.138 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.138 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.138 15171 15197 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:48.138 15171 15197 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:58:48.138 15171 15197 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1696)
+04-24 16:58:48.138 15171 15197 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:58:48.138 15171 15197 I Unity   : 
+04-24 16:58:48.142 15171 15197 I Unity   : OpenXR instance 0x100000000000002 session 0x200000000000020
+04-24 16:58:48.142 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.142 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.142 15171 15197 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:48.142 15171 15197 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:58:48.142 15171 15197 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1700)
+04-24 16:58:48.142 15171 15197 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:58:48.142 15171 15197 I Unity   : 
+04-24 16:58:48.168 15171 15197 I Unity   : OVRPlugin.Media initialized
+04-24 16:58:48.168 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.168 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.168 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:48.168 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:48.168 15171 15197 I Unity   : OVRManager:StaticInitializeMixedRealityCapture (OVRMixedRealityCaptureConfiguration) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2562)
+04-24 16:58:48.168 15171 15197 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1798)
+04-24 16:58:48.168 15171 15197 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:58:48.168 15171 15197 I Unity   : 
+04-24 16:58:48.170 15171 15197 I Unity   : [MRC] SetMrcAudioSampleRate(48000)
+04-24 16:58:48.170 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.170 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.170 15171 15197 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:48.170 15171 15197 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:58:48.170 15171 15197 I Unity   : OVRManager:StaticInitializeMixedRealityCapture (OVRMixedRealityCaptureConfiguration) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2569)
+04-24 16:58:48.170 15171 15197 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1798)
+04-24 16:58:48.170 15171 15197 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:58:48.170 15171 15197 I Unity   : 
+04-24 16:58:48.173 15171 15197 I Unity   : [MRC] Active InputVideoBufferType:TextureHandle
+04-24 16:58:48.173 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.173 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.173 15171 15197 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:48.173 15171 15197 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:58:48.173 15171 15197 I Unity   : OVRManager:StaticInitializeMixedRealityCapture (OVRMixedRealityCaptureConfiguration) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2573)
+04-24 16:58:48.173 15171 15197 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1798)
+04-24 16:58:48.173 15171 15197 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:58:48.173 15171 15197 I Unity   : 
+04-24 16:58:48.174 15171 15197 I Unity   : [MRC] ActivateMode: Automatic
+04-24 16:58:48.174 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.174 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.174 15171 15197 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:48.174 15171 15197 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:58:48.174 15171 15197 I Unity   : OVRManager:StaticInitializeMixedRealityCapture (OVRMixedRealityCaptureConfiguration) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2577)
+04-24 16:58:48.174 15171 15197 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1798)
+04-24 16:58:48.174 15171 15197 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:58:48.174 15171 15197 I Unity   : 
+04-24 16:58:48.210 15171 15197 I Unity   : Current display frequency 72, available frequencies [60, 60, 72, 72]
+04-24 16:58:48.210 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.210 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.210 15171 15197 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:48.210 15171 15197 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:58:48.210 15171 15197 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1805)
+04-24 16:58:48.210 15171 15197 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:58:48.210 15171 15197 I Unity   : 
+04-24 16:58:48.630 15171 15197 I Unity   : TcpListener started. Local endpoint: 0.0.0.0:32419
+04-24 16:58:48.630 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.630 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.630 15171 15197 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:48.630 15171 15197 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:58:48.630 15171 15197 I Unity   : OVRNetwork/OVRNetworkTcpServer:StartListening (int) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRNetwork.cs:103)
+04-24 16:58:48.630 15171 15197 I Unity   : OVRSystemPerfMetrics/OVRSystemPerfMetricsTcpServer:OnEnable () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRSystemPerfMetrics.cs:214)
+04-24 16:58:48.630 15171 15197 I Unity   : UnityEngine.GameObject:AddComponent (System.Type) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/GameObject.bindings.cs:235)
+04-24 16:58:48.630 15171 15197 I Unity   : UnityEngine.GameObject:AddComponent<OVRSystemPerfMetrics/OVRSystemPerfMetricsTcpServer> () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/GameObject
+04-24 16:58:48.631 15171 15197 I Unity   : [OVRNetworkTcpServer] Start Listening on port 32419
+04-24 16:58:48.631 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.631 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.631 15171 15197 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:48.631 15171 15197 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:58:48.631 15171 15197 I Unity   : OVRNetwork/OVRNetworkTcpServer:StartListening (int) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRNetwork.cs:115)
+04-24 16:58:48.631 15171 15197 I Unity   : OVRSystemPerfMetrics/OVRSystemPerfMetricsTcpServer:OnEnable () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRSystemPerfMetrics.cs:214)
+04-24 16:58:48.631 15171 15197 I Unity   : UnityEngine.GameObject:AddComponent (System.Type) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/GameObject.bindings.cs:235)
+04-24 16:58:48.631 15171 15197 I Unity   : UnityEngine.GameObject:AddComponent<OVRSystemPerfMetrics/OVRSystemPerfMetricsTcpServer> () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/GameObjec
+04-24 16:58:48.641 15171 15197 W Unity   : Local Dimming feature is not supported
+04-24 16:58:48.641 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.641 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.641 15171 15197 W Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:48.641 15171 15197 W Unity   : UnityEngine.Debug:LogWarning (object)
+04-24 16:58:48.641 15171 15197 W Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1848)
+04-24 16:58:48.641 15171 15197 W Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:58:48.641 15171 15197 W Unity   : 
+04-24 16:58:48.982 15171 15197 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandRight)
+04-24 16:58:48.982 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.982 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.982 15171 15197 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:48.982 15171 15197 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:58:48.982 15171 15197 I Unity   : OVRControllerHelper:InitializeControllerModels () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRControllerHelper.cs:144)
+04-24 16:58:48.982 15171 15197 I Unity   : OVRControllerHelper:Start () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRControllerHelper.cs:102)
+04-24 16:58:48.982 15171 15197 I Unity   : 
+04-24 16:58:48.996 15171 15197 E Unity   : IndexOutOfRangeException: Index was outside the bounds of the array.
+04-24 16:58:48.996 15171 15197 E Unity   :   at BreakDoor.Start () [0x0000d] in C:\Users\kisan\OneDrive\Bureau\VR_project\Assets\BreakDoor.cs:21 
+04-24 16:58:48.996 15171 15197 E Unity   : 
+04-24 16:58:48.997 15171 15197 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandLeft)
+04-24 16:58:48.997 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:48.997 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:48.997 15171 15197 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:48.997 15171 15197 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:58:48.997 15171 15197 I Unity   : OVRControllerHelper:InitializeControllerModels () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRControllerHelper.cs:144)
+04-24 16:58:48.997 15171 15197 I Unity   : OVRControllerHelper:Start () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRControllerHelper.cs:102)
+04-24 16:58:48.997 15171 15197 I Unity   : 
+04-24 16:58:49.040 15171 15197 I Unity   : The current MSAA level is 0, but the recommended MSAA level is 4. Switching to the recommended level.
+04-24 16:58:49.040 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:49.040 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:49.040 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:49.040 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:49.040 15171 15197 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2046)
+04-24 16:58:49.040 15171 15197 I Unity   : 
+04-24 16:58:49.042 15171 15197 I Unity   : [OVRManager] HMDAcquired event
+04-24 16:58:49.042 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:49.042 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:49.042 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:49.042 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:49.042 15171 15197 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2086)
+04-24 16:58:49.042 15171 15197 I Unity   : 
+04-24 16:58:49.043 15171 15197 I Unity   : [OVRManager] HMDMounted event
+04-24 16:58:49.043 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:49.043 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:49.043 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:49.043 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:49.043 15171 15197 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2120)
+04-24 16:58:49.043 15171 15197 I Unity   : 
+04-24 16:58:49.044 15171 15197 I Unity   : [OVRManager] VrFocusAcquired event
+04-24 16:58:49.044 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:49.044 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:49.044 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:49.044 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:49.044 15171 15197 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2154)
+04-24 16:58:49.044 15171 15197 I Unity   : 
+04-24 16:58:49.049 15171 15197 I Unity   : [OVRManager] TrackingAcquired event
+04-24 16:58:49.049 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:49.049 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:49.049 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:58:49.049 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:58:49.049 15171 15197 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2266)
+04-24 16:58:49.049 15171 15197 I Unity   : 
+04-24 16:58:49.288 15171 15197 W Unity   : Ignoring depth surface store action as it is memoryless
+04-24 16:58:54.051 15171 15197 W Unity   : RightHandAnchor get closed
+04-24 16:58:54.051 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:54.051 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:54.051 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:54.051 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:54.051 15171 15197 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:104)
+04-24 16:58:54.051 15171 15197 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 16:58:54.051 15171 15197 W Unity   : 
+04-24 16:58:54.052 15171 15197 W Unity   : RightHandAnchor grasped axe
+04-24 16:58:54.052 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:54.052 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:54.052 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:54.052 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:54.052 15171 15197 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:138)
+04-24 16:58:54.052 15171 15197 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 16:58:54.052 15171 15197 W Unity   : 
+04-24 16:58:54.054 15171 15197 W Unity   : RightHandAnchor get closed
+04-24 16:58:54.054 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:58:54.054 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:58:54.054 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:58:54.054 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:58:54.054 15171 15197 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:104)
+04-24 16:58:54.054 15171 15197 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 16:58:54.054 15171 15197 W Unity   : 
+04-24 16:59:27.315 15171 15197 W Unity   : RightHandAnchor released axe
+04-24 16:59:27.315 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.315 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.315 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.315 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.315 15171 15197 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:153)
+04-24 16:59:27.315 15171 15197 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 16:59:27.315 15171 15197 W Unity   : 
+04-24 16:59:27.331 15171 15197 W Unity   : Collision! Resistance remaining: 30
+04-24 16:59:27.331 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.331 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.331 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.331 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.331 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 16:59:27.331 15171 15197 W Unity   : 
+04-24 16:59:27.332 15171 15197 W Unity   : Collider (child) name: blade
+04-24 16:59:27.332 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.332 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.332 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.332 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.332 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 16:59:27.332 15171 15197 W Unity   : 
+04-24 16:59:27.333 15171 15197 W Unity   : Velocity: 11.29039
+04-24 16:59:27.333 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.333 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.333 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.333 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.333 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 16:59:27.333 15171 15197 W Unity   : 
+04-24 16:59:27.333 15171 15197 W Unity   : New resistance: -26.45194
+04-24 16:59:27.333 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.333 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.333 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.333 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.333 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 16:59:27.333 15171 15197 W Unity   : 
+04-24 16:59:27.334 15171 15197 W Unity   : Destroying...
+04-24 16:59:27.334 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.334 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.334 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.334 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.334 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 16:59:27.334 15171 15197 W Unity   : 
+04-24 16:59:27.335 15171 15197 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 16:59:27.335 15171 15197 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.335 15171 15197 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 16:59:27.335 15171 15197 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 16:59:27.335 15171 15197 E Unity   : 
+04-24 16:59:27.335 15171 15197 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 16:59:27.335 15171 15197 E Unity   : 
+04-24 16:59:27.335 15171 15197 W Unity   : Collision! Resistance remaining: -26.45194
+04-24 16:59:27.335 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.335 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.335 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.335 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.335 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 16:59:27.335 15171 15197 W Unity   : 
+04-24 16:59:27.336 15171 15197 W Unity   : Collider (child) name: blade
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.336 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 16:59:27.336 15171 15197 W Unity   : 
+04-24 16:59:27.336 15171 15197 W Unity   : Velocity: 11.29039
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.336 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 16:59:27.336 15171 15197 W Unity   : 
+04-24 16:59:27.336 15171 15197 W Unity   : New resistance: -82.90388
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.336 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 16:59:27.336 15171 15197 W Unity   : 
+04-24 16:59:27.336 15171 15197 W Unity   : Destroying...
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.336 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.336 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 16:59:27.336 15171 15197 W Unity   : 
+04-24 16:59:27.337 15171 15197 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 16:59:27.337 15171 15197 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.337 15171 15197 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 16:59:27.337 15171 15197 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 16:59:27.337 15171 15197 E Unity   : 
+04-24 16:59:27.337 15171 15197 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 16:59:27.337 15171 15197 E Unity   : 
+04-24 16:59:27.337 15171 15197 W Unity   : Collision! Resistance remaining: -82.90388
+04-24 16:59:27.337 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.337 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.337 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.337 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.337 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 16:59:27.337 15171 15197 W Unity   : 
+04-24 16:59:27.337 15171 15197 W Unity   : Collider (child) name: blade
+04-24 16:59:27.337 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.337 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.337 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.337 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.337 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 16:59:27.337 15171 15197 W Unity   : 
+04-24 16:59:27.338 15171 15197 W Unity   : Velocity: 11.29039
+04-24 16:59:27.338 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.338 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.338 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.338 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.338 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 16:59:27.338 15171 15197 W Unity   : 
+04-24 16:59:27.338 15171 15197 W Unity   : New resistance: -139.3558
+04-24 16:59:27.338 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.338 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.338 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.338 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.338 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 16:59:27.338 15171 15197 W Unity   : 
+04-24 16:59:27.338 15171 15197 W Unity   : Destroying...
+04-24 16:59:27.338 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.338 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.338 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.338 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.338 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 16:59:27.338 15171 15197 W Unity   : 
+04-24 16:59:27.338 15171 15197 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 16:59:27.338 15171 15197 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.338 15171 15197 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 16:59:27.338 15171 15197 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 16:59:27.338 15171 15197 E Unity   : 
+04-24 16:59:27.338 15171 15197 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 16:59:27.338 15171 15197 E Unity   : 
+04-24 16:59:27.339 15171 15197 W Unity   : Collision! Resistance remaining: -139.3558
+04-24 16:59:27.339 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.339 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.339 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.339 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.339 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 16:59:27.339 15171 15197 W Unity   : 
+04-24 16:59:27.339 15171 15197 W Unity   : Collider (child) name: blade
+04-24 16:59:27.339 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.339 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.339 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.339 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.339 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 16:59:27.339 15171 15197 W Unity   : 
+04-24 16:59:27.339 15171 15197 W Unity   : Velocity: 11.29039
+04-24 16:59:27.339 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.339 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.339 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.339 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.339 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 16:59:27.339 15171 15197 W Unity   : 
+04-24 16:59:27.340 15171 15197 W Unity   : New resistance: -195.8078
+04-24 16:59:27.340 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.340 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.340 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.340 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.340 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 16:59:27.340 15171 15197 W Unity   : 
+04-24 16:59:27.340 15171 15197 W Unity   : Destroying...
+04-24 16:59:27.340 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.340 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.340 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.340 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.340 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 16:59:27.340 15171 15197 W Unity   : 
+04-24 16:59:27.340 15171 15197 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 16:59:27.340 15171 15197 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.340 15171 15197 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 16:59:27.340 15171 15197 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 16:59:27.340 15171 15197 E Unity   : 
+04-24 16:59:27.340 15171 15197 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 16:59:27.340 15171 15197 E Unity   : 
+04-24 16:59:27.342 15171 15197 I Unity   : Begin detatch...
+04-24 16:59:27.342 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.342 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.342 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:27.342 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:27.342 15171 15197 I Unity   : AxePosn:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/AxePosn.cs:29)
+04-24 16:59:27.342 15171 15197 I Unity   : 
+04-24 16:59:27.346 15171 15197 W Unity   : Moving axe to (-0.86, 0.89, 0.88)
+04-24 16:59:27.346 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.346 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.346 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.346 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.346 15171 15197 W Unity   : AxePosn:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/AxePosn.cs:33)
+04-24 16:59:27.346 15171 15197 W Unity   : 
+04-24 16:59:27.535 15171 15197 I Unity   : Begin detatch...
+04-24 16:59:27.535 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.535 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.535 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:27.535 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:27.535 15171 15197 I Unity   : AxePosn:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/AxePosn.cs:29)
+04-24 16:59:27.535 15171 15197 I Unity   : 
+04-24 16:59:27.535 15171 15197 W Unity   : Moving axe to (-0.86, 0.89, 0.88)
+04-24 16:59:27.535 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.535 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.535 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.535 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.535 15171 15197 W Unity   : AxePosn:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/AxePosn.cs:33)
+04-24 16:59:27.535 15171 15197 W Unity   : 
+04-24 16:59:27.660 15171 15197 W Unity   : Collision! Resistance remaining: -195.8078
+04-24 16:59:27.660 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.660 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.660 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.660 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.660 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 16:59:27.660 15171 15197 W Unity   : 
+04-24 16:59:27.660 15171 15197 W Unity   : Collider (child) name: blade
+04-24 16:59:27.660 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.660 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.660 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.660 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.660 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 16:59:27.660 15171 15197 W Unity   : 
+04-24 16:59:27.660 15171 15197 W Unity   : Velocity: 17.18316
+04-24 16:59:27.660 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.660 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.660 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.660 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.660 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 16:59:27.660 15171 15197 W Unity   : 
+04-24 16:59:27.661 15171 15197 W Unity   : New resistance: -281.7236
+04-24 16:59:27.661 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.661 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.661 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.661 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.661 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 16:59:27.661 15171 15197 W Unity   : 
+04-24 16:59:27.661 15171 15197 W Unity   : Destroying...
+04-24 16:59:27.661 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.661 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.661 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.661 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.661 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 16:59:27.661 15171 15197 W Unity   : 
+04-24 16:59:27.662 15171 15197 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 16:59:27.662 15171 15197 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.662 15171 15197 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 16:59:27.662 15171 15197 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 16:59:27.662 15171 15197 E Unity   : 
+04-24 16:59:27.662 15171 15197 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 16:59:27.662 15171 15197 E Unity   : 
+04-24 16:59:27.662 15171 15197 W Unity   : Collision! Resistance remaining: -281.7236
+04-24 16:59:27.662 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.662 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.662 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.662 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.662 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 16:59:27.662 15171 15197 W Unity   : 
+04-24 16:59:27.662 15171 15197 W Unity   : Collider (child) name: blade
+04-24 16:59:27.662 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.662 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.662 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.662 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.662 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 16:59:27.662 15171 15197 W Unity   : 
+04-24 16:59:27.662 15171 15197 W Unity   : Velocity: 17.18316
+04-24 16:59:27.662 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.662 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.662 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.662 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.662 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 16:59:27.662 15171 15197 W Unity   : 
+04-24 16:59:27.663 15171 15197 W Unity   : New resistance: -367.6394
+04-24 16:59:27.663 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.663 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.663 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.663 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.663 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 16:59:27.663 15171 15197 W Unity   : 
+04-24 16:59:27.663 15171 15197 W Unity   : Destroying...
+04-24 16:59:27.663 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.663 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:27.663 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:27.663 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:27.663 15171 15197 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 16:59:27.663 15171 15197 W Unity   : 
+04-24 16:59:27.663 15171 15197 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 16:59:27.663 15171 15197 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:27.663 15171 15197 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 16:59:27.663 15171 15197 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 16:59:27.663 15171 15197 E Unity   : 
+04-24 16:59:27.663 15171 15197 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 16:59:27.663 15171 15197 E Unity   : 
+04-24 16:59:32.871 15171 15197 W Unity   : RightHandAnchor get closed
+04-24 16:59:32.871 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:32.871 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:32.871 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:32.871 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:32.871 15171 15197 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:104)
+04-24 16:59:32.871 15171 15197 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 16:59:32.871 15171 15197 W Unity   : 
+04-24 16:59:32.871 15171 15197 W Unity   : RightHandAnchor get closed
+04-24 16:59:32.871 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:32.871 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:32.871 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:32.871 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:32.871 15171 15197 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:104)
+04-24 16:59:32.871 15171 15197 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 16:59:32.871 15171 15197 W Unity   : 
+04-24 16:59:33.317 15171 15197 W Unity   : RightHandAnchor released axe
+04-24 16:59:33.317 15171 15197 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:33.317 15171 15197 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:33.317 15171 15197 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:33.317 15171 15197 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 16:59:33.317 15171 15197 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:153)
+04-24 16:59:33.317 15171 15197 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 16:59:33.317 15171 15197 W Unity   : 
+04-24 16:59:37.889 15171 15197 I Unity   : [OVRManager] InputFocusLost event
+04-24 16:59:37.889 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:37.889 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:37.889 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:37.889 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:37.889 15171 15197 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2174)
+04-24 16:59:37.889 15171 15197 I Unity   : 
+04-24 16:59:37.942 15171 15171 I Unity   : windowFocusChanged: false
+04-24 16:59:37.970 15171 15197 I Unity   : [OVRManager] OnApplicationFocus(false)
+04-24 16:59:37.970 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:37.970 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:37.970 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:37.970 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:37.970 15171 15197 I Unity   : OVRManager:OnApplicationFocus (bool) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2516)
+04-24 16:59:37.970 15171 15197 I Unity   : 
+04-24 16:59:41.062 15171 15171 I Unity   : onPause
+04-24 16:59:41.109 15171 15197 I Unity   : [OVRManager] OnApplicationPause(true)
+04-24 16:59:41.109 15171 15197 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:41.109 15171 15197 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:41.109 15171 15197 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:41.109 15171 15197 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:41.109 15171 15197 I Unity   : OVRManager:OnApplicationPause (bool) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2500)
+04-24 16:59:41.109 15171 15197 I Unity   : 
+04-24 16:59:42.036 15171 15171 I Unity   : onDestroy
+04-24 16:59:46.792 15438 15438 I Unity   : onResume
+04-24 16:59:47.306 15438 15438 I Unity   : windowFocusChanged: true
+04-24 16:59:47.320 15438 15463 I Unity   : MemoryManager: Using 'Dynamic Heap' Allocator.
+04-24 16:59:47.384 15438 15463 I Unity   : SystemInfo CPU = ARM64 FP ASIMD AES, Cores = 3, Memory = 3808mb
+04-24 16:59:47.384 15438 15463 I Unity   : SystemInfo ARM big.LITTLE configuration: 3 big (mask: 0xe0), 0 little (mask: 0x0)
+04-24 16:59:47.384 15438 15463 I Unity   : XR UsableCoreMask: 0xe0
+04-24 16:59:47.387 15438 15463 I Unity   : ApplicationInfo com.VR_project04.H02 version 0.1
+04-24 16:59:47.387 15438 15463 I Unity   : Built from '2021.3/staging' branch, Version '2021.3.20f1 (577897200b8b)', Build type 'Development', Scripting Backend 'mono', CPU 'armeabi-v7a', Stripping 'Disabled'
+04-24 16:59:47.571 15438 15463 I Unity   : Company Name: VR_project04
+04-24 16:59:47.571 15438 15463 I Unity   : Product Name: H02
+04-24 16:59:49.222 15438 15463 I Unity   : XRGeneral Settings awakening...
+04-24 16:59:49.222 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:49.222 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:49.222 15438 15463 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:49.222 15438 15463 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:49.222 15438 15463 I Unity   : UnityEngine.XR.Management.XRGeneralSettings:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Library/PackageCache/com.unity.xr.management@4.3.3/Runtime/XRGeneralSettings.cs:91)
+04-24 16:59:49.222 15438 15463 I Unity   : 
+04-24 16:59:50.457 15438 15507 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
+04-24 16:59:55.142 15438 15463 E Unity   : DllNotFoundException: AudioPluginOculusSpatializer assembly:<unknown assembly> type:<unknown type> member:(null)
+04-24 16:59:55.142 15438 15463 E Unity   :   at (wrapper managed-to-native) ONSPAudioSource.OSP_SetGlobalVoiceLimit(int)
+04-24 16:59:55.142 15438 15463 E Unity   :   at ONSPAudioSource.OnBeforeSceneLoadRuntimeMethod () [0x00001] in C:\Users\kisan\OneDrive\Bureau\VR_project\Assets\Oculus\Spatializer\scripts\ONSPAudioSource.cs:50 
+04-24 16:59:55.142 15438 15463 E Unity   : 
+04-24 16:59:55.183 15438 15463 I Unity   : Unity v2021.3.20f1, Oculus Utilities v1.82.0, OVRPlugin v1.82.0, SDK v1.0.26.
+04-24 16:59:55.183 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:55.183 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:55.183 15438 15463 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:55.183 15438 15463 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:55.183 15438 15463 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1691)
+04-24 16:59:55.183 15438 15463 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:59:55.183 15438 15463 I Unity   : 
+04-24 16:59:55.195 15438 15463 I Unity   : SystemHeadset Oculus_Quest, API OpenXR
+04-24 16:59:55.195 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:55.195 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:55.195 15438 15463 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:55.195 15438 15463 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:59:55.195 15438 15463 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1696)
+04-24 16:59:55.195 15438 15463 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:59:55.195 15438 15463 I Unity   : 
+04-24 16:59:55.199 15438 15463 I Unity   : OpenXR instance 0x100000000000002 session 0x200000000000020
+04-24 16:59:55.199 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:55.199 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:55.199 15438 15463 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:55.199 15438 15463 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:59:55.199 15438 15463 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1700)
+04-24 16:59:55.199 15438 15463 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:59:55.199 15438 15463 I Unity   : 
+04-24 16:59:55.224 15438 15463 I Unity   : OVRPlugin.Media initialized
+04-24 16:59:55.224 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:55.224 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:55.224 15438 15463 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:55.224 15438 15463 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:55.224 15438 15463 I Unity   : OVRManager:StaticInitializeMixedRealityCapture (OVRMixedRealityCaptureConfiguration) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2562)
+04-24 16:59:55.224 15438 15463 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1798)
+04-24 16:59:55.224 15438 15463 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:59:55.224 15438 15463 I Unity   : 
+04-24 16:59:55.226 15438 15463 I Unity   : [MRC] SetMrcAudioSampleRate(48000)
+04-24 16:59:55.226 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:55.226 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:55.226 15438 15463 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:55.226 15438 15463 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:59:55.226 15438 15463 I Unity   : OVRManager:StaticInitializeMixedRealityCapture (OVRMixedRealityCaptureConfiguration) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2569)
+04-24 16:59:55.226 15438 15463 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1798)
+04-24 16:59:55.226 15438 15463 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:59:55.226 15438 15463 I Unity   : 
+04-24 16:59:55.229 15438 15463 I Unity   : [MRC] Active InputVideoBufferType:TextureHandle
+04-24 16:59:55.229 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:55.229 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:55.229 15438 15463 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:55.229 15438 15463 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:59:55.229 15438 15463 I Unity   : OVRManager:StaticInitializeMixedRealityCapture (OVRMixedRealityCaptureConfiguration) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2573)
+04-24 16:59:55.229 15438 15463 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1798)
+04-24 16:59:55.229 15438 15463 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:59:55.229 15438 15463 I Unity   : 
+04-24 16:59:55.230 15438 15463 I Unity   : [MRC] ActivateMode: Automatic
+04-24 16:59:55.230 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:55.230 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:55.230 15438 15463 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:55.230 15438 15463 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:59:55.230 15438 15463 I Unity   : OVRManager:StaticInitializeMixedRealityCapture (OVRMixedRealityCaptureConfiguration) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2577)
+04-24 16:59:55.230 15438 15463 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1798)
+04-24 16:59:55.230 15438 15463 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:59:55.230 15438 15463 I Unity   : 
+04-24 16:59:55.266 15438 15463 I Unity   : Current display frequency 72, available frequencies [60, 60, 72, 72]
+04-24 16:59:55.266 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:55.266 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:55.266 15438 15463 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:55.266 15438 15463 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:59:55.266 15438 15463 I Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1805)
+04-24 16:59:55.266 15438 15463 I Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:59:55.266 15438 15463 I Unity   : 
+04-24 16:59:55.680 15438 15463 I Unity   : TcpListener started. Local endpoint: 0.0.0.0:32419
+04-24 16:59:55.680 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:55.680 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:55.680 15438 15463 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:55.680 15438 15463 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:59:55.680 15438 15463 I Unity   : OVRNetwork/OVRNetworkTcpServer:StartListening (int) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRNetwork.cs:103)
+04-24 16:59:55.680 15438 15463 I Unity   : OVRSystemPerfMetrics/OVRSystemPerfMetricsTcpServer:OnEnable () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRSystemPerfMetrics.cs:214)
+04-24 16:59:55.680 15438 15463 I Unity   : UnityEngine.GameObject:AddComponent (System.Type) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/GameObject.bindings.cs:235)
+04-24 16:59:55.680 15438 15463 I Unity   : UnityEngine.GameObject:AddComponent<OVRSystemPerfMetrics/OVRSystemPerfMetricsTcpServer> () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/GameObject
+04-24 16:59:55.680 15438 15463 I Unity   : [OVRNetworkTcpServer] Start Listening on port 32419
+04-24 16:59:55.680 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:55.680 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:55.680 15438 15463 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:55.680 15438 15463 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:59:55.680 15438 15463 I Unity   : OVRNetwork/OVRNetworkTcpServer:StartListening (int) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRNetwork.cs:115)
+04-24 16:59:55.680 15438 15463 I Unity   : OVRSystemPerfMetrics/OVRSystemPerfMetricsTcpServer:OnEnable () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRSystemPerfMetrics.cs:214)
+04-24 16:59:55.680 15438 15463 I Unity   : UnityEngine.GameObject:AddComponent (System.Type) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/GameObject.bindings.cs:235)
+04-24 16:59:55.680 15438 15463 I Unity   : UnityEngine.GameObject:AddComponent<OVRSystemPerfMetrics/OVRSystemPerfMetricsTcpServer> () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/GameObjec
+04-24 16:59:55.690 15438 15463 W Unity   : Local Dimming feature is not supported
+04-24 16:59:55.690 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:55.690 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:55.690 15438 15463 W Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:55.690 15438 15463 W Unity   : UnityEngine.Debug:LogWarning (object)
+04-24 16:59:55.690 15438 15463 W Unity   : OVRManager:InitOVRManager () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1848)
+04-24 16:59:55.690 15438 15463 W Unity   : OVRManager:Awake () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:1890)
+04-24 16:59:55.690 15438 15463 W Unity   : 
+04-24 16:59:56.027 15438 15463 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandRight)
+04-24 16:59:56.027 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:56.027 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:56.027 15438 15463 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:56.027 15438 15463 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:59:56.027 15438 15463 I Unity   : OVRControllerHelper:InitializeControllerModels () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRControllerHelper.cs:144)
+04-24 16:59:56.027 15438 15463 I Unity   : OVRControllerHelper:Start () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRControllerHelper.cs:102)
+04-24 16:59:56.027 15438 15463 I Unity   : 
+04-24 16:59:56.040 15438 15463 E Unity   : IndexOutOfRangeException: Index was outside the bounds of the array.
+04-24 16:59:56.040 15438 15463 E Unity   :   at BreakDoor.Start () [0x0000d] in C:\Users\kisan\OneDrive\Bureau\VR_project\Assets\BreakDoor.cs:21 
+04-24 16:59:56.040 15438 15463 E Unity   : 
+04-24 16:59:56.041 15438 15463 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandLeft)
+04-24 16:59:56.041 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:56.041 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:56.041 15438 15463 I Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 16:59:56.041 15438 15463 I Unity   : UnityEngine.Debug:LogFormat (string,object[])
+04-24 16:59:56.041 15438 15463 I Unity   : OVRControllerHelper:InitializeControllerModels () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRControllerHelper.cs:144)
+04-24 16:59:56.041 15438 15463 I Unity   : OVRControllerHelper:Start () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/Util/OVRControllerHelper.cs:102)
+04-24 16:59:56.041 15438 15463 I Unity   : 
+04-24 16:59:56.083 15438 15463 I Unity   : The current MSAA level is 0, but the recommended MSAA level is 4. Switching to the recommended level.
+04-24 16:59:56.083 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:56.083 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:56.083 15438 15463 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:56.083 15438 15463 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:56.083 15438 15463 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2046)
+04-24 16:59:56.083 15438 15463 I Unity   : 
+04-24 16:59:56.085 15438 15463 I Unity   : [OVRManager] HMDAcquired event
+04-24 16:59:56.085 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:56.085 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:56.085 15438 15463 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:56.085 15438 15463 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:56.085 15438 15463 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2086)
+04-24 16:59:56.085 15438 15463 I Unity   : 
+04-24 16:59:56.086 15438 15463 I Unity   : [OVRManager] HMDMounted event
+04-24 16:59:56.086 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:56.086 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:56.086 15438 15463 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:56.086 15438 15463 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:56.086 15438 15463 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2120)
+04-24 16:59:56.086 15438 15463 I Unity   : 
+04-24 16:59:56.088 15438 15463 I Unity   : [OVRManager] VrFocusAcquired event
+04-24 16:59:56.088 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:56.088 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:56.088 15438 15463 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:56.088 15438 15463 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:56.088 15438 15463 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2154)
+04-24 16:59:56.088 15438 15463 I Unity   : 
+04-24 16:59:56.092 15438 15463 I Unity   : [OVRManager] TrackingAcquired event
+04-24 16:59:56.092 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 16:59:56.092 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 16:59:56.092 15438 15463 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 16:59:56.092 15438 15463 I Unity   : UnityEngine.Debug:Log (object)
+04-24 16:59:56.092 15438 15463 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2266)
+04-24 16:59:56.092 15438 15463 I Unity   : 
+04-24 16:59:56.323 15438 15463 W Unity   : Ignoring depth surface store action as it is memoryless
+04-24 17:00:03.921 15438 15463 W Unity   : RightHandAnchor get closed
+04-24 17:00:03.921 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:03.921 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:03.921 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:03.921 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:03.921 15438 15463 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:104)
+04-24 17:00:03.921 15438 15463 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 17:00:03.921 15438 15463 W Unity   : 
+04-24 17:00:03.922 15438 15463 W Unity   : RightHandAnchor grasped axe
+04-24 17:00:03.922 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:03.922 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:03.922 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:03.922 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:03.922 15438 15463 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:138)
+04-24 17:00:03.922 15438 15463 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 17:00:03.922 15438 15463 W Unity   : 
+04-24 17:00:03.924 15438 15463 W Unity   : RightHandAnchor get closed
+04-24 17:00:03.924 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:03.924 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:03.924 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:03.924 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:03.924 15438 15463 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:104)
+04-24 17:00:03.924 15438 15463 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 17:00:03.924 15438 15463 W Unity   : 
+04-24 17:00:44.828 15438 15463 W Unity   : RightHandAnchor released axe
+04-24 17:00:44.828 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.828 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.828 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.828 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.828 15438 15463 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:153)
+04-24 17:00:44.828 15438 15463 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 17:00:44.828 15438 15463 W Unity   : 
+04-24 17:00:44.845 15438 15463 W Unity   : Collision! Resistance remaining: 30
+04-24 17:00:44.845 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.845 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.845 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.845 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.845 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 17:00:44.845 15438 15463 W Unity   : 
+04-24 17:00:44.846 15438 15463 W Unity   : Collider (child) name: blade
+04-24 17:00:44.846 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.846 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.846 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.846 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.846 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 17:00:44.846 15438 15463 W Unity   : 
+04-24 17:00:44.847 15438 15463 W Unity   : Velocity: 2.337157
+04-24 17:00:44.847 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.847 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.847 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.847 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.847 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 17:00:44.847 15438 15463 W Unity   : 
+04-24 17:00:44.847 15438 15463 W Unity   : New resistance: 18.31421
+04-24 17:00:44.847 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.847 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.847 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.847 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.847 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 17:00:44.847 15438 15463 W Unity   : 
+04-24 17:00:44.848 15438 15463 W Unity   : Collision! Resistance remaining: 18.31421
+04-24 17:00:44.848 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.848 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.848 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.848 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.848 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 17:00:44.848 15438 15463 W Unity   : 
+04-24 17:00:44.848 15438 15463 W Unity   : Collider (child) name: blade
+04-24 17:00:44.848 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.848 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.848 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.848 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.848 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 17:00:44.848 15438 15463 W Unity   : 
+04-24 17:00:44.849 15438 15463 W Unity   : Velocity: 2.337157
+04-24 17:00:44.849 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.849 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.849 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.849 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.849 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 17:00:44.849 15438 15463 W Unity   : 
+04-24 17:00:44.849 15438 15463 W Unity   : New resistance: 6.628426
+04-24 17:00:44.849 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.849 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.849 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.849 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.849 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 17:00:44.849 15438 15463 W Unity   : 
+04-24 17:00:44.849 15438 15463 W Unity   : Collision! Resistance remaining: 6.628426
+04-24 17:00:44.849 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.849 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.849 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.849 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.849 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 17:00:44.849 15438 15463 W Unity   : 
+04-24 17:00:44.850 15438 15463 W Unity   : Collider (child) name: blade
+04-24 17:00:44.850 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.850 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.850 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.850 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.850 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 17:00:44.850 15438 15463 W Unity   : 
+04-24 17:00:44.850 15438 15463 W Unity   : Velocity: 2.337157
+04-24 17:00:44.850 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.850 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.850 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.850 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.850 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 17:00:44.850 15438 15463 W Unity   : 
+04-24 17:00:44.850 15438 15463 W Unity   : New resistance: -5.057362
+04-24 17:00:44.850 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.850 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.850 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.850 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.850 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 17:00:44.850 15438 15463 W Unity   : 
+04-24 17:00:44.851 15438 15463 W Unity   : Destroying...
+04-24 17:00:44.851 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.851 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.851 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.851 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.851 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 17:00:44.851 15438 15463 W Unity   : 
+04-24 17:00:44.851 15438 15463 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 17:00:44.851 15438 15463 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.851 15438 15463 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 17:00:44.851 15438 15463 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 17:00:44.851 15438 15463 E Unity   : 
+04-24 17:00:44.851 15438 15463 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 17:00:44.851 15438 15463 E Unity   : 
+04-24 17:00:44.852 15438 15463 W Unity   : Collision! Resistance remaining: -5.057362
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.852 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 17:00:44.852 15438 15463 W Unity   : 
+04-24 17:00:44.852 15438 15463 W Unity   : Collider (child) name: blade
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.852 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 17:00:44.852 15438 15463 W Unity   : 
+04-24 17:00:44.852 15438 15463 W Unity   : Velocity: 2.337157
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.852 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 17:00:44.852 15438 15463 W Unity   : 
+04-24 17:00:44.852 15438 15463 W Unity   : New resistance: -16.74315
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.852 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.852 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 17:00:44.852 15438 15463 W Unity   : 
+04-24 17:00:44.853 15438 15463 W Unity   : Destroying...
+04-24 17:00:44.853 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.853 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.853 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.853 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.853 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 17:00:44.853 15438 15463 W Unity   : 
+04-24 17:00:44.853 15438 15463 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 17:00:44.853 15438 15463 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.853 15438 15463 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 17:00:44.853 15438 15463 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 17:00:44.853 15438 15463 E Unity   : 
+04-24 17:00:44.853 15438 15463 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 17:00:44.853 15438 15463 E Unity   : 
+04-24 17:00:44.993 15438 15463 W Unity   : Collision! Resistance remaining: -16.74315
+04-24 17:00:44.993 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.993 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.993 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.993 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.993 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 17:00:44.993 15438 15463 W Unity   : 
+04-24 17:00:44.993 15438 15463 W Unity   : Collider (child) name: blade
+04-24 17:00:44.993 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.993 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.993 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.993 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.993 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 17:00:44.993 15438 15463 W Unity   : 
+04-24 17:00:44.994 15438 15463 W Unity   : Velocity: 0.5799751
+04-24 17:00:44.994 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.994 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.994 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.994 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.994 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 17:00:44.994 15438 15463 W Unity   : 
+04-24 17:00:44.994 15438 15463 W Unity   : New resistance: -19.64302
+04-24 17:00:44.994 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.994 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.994 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.994 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.994 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 17:00:44.994 15438 15463 W Unity   : 
+04-24 17:00:44.994 15438 15463 W Unity   : Destroying...
+04-24 17:00:44.994 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.994 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.994 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.994 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.994 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 17:00:44.994 15438 15463 W Unity   : 
+04-24 17:00:44.995 15438 15463 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 17:00:44.995 15438 15463 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.995 15438 15463 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 17:00:44.995 15438 15463 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 17:00:44.995 15438 15463 E Unity   : 
+04-24 17:00:44.995 15438 15463 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 17:00:44.995 15438 15463 E Unity   : 
+04-24 17:00:44.995 15438 15463 W Unity   : Collision! Resistance remaining: -19.64302
+04-24 17:00:44.995 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.995 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.995 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.995 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.995 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:29)
+04-24 17:00:44.995 15438 15463 W Unity   : 
+04-24 17:00:44.995 15438 15463 W Unity   : Collider (child) name: blade
+04-24 17:00:44.995 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.995 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.995 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.995 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.995 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:32)
+04-24 17:00:44.995 15438 15463 W Unity   : 
+04-24 17:00:44.995 15438 15463 W Unity   : Velocity: 0.5799751
+04-24 17:00:44.995 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.995 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.995 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.995 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.995 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:34)
+04-24 17:00:44.995 15438 15463 W Unity   : 
+04-24 17:00:44.996 15438 15463 W Unity   : New resistance: -22.5429
+04-24 17:00:44.996 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.996 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.996 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.996 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.996 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:44)
+04-24 17:00:44.996 15438 15463 W Unity   : 
+04-24 17:00:44.996 15438 15463 W Unity   : Destroying...
+04-24 17:00:44.996 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.996 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:44.996 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:44.996 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:44.996 15438 15463 W Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:50)
+04-24 17:00:44.996 15438 15463 W Unity   : 
+04-24 17:00:44.996 15438 15463 E Unity   : Destroying GameObjects immediately is not permitted during physics trigger/contact, animation event callbacks, rendering callbacks or OnValidate. You must use Destroy instead.
+04-24 17:00:44.996 15438 15463 E Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:44.996 15438 15463 E Unity   : UnityEngine.Object:DestroyImmediate (UnityEngine.Object) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnityEngineObject.bindings.cs:332)
+04-24 17:00:44.996 15438 15463 E Unity   : BreakDoor:OnCollisionEnter (UnityEngine.Collision) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/BreakDoor.cs:51)
+04-24 17:00:44.996 15438 15463 E Unity   : 
+04-24 17:00:44.996 15438 15463 E Unity   : [/home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 37]
+04-24 17:00:44.996 15438 15463 E Unity   : 
+04-24 17:00:46.402 15438 15463 W Unity   : RightHandAnchor get closed
+04-24 17:00:46.402 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:46.402 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:46.402 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:46.402 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:46.402 15438 15463 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:104)
+04-24 17:00:46.402 15438 15463 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 17:00:46.402 15438 15463 W Unity   : 
+04-24 17:00:46.402 15438 15463 W Unity   : RightHandAnchor get closed
+04-24 17:00:46.402 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:46.402 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:46.402 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:46.402 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:46.402 15438 15463 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:104)
+04-24 17:00:46.402 15438 15463 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 17:00:46.402 15438 15463 W Unity   : 
+04-24 17:00:46.805 15438 15463 W Unity   : RightHandAnchor released axe
+04-24 17:00:46.805 15438 15463 W Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:46.805 15438 15463 W Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:46.805 15438 15463 W Unity   : UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+04-24 17:00:46.805 15438 15463 W Unity   : UnityEngine.Debug:LogWarningFormat (string,object[])
+04-24 17:00:46.805 15438 15463 W Unity   : HandController:handle_controller_behavior () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:153)
+04-24 17:00:46.805 15438 15463 W Unity   : HandController:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/HandController.cs:75)
+04-24 17:00:46.805 15438 15463 W Unity   : 
+04-24 17:00:50.224 15438 15463 I Unity   : [OVRManager] InputFocusLost event
+04-24 17:00:50.224 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:50.224 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:50.224 15438 15463 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 17:00:50.224 15438 15463 I Unity   : UnityEngine.Debug:Log (object)
+04-24 17:00:50.224 15438 15463 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2174)
+04-24 17:00:50.224 15438 15463 I Unity   : 
+04-24 17:00:50.262 15438 15438 I Unity   : windowFocusChanged: false
+04-24 17:00:50.291 15438 15463 I Unity   : [OVRManager] OnApplicationFocus(false)
+04-24 17:00:50.291 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:50.291 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:50.291 15438 15463 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 17:00:50.291 15438 15463 I Unity   : UnityEngine.Debug:Log (object)
+04-24 17:00:50.291 15438 15463 I Unity   : OVRManager:OnApplicationFocus (bool) (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2516)
+04-24 17:00:50.291 15438 15463 I Unity   : 
+04-24 17:00:50.953 15438 15463 I Unity   : [OVRManager] HMDUnmounted event
+04-24 17:00:50.953 15438 15463 I Unity   : UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+04-24 17:00:50.953 15438 15463 I Unity   : UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+04-24 17:00:50.953 15438 15463 I Unity   : UnityEngine.Logger:Log (UnityEngine.LogType,object)
+04-24 17:00:50.953 15438 15463 I Unity   : UnityEngine.Debug:Log (object)
+04-24 17:00:50.953 15438 15463 I Unity   : OVRManager:Update () (at C:/Users/kisan/OneDrive/Bureau/VR_project/Assets/Oculus/VR/Scripts/OVRManager.cs:2106)
+04-24 17:00:50.953 15438 15463 I Unity   : 
