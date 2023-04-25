@@ -22,8 +22,37 @@ public class BreakDoor : MonoBehaviour
         ShatterSound = audioSources[1];
     }
 
-    // call upon collision ie if hit by something
+    // called by axe if hits door
+    public int onBladeHit(GameObject child)
+    {
+        if (child.name == Weakness)
+        {
+            float vel = child.GetComponent<AxeCollider>().vel.magnitude;
+            Resistance -= vel;
 
+            Debug.LogWarningFormat("New resistance: {0}", Resistance);
+
+            if (Resistance <= 0)
+            {
+                // door successfully broken!
+                if (ShatterSound) ShatterSound.Play();
+                Debug.LogWarningFormat("Destroying...");
+                Destroy(this); // removed once call is done
+                Destroy(gameObject);
+
+                return 1;
+            }
+            else
+            {
+                if (HitSound) HitSound.Play();
+                HitSound.Play(); // some damage => provide feedback
+            }
+        }
+        return 0;
+    }
+    
+    // call upon collision ie if hit by something
+/*
     void OnCollisionEnter(Collision collision)
     {
         Debug.LogWarningFormat("Collision! Resistance remaining: {0}", Resistance);
@@ -48,7 +77,8 @@ public class BreakDoor : MonoBehaviour
                     // door successfully broken!
                     if (ShatterSound) ShatterSound.Play();
                     Debug.LogWarningFormat("Destroying...");
-                    Destroy(gameObject); // removed once call is done
+                    Destroy(this); // removed once call is done
+                    Destroy(gameObject);
                 }
                 else
                 {
@@ -58,5 +88,5 @@ public class BreakDoor : MonoBehaviour
             }
         }
         // not being hit with correct object => ignore
-    }
+    }*/
 }
