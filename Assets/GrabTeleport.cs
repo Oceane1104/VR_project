@@ -8,18 +8,11 @@ using UnityEngine;
 //            If ray points to object that player can grab, object teleports into hand
 //			  Release by releasing both buttons
 
-public class GrabTeleport : MonoBehaviour
+// Overlap with handcontroller => inherit from it
+
+public class GrabTeleport : HandController
 {
-	// Store the hand type to know which button should be pressed
-	public enum HandType : int { LeftHand, RightHand };
-	[Header("Hand Properties")]
-	public HandType handType;
-
-	// Store the player controller to forward it to the object
-	[Header("Player Controller")]
-	public MainPlayerController playerController;
-
-	[Header("Maximum Distance")]
+	/*[Header("Maximum Distance")]
 	[Range(2f, 30f)]
 	// Max distance of object from player
 	public float maxObjectDistance = 5f;
@@ -30,25 +23,25 @@ public class GrabTeleport : MonoBehaviour
 	protected GameObject marker_prefab_instanciated;
 
 	// If already have object in hand can't grab
-	protected bool is_hand_closed_previous_frame = false;
+	protected bool teleport_grab = false;
 	// check if already pointing ray
-	protected bool is_hand_pointing_previous_frame = false;
+	protected bool hand_pointing = false;
 
-	protected ObjectAnchorSpecial object_grasped = null;
+	protected ObjectAnchorSpecial special_object_grasped = null;
 
 	// return true if either hand pointing 
 	protected bool is_pointing()
-    {
+	{
 		if (handType == HandType.LeftHand)
-        {
+		{
 			return OVRInput.Get(OVRInput.Button.Three);
-        }
+		}
 
 		return OVRInput.Get(OVRInput.Button.One);
 	}
 
 	bool is_grabbing()
-    {
+	{
 		if (handType == HandType.LeftHand)
 		{
 			return OVRInput.Get(OVRInput.Button.Three) &&
@@ -60,34 +53,34 @@ public class GrabTeleport : MonoBehaviour
 	}
 
 	// Store all gameobjects containing an Anchor
-	static protected ObjectAnchorSpecial[] anchors_in_the_scene;
+	static protected ObjectAnchorSpecial[] special_anchors_in_scene;
 	void Start()
 	{
 		// Prevent multiple fetch
-		if (anchors_in_the_scene == null) anchors_in_the_scene = GameObject.FindObjectsOfType<ObjectAnchorSpecial>();
+		if (special_anchors_in_scene == null) special_anchors_in_scene = GameObject.FindObjectsOfType<ObjectAnchorSpecial>();
 	}
 
 	// which object to grab?
 	// calculate distance
 	protected int which_object(Vector3 posn)
-    {
+	{
 		int best_object_id = -1;
 		float best_object_distance = float.MaxValue;
 		float oject_distance;
 
 		// Iterate over objects to determine if we can interact with it
-		for (int i = 0; i < anchors_in_the_scene.Length; i++)
+		for (int i = 0; i < special_anchors_in_scene.Length; i++)
 		{
 
 			// Skip object not available
-			if (!anchors_in_the_scene[i].is_available()) continue;
+			if (!special_anchors_in_scene[i].is_available()) continue;
 
 			// Compute the distance to the object
-			oject_distance = Vector3.Distance(this.transform.position, anchors_in_the_scene[i].transform.position);
+			oject_distance = Vector3.Distance(this.transform.position, special_anchors_in_scene[i].transform.position);
 
 			// Keep in memory the closest object
 			// N.B. We can extend this selection using priorities
-			if (oject_distance < best_object_distance && oject_distance <= anchors_in_the_scene[i].get_grasping_radius())
+			if (oject_distance < best_object_distance && oject_distance <= special_anchors_in_scene[i].get_grasping_radius())
 			{
 				best_object_id = i;
 				best_object_distance = oject_distance;
@@ -102,9 +95,10 @@ public class GrabTeleport : MonoBehaviour
 		// check if pointing
 		bool pointing = is_pointing();
 		bool grabbing = is_grabbing();
-		if (pointing == is_hand_pointing_previous_frame && grabbing == is_hand_closed_previous_frame) return; // no change
-		is_hand_pointing_previous_frame = pointing; // update state
-		is_hand_closed_previous_frame = grabbing;
+		if (pointing == hand_pointing && grabbing == teleport_grab) return;
+		if (object_grasped || is_hand_closed()) return;
+		hand_pointing = pointing; // update state
+		teleport_grab = grabbing;
 
 		// target
 		Vector3 target_point;
@@ -112,44 +106,44 @@ public class GrabTeleport : MonoBehaviour
 		bool aim = aim_with(forward, out target_point);
 		// draw ray! but only if valid point
 		if (pointing && aim)
-        {
+		{
 			// Instantiate the marker prefab if it doesn't already exists and place it to the targeted position
 			if (marker_prefab_instanciated == null) marker_prefab_instanciated = GameObject.Instantiate(markerPrefab, this.transform);
-			marker_prefab_instanciated.transform.position = target_point;
+			//marker_prefab_instanciated.transform.position = target_point;
 
 			// check if can grab object & if so pick it up
 			if (grabbing)
-            {
+			{
 				int best_object_id = which_object(target_point);
 				// If the best object is in range grab it
 				if (best_object_id != -1)
 				{
 
 					// Store in memory the object grasped
-					object_grasped = anchors_in_the_scene[best_object_id];
+					special_object_grasped = special_anchors_in_scene[best_object_id];
 
 					// Log the grasp
-					Debug.LogWarningFormat("{0} grasped {1}", this.transform.parent.name, object_grasped.name);
+					Debug.LogWarningFormat("{0} grasped {1}", this.transform.parent.name, special_object_grasped.name);
 
 					// Grab this object
-					object_grasped.attach_to(this);
+					special_object_grasped.teleport_attach_to(this);
 				}
 			}
 		}
 
 		// what if hand is open?
-		if (object_grasped != null && !grabbing)
-        {
+		if (special_object_grasped != null && !grabbing)
+		{
 			// Log the release
-			Debug.LogWarningFormat("{0} released {1}", this.transform.parent.name, object_grasped.name);
+			Debug.LogWarningFormat("{0} released {1}", this.transform.parent.name, special_object_grasped.name);
 
 			// Release the object
-			object_grasped.detach_from(this);
+			special_object_grasped.detach_from(this, velocity);
 		}
 
 		// if not pointing, out of range, or have object in hand
-		if (!pointing || !aim || object_grasped != null)
-        {
+		if (!pointing || !aim || special_object_grasped != null)
+		{
 			// Remove the cursor
 			if (marker_prefab_instanciated != null) Destroy(marker_prefab_instanciated);
 			marker_prefab_instanciated = null;
@@ -175,6 +169,5 @@ public class GrabTeleport : MonoBehaviour
 		// "Output" the target point
 		target_point = hit.point;
 		return true;
-	}
+	}*/
 }
-
