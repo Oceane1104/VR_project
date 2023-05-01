@@ -145,7 +145,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165585583}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10c543198a898be46b434825b8bf36c4, type: 3}
   m_Name: 
@@ -153,6 +153,7 @@ MonoBehaviour:
   graspingRadius: 0.2
   throwForce: 1
   floorLimit: 0
+  teleportRadius: 1.5
   hand_controller: {fileID: 0}
 --- !u!114 &165585590
 MonoBehaviour:
@@ -161,7 +162,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165585583}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 342e1c6e080e76948a2d1afa3a452a4a, type: 3}
   m_Name: 
@@ -169,6 +170,7 @@ MonoBehaviour:
   graspingRadius: 0.2
   throwForce: 1
   floorLimit: 0
+  teleportRadius: 1.5
   hand_controller: {fileID: 0}
 --- !u!1 &166658224
 GameObject:
@@ -927,7 +929,7 @@ PrefabInstance:
       objectReference: {fileID: 264170055}
     - target: {fileID: 6030183422192155035, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6030183422192155035, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: markerPrefab
@@ -1754,6 +1756,7 @@ MonoBehaviour:
   graspingRadius: 0.1
   throwForce: 1
   floorLimit: 0
+  teleportRadius: 1.5
   hand_controller: {fileID: 0}
 --- !u!64 &1838451463
 MeshCollider:

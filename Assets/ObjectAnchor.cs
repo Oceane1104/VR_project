@@ -9,7 +9,7 @@ public class ObjectAnchor : MonoBehaviour
 	public float graspingRadius = 0.1f; //The radius at which you can grab the object
 	public float throwForce = 1f; //Force to multiply to the object when throwing (if you need to be less or more stronger)
 	public float floorLimit = 0.0f; // set this to the y-position of your floor for the rigidbody don't go through the floor
-
+	public float teleportRadius = 1.5f;
 
 	// Store initial transform parent
 	protected Transform initial_transform_parent;
@@ -23,11 +23,15 @@ public class ObjectAnchor : MonoBehaviour
 
 	public void attach_to(HandController hand_controller)
 	{
+		Debug.Log("Regular attaching...");
 		// Store the hand controller in memory
 		this.hand_controller = hand_controller;
 
 		//Disable the Rigidbody component of the object
-		GetComponent<Rigidbody>().isKinematic = true;
+		if (GetComponent<Rigidbody>())
+		{
+			GetComponent<Rigidbody>().isKinematic = true;
+		}
 
 		// Set the object to be placed in the hand controller referential
 		this.transform.SetParent(hand_controller.transform);
@@ -41,23 +45,40 @@ public class ObjectAnchor : MonoBehaviour
 		// Detach the hand controller
 		this.hand_controller = null;
 		transform.SetParent(null);
-		GetComponent<Rigidbody>().isKinematic = false;
+		if (GetComponent<Rigidbody>())
+		{
+			GetComponent<Rigidbody>().isKinematic = false;
+			//Through the object with the velocity of the controller
+			GetComponent<Rigidbody>().AddForce(velocity * throwForce, ForceMode.Impulse);
 
-		//Through the object with the velocity of the controller
-		GetComponent<Rigidbody>().AddForce(velocity * throwForce, ForceMode.Impulse);
+			// clamp the y-position of the Rigidbody to the floor limit
+			Vector3 clampedPosition = GetComponent<Rigidbody>().position;
+			clampedPosition.y = Mathf.Max(clampedPosition.y, floorLimit);
+			GetComponent<Rigidbody>().position = clampedPosition;
 
-		// clamp the y-position of the Rigidbody to the floor limit
-		Vector3 clampedPosition = GetComponent<Rigidbody>().position;
-		clampedPosition.y = Mathf.Max(clampedPosition.y, floorLimit);
-		GetComponent<Rigidbody>().position = clampedPosition;
-
-		// stop the Rigidbody's movement when the trigger is released
-		GetComponent<Rigidbody>().velocity = Vector3.zero;
-		GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+			// stop the Rigidbody's movement when the trigger is released
+			GetComponent<Rigidbody>().velocity = Vector3.zero;
+			GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+		}
+		
+		Debug.Log("Detatching...");
 	}
 	public bool is_available() { return hand_controller == null; }
 
 	public float get_grasping_radius() { return graspingRadius; }
+
+	public float get_teleport_radius() { return teleportRadius; }
+
+	public void teleport_attach_to(HandController hand_controller)
+	{
+		// call regular attach function
+		attach_to(hand_controller);
+
+		// also make sure object "flies to" hand
+		Debug.LogWarningFormat("Moving object from {0} to {1}", transform.position, hand_controller.transform.position);
+
+		transform.position = hand_controller.transform.position;
+	}
 
 }
 

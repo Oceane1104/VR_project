@@ -113,24 +113,25 @@ public class HandController : MonoBehaviour
 	{
 		int best_object_id = -1;
 		float best_object_distance = float.MaxValue;
-		float oject_distance;
+		float object_distance;
 
 		// Iterate over objects to determine if we can interact with it
 		for (int i = 0; i < special_anchors_in_scene.Length; i++)
 		{
-
 			// Skip object not available
 			if (!special_anchors_in_scene[i].is_available()) continue;
 
 			// Compute the distance to the object
-			oject_distance = Vector3.Distance(this.transform.position, special_anchors_in_scene[i].transform.position);
+			object_distance = Vector3.Distance(this.transform.position, special_anchors_in_scene[i].transform.position);
+			Debug.LogWarningFormat("Marker loc: {0} vs target: {1} vs obj loc {2}", marker_prefab_instanciated.transform.position, posn, special_anchors_in_scene[i].transform.position);
+			Debug.LogWarningFormat("Object distance: {0}", object_distance);
 
 			// Keep in memory the closest object
 			// N.B. We can extend this selection using priorities
-			if (oject_distance < best_object_distance && oject_distance <= special_anchors_in_scene[i].get_grasping_radius())
+			if (object_distance < best_object_distance && object_distance <= special_anchors_in_scene[i].get_teleport_radius())
 			{
 				best_object_id = i;
-				best_object_distance = oject_distance;
+				best_object_distance = object_distance;
 			}
 		}
 
@@ -156,8 +157,6 @@ public class HandController : MonoBehaviour
 
 	protected void handle_teleport_behavior()
     {
-		Debug.LogWarningFormat("Teleport null object grasped: {0} special object: {1} hand closed: {2} pointing: {3} grabbing: {4} prev point: {5} prev grab: {6}",
-			object_grasped == null, special_object_grasped == null, is_hand_closed(), is_pointing() && !is_grabbing(), is_grabbing(), hand_pointing, teleport_grab);
 		if (object_grasped || is_hand_closed()) return; // make sure not regular grab
 
 		bool pointing = is_pointing(); // pointing and/or grabbing
@@ -171,18 +170,17 @@ public class HandController : MonoBehaviour
 		Vector3 target_point;
 		Vector3 forward = handController.rotation * Vector3.forward; // hand controller fwd in worldspace
 		bool aim = aim_with(forward, out target_point);
-		// draw ray! but only if valid point
+		// draw ray! but only if valid point/hand not completely closed
 		if (pointing && aim)
 		{
 			// Instantiate the marker prefab if it doesn't already exists and place it to the targeted position
 			if (marker_prefab_instanciated == null) marker_prefab_instanciated = GameObject.Instantiate(markerPrefab, this.transform);
-			Debug.LogWarningFormat("Marker loc: {0} vs target: {1}", marker_prefab_instanciated.transform.position, target_point);
 			//marker_prefab_instanciated.transform.position = target_point;
 
 			// check if can grab object & if so pick it up
 			if (grabbing)
 			{
-				int best_object_id = which_object(target_point);
+				int best_object_id = which_object(marker_prefab_instanciated.transform.position);//target_point);
 				// If the best object is in range grab it
 				if (best_object_id != -1)
 				{
@@ -247,15 +245,13 @@ public class HandController : MonoBehaviour
 	/// </summary>
 	protected void handle_controller_behavior()
 	{
-
-		Debug.LogWarningFormat("Reg null object grasped: {0} special object: {1} hand closed: {2} pointing: {3} grabbing: {4} prev closed: {5}",
-			object_grasped == null, special_object_grasped == null, is_hand_closed(), is_pointing() && !is_grabbing(), is_grabbing(), is_hand_closed_previous_frame);
 		// check if teleport-grab case instead
+
 		bool hand_closed = is_hand_closed();
 
-		bool pointing = is_pointing() && !hand_closed; // make sure only pointing/grabbing but hand not closed
+		//bool pointing = is_pointing() && !hand_closed; // make sure only pointing/grabbing but hand not closed
 
-		if (pointing && object_grasped == null) return; // if non-null need to drop object
+		//if (pointing && object_grasped == null) return; // if non-null need to drop object
 		if (special_object_grasped) return;
 
 		// Check if there is a change in the grasping state (i.e. an edge) otherwise do nothing
