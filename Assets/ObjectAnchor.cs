@@ -4,6 +4,12 @@ public class ObjectAnchor : MonoBehaviour
 {
 
 	[Header("Grasping Properties")]
+using System;
+using UnityEngine;
+
+public class ObjectAnchor : MonoBehaviour {
+
+	[Header( "Grasping Properties" )]
 	public float graspingRadius = 0.1f;
 
 	// Store initial transform parent
@@ -19,6 +25,13 @@ public class ObjectAnchor : MonoBehaviour
 
 	public void attach_to(HandController hand_controller)
 	{
+	void Start () { initial_transform_parent = transform.parent; }
+
+	
+	// Store the hand controller this object will be attached to
+	protected HandController hand_controller = null;
+
+	public virtual void attach_to ( HandController hand_controller ) {
 		// Store the hand controller in memory
 		this.hand_controller = hand_controller;
 
@@ -30,6 +43,12 @@ public class ObjectAnchor : MonoBehaviour
 	{
 		// Make sure that the right hand controller ask for the release
 		if (this.hand_controller != hand_controller) return;
+		transform.SetParent( hand_controller.transform );
+	}
+
+	public virtual void detach_from ( HandController hand_controller ) {
+		// Make sure that the right hand controller ask for the release
+		if ( this.hand_controller != hand_controller ) return;
 
 		// Detach the hand controller
 		this.hand_controller = null;
@@ -41,4 +60,12 @@ public class ObjectAnchor : MonoBehaviour
 	public bool is_available() { return hand_controller == null; }
 
 	public float get_grasping_radius() { return graspingRadius; }
+		transform.SetParent( initial_transform_parent );
+	}
+
+	public virtual bool is_available () { return hand_controller == null; }
+
+	public virtual float get_grasping_radius () { return graspingRadius; }
+
+	public virtual bool can_be_grasped_by ( MainPlayerController player ) { return player.is_equiped_with( typeof( BasicGraspUpgrade ) ); }
 }
