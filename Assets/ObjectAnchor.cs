@@ -77,17 +77,6 @@ public class ObjectAnchor : MonoBehaviour
 		if (parent && parent.GetComponent<Rigidbody>())
         {
 			parent.GetComponent<Rigidbody>().isKinematic = false;
-			//Through the object with the velocity of the controller
-			parent.GetComponent<Rigidbody>().AddForce(velocity * throwForce, ForceMode.Impulse);
-
-			// clamp the y-position of the Rigidbody to the floor limit
-			Vector3 clampedPosition = GetComponent<Rigidbody>().position;
-			clampedPosition.y = Mathf.Max(clampedPosition.y, floorLimit);
-			parent.GetComponent<Rigidbody>().position = clampedPosition;
-
-			// stop the Rigidbody's movement when the trigger is released
-			parent.GetComponent<Rigidbody>().velocity = Vector3.zero;
-			parent.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 		}  if (GetComponent<Rigidbody>())
 		{
 			GetComponent<Rigidbody>().isKinematic = false;

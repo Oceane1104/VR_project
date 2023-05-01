@@ -181,7 +181,6 @@ public class HandController : MonoBehaviour
 		{
 			// Instantiate the marker prefab if it doesn't already exists and place it to the targeted position
 			if (marker_prefab_instanciated == null) marker_prefab_instanciated = GameObject.Instantiate(markerPrefab, this.transform);
-			Debug.LogWarningFormat("Init... Marker_prefab_inst is null? {0} marker prefab is null? {1}", marker_prefab_instanciated == null, markerPrefab == null);
 
 			//marker_prefab_instanciated.transform.position = target_point;
 
@@ -222,8 +221,6 @@ public class HandController : MonoBehaviour
 			// Remove the cursor
 			if (marker_prefab_instanciated != null) Destroy(marker_prefab_instanciated);
 			marker_prefab_instanciated = null;
-			Debug.LogWarningFormat("pointing: {0} aim: {1}", pointing, aim);
-			Debug.LogWarningFormat("Destroying marker... Marker_prefab_inst is null? {0} marker prefab is null? {1}", marker_prefab_instanciated == null, markerPrefab == null);
 		}
 	}
 
