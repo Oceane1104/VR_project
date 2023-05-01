@@ -42,22 +42,35 @@ public class HandController : MonoBehaviour
 	{
 		if (handType == HandType.LeftHand)
 		{
-			return OVRInput.Get(OVRInput.Button.Three);
+			return	OVRInput.Get(OVRInput.Button.Three)                           // Check that the A button is pressed
+		  && !OVRInput.Get(OVRInput.Button.Four)                         // Check that the B button is not pressed
+		  && !(OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0.5 )    // Check that the middle finger is not pressing
+		  && !(OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5);
 		}
 
-		return OVRInput.Get(OVRInput.Button.One);
+		return
+			OVRInput.Get(OVRInput.Button.One)                             // Check that the A button is pressed
+			&& !OVRInput.Get(OVRInput.Button.Two)                          // Check that the B button is not pressed
+			&& !(OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) > 0.5)   // Check that the middle finger is not pressing
+			&& !(OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.5);
 	}
 
 	bool is_grabbing()
 	{
 		if (handType == HandType.LeftHand)
 		{
-			return OVRInput.Get(OVRInput.Button.Three) &&
-				OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5;
+			return OVRInput.Get(OVRInput.Button.Three)                           // Check that the A button is pressed
+		  && !OVRInput.Get(OVRInput.Button.Four)                         // Check that the B button is not pressed
+		  && !(OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0.5)    // Check that the middle finger is not pressing
+		  && (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5);
 		}
 
-		return OVRInput.Get(OVRInput.Button.One) &&
-							OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.5;
+		return
+			OVRInput.Get(OVRInput.Button.One)                             // Check that the A button is pressed
+			&& !OVRInput.Get(OVRInput.Button.Two)                          // Check that the B button is not pressed
+			&& !(OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) > 0.5)   // Check that the middle finger is not pressing
+			&& (OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.5); 
+		
 	}
 
 	// Store all gameobjects containing an Anchor
@@ -100,6 +113,23 @@ public class HandController : MonoBehaviour
 			&& OVRInput.Get(OVRInput.Button.Two)                          // Check that the B button is pressed
 			&& OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) > 0.5   // Check that the middle finger is pressing
 			&& OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.5; // Check that the index finger is pressing
+	}
+
+	protected bool is_open()
+    {
+		if (handType == HandType.LeftHand) return
+		  !OVRInput.Get(OVRInput.Button.Three)                           
+		  && !OVRInput.Get(OVRInput.Button.Four)                        
+		  &&!( OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0.5)    
+		  && !(OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5);  
+
+
+		// Case of a right hand
+		else return
+			!OVRInput.Get(OVRInput.Button.One)                             
+			&& !OVRInput.Get(OVRInput.Button.Two)                          
+			&& !(OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) > 0.5)   
+			&& !(OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.5);
 	}
 
 	protected Vector3 calculatorVelocity()
@@ -165,7 +195,7 @@ public class HandController : MonoBehaviour
     {
 		if (object_grasped || is_hand_closed()) return; // make sure not regular grab
 
-		bool pointing = is_pointing(); // pointing and/or grabbing
+		bool pointing = is_pointing(); 
 		bool grabbing = is_grabbing();
 
 		if (pointing == hand_pointing && grabbing == teleport_grab) return; // no change
@@ -177,8 +207,9 @@ public class HandController : MonoBehaviour
 		Vector3 forward = handController.rotation * Vector3.forward; // hand controller fwd in worldspace
 		bool aim = aim_with(forward, out target_point);
 		// draw ray! but only if valid point/hand not completely closed
-		if (pointing && aim)
+		if ((pointing || grabbing) && aim)
 		{
+			Debug.Log("Teleport grabbing/etc...");
 			// Instantiate the marker prefab if it doesn't already exists and place it to the targeted position
 			if (marker_prefab_instanciated == null) marker_prefab_instanciated = GameObject.Instantiate(markerPrefab, this.transform);
 
@@ -195,9 +226,6 @@ public class HandController : MonoBehaviour
 					// Store in memory the object grasped
 					special_object_grasped = special_anchors_in_scene[best_object_id];
 
-					// Log the grasp
-					Debug.LogWarningFormat("{0} grasped {1}", this.transform.parent.name, special_object_grasped.name);
-
 					// Grab this object
 					special_object_grasped.teleport_attach_to(this);
 				}
@@ -205,18 +233,15 @@ public class HandController : MonoBehaviour
 		}
 
 		// what if hand is open?
-		if (special_object_grasped != null && !grabbing)
+		if (special_object_grasped != null && (pointing || !grabbing || is_open()))
 		{
-			// Log the release
-			Debug.LogWarningFormat("{0} released {1}", this.transform.parent.name, special_object_grasped.name);
-
 			// Release the object
 			special_object_grasped.detach_from(this, velocity);
 			special_object_grasped = null;
 		}
 
 		// if not pointing, out of range, or have object in hand
-		if (!pointing || !aim || special_object_grasped != null)
+		if (!pointing || is_open() || !aim || special_object_grasped != null)
 		{
 			// Remove the cursor
 			if (marker_prefab_instanciated != null) Destroy(marker_prefab_instanciated);
@@ -271,14 +296,14 @@ public class HandController : MonoBehaviour
 		//==============================================//
 		if (hand_closed)
 		{
-
+			Debug.Log("Vanilla grabbing...");
 			// Log hand action detection
 			Debug.LogWarningFormat("{0} get closed", this.transform.parent.name);
 
 			// Determine which object available is the closest from the left hand
 			int best_object_id = -1;
 			float best_object_distance = float.MaxValue;
-			float oject_distance;
+			float object_distance;
 
 			// Iterate over objects to determine if we can interact with it
 			for (int i = 0; i < anchors_in_the_scene.Length; i++)
@@ -288,15 +313,16 @@ public class HandController : MonoBehaviour
 				if (!anchors_in_the_scene[i].is_available()) continue;
 
 				// Compute the distance to the object
-				oject_distance = Vector3.Distance(this.transform.position, anchors_in_the_scene[i].transform.position);
+				object_distance = Vector3.Distance(this.transform.position, anchors_in_the_scene[i].transform.position);
 
 				// Keep in memory the closest object
 				// N.B. We can extend this selection using priorities
-				if (oject_distance < best_object_distance && oject_distance <= anchors_in_the_scene[i].get_grasping_radius())
+				if (object_distance < best_object_distance && object_distance <= anchors_in_the_scene[i].get_grasping_radius())
 				{
 					best_object_id = i;
-					best_object_distance = oject_distance;
+					best_object_distance = object_distance;
 				}
+				Debug.LogWarningFormat("Obj dist: {0} vs grasping radius: {1}", object_distance, anchors_in_the_scene[i].get_grasping_radius());
 			}
 
 			// If the best object is in range grab it
