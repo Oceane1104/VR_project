@@ -23,7 +23,7 @@ public class HandController : MonoBehaviour
 	[Header("Maximum Distance")]
 	[Range(2f, 30f)]
 	// Max distance of object from player
-	public float maxObjectDistance = 5f;
+	public float maxObjectDistance = 15f;
 
 	[Header("Marker")]
 	// Store the refence to the marker prefab used to highlight the targeted point
@@ -35,7 +35,7 @@ public class HandController : MonoBehaviour
 	// check if already pointing ray
 	protected bool hand_pointing = false;
 
-	protected ObjectAnchorSpecial special_object_grasped = null;
+	protected ObjectAnchor special_object_grasped = null;
 
 	// return true if either hand pointing 
 	protected bool is_pointing()
@@ -61,7 +61,7 @@ public class HandController : MonoBehaviour
 	}
 
 	// Store all gameobjects containing an Anchor
-	static protected ObjectAnchorSpecial[] special_anchors_in_scene;
+	static protected ObjectAnchor[] special_anchors_in_scene;
 
 	// Store all gameobjects containing an Anchor
 	// N.B. This list is static as it is the same list for all hands controller
@@ -71,7 +71,14 @@ public class HandController : MonoBehaviour
 	{
 		// Prevent multiple fetch
 		if (anchors_in_the_scene == null) anchors_in_the_scene = GameObject.FindObjectsOfType<ObjectAnchor>();
-		if (special_anchors_in_scene == null) special_anchors_in_scene = GameObject.FindObjectsOfType<ObjectAnchorSpecial>();
+		if (special_anchors_in_scene == null) {
+			var temp = new System.Collections.Generic.List<ObjectAnchor>();
+			foreach(ObjectAnchor obj in anchors_in_the_scene)
+            {
+				temp.Add(obj);
+            }
+			special_anchors_in_scene = temp.ToArray();
+		}
 
 	}
 
@@ -122,9 +129,8 @@ public class HandController : MonoBehaviour
 			if (!special_anchors_in_scene[i].is_available()) continue;
 
 			// Compute the distance to the object
-			object_distance = Vector3.Distance(this.transform.position, special_anchors_in_scene[i].transform.position);
-			Debug.LogWarningFormat("Marker loc: {0} vs target: {1} vs obj loc {2}", marker_prefab_instanciated.transform.position, posn, special_anchors_in_scene[i].transform.position);
-			Debug.LogWarningFormat("Object distance: {0}", object_distance);
+			object_distance = Vector3.Distance(posn, special_anchors_in_scene[i].transform.position);
+			Debug.LogWarningFormat("Object {0} distance: {1}", special_anchors_in_scene[i].transform.gameObject.name, object_distance);
 
 			// Keep in memory the closest object
 			// N.B. We can extend this selection using priorities
@@ -175,6 +181,8 @@ public class HandController : MonoBehaviour
 		{
 			// Instantiate the marker prefab if it doesn't already exists and place it to the targeted position
 			if (marker_prefab_instanciated == null) marker_prefab_instanciated = GameObject.Instantiate(markerPrefab, this.transform);
+			Debug.LogWarningFormat("Init... Marker_prefab_inst is null? {0} marker prefab is null? {1}", marker_prefab_instanciated == null, markerPrefab == null);
+
 			//marker_prefab_instanciated.transform.position = target_point;
 
 			// check if can grab object & if so pick it up
@@ -205,6 +213,7 @@ public class HandController : MonoBehaviour
 
 			// Release the object
 			special_object_grasped.detach_from(this, velocity);
+			special_object_grasped = null;
 		}
 
 		// if not pointing, out of range, or have object in hand
@@ -213,6 +222,8 @@ public class HandController : MonoBehaviour
 			// Remove the cursor
 			if (marker_prefab_instanciated != null) Destroy(marker_prefab_instanciated);
 			marker_prefab_instanciated = null;
+			Debug.LogWarningFormat("pointing: {0} aim: {1}", pointing, aim);
+			Debug.LogWarningFormat("Destroying marker... Marker_prefab_inst is null? {0} marker prefab is null? {1}", marker_prefab_instanciated == null, markerPrefab == null);
 		}
 	}
 
@@ -318,6 +329,7 @@ public class HandController : MonoBehaviour
 
 			// Release the object
 			object_grasped.detach_from(this, velocity);
+			object_grasped = null;
 		}
 	}
 }

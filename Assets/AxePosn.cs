@@ -8,6 +8,7 @@ public class AxePosn : MonoBehaviour
     Vector3 posn;
     Transform glued = null; // is it stuck to door?
     public Vector3 doorPosn = Vector3.zero;
+    public Transform target;
 
     // Start is called before the first frame update
     void Start()
@@ -20,17 +21,22 @@ public class AxePosn : MonoBehaviour
     void Update()
     {
         posn = transform.position;
-        {
+        
             float ogDist = (doorPosn - startPosn).magnitude;
             float dist = (posn - startPosn).magnitude;
+            ObjectAnchor anchor = GetComponent<ObjectAnchor>();
             if (dist > ogDist)
             {
                 Debug.Log("Begin detatch...");
-                ObjectAnchor anchor = GetComponent<ObjectAnchor>();
                 anchor.detach_from(anchor.hand_controller, Vector3.zero);
                 this.transform.position = startPosn;
                 Debug.LogWarningFormat("Moving axe to {0}", startPosn);
             }
+        
+        // check if this/child is held & if so face forward
+        if (!anchor.is_available())
+        {
+            transform.LookAt(target);
         }
     }
 
@@ -40,7 +46,8 @@ public class AxePosn : MonoBehaviour
         Debug.LogWarningFormat("Axe collided w {0}", obj.name);
         if (obj.name == "Door")
         {
-            GameObject child = this.transform.GetChild(1).gameObject; // get which part of object collided
+            GameObject child = this.transform.GetChild(0).gameObject; // get which part of object collided
+            //GameObject child = obj;
             if (child == null) Debug.Log("Null :(");
             Debug.LogWarningFormat("Collider (child) name: {0}", child.name);
             float vel = child.GetComponent<AxeCollider>().vel.magnitude;

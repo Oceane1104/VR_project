@@ -25,7 +25,7 @@ public class BreakDoor : MonoBehaviour
     // called by axe if hits door
     public int onBladeHit(GameObject child)
     {
-        if (child.name == Weakness)
+        //if (child.name == Weakness)
         {
             float vel = child.GetComponent<AxeCollider>().vel.magnitude;
             Resistance -= vel;
