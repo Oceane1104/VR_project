@@ -7,13 +7,18 @@ public class ObjectAnchor : MonoBehaviour
 {
 	[Header("Grasping Properties")]
 	public float graspingRadius = 0.1f; //The radius at which you can grab the object
-    public float throwForce = 1f; //Force to multiply to the object when throwing (if you need to be less or more stronger)
+    public float throwForce = 1; //Force to multiply to the object when throwing (if you need to be less or more stronger)
     public float floorLimit = 0.0f; // set this to the y-position of your floor for the rigidbody don't go through the floor
+    public float vel;
+    public Vector3 throwDirection;
+    public AudioSource audioSources_throw;
 
     // Store initial transform parent
     protected Transform initial_transform_parent;
 	void Start()
 	{
+        AudioSource[] audioSources_rb = this.GetComponents<AudioSource>();
+        audioSources_throw = audioSources_rb[0];
         initial_transform_parent = transform.parent;
     }
 
@@ -34,16 +39,26 @@ public class ObjectAnchor : MonoBehaviour
 
 	public void detach_from(HandController hand_controller, Vector3 velocity)
 	{
-		// Make sure that the right hand controller ask for the release
-		if (this.hand_controller != hand_controller) return;
+        vel = velocity.magnitude;
+        throwDirection = transform.forward;
+
+        if (vel > 2)
+        {
+            audioSources_throw.Play();
+        }
+        // Make sure that the right hand controller ask for the release
+        if (this.hand_controller != hand_controller) return;
 
 		// Detach the hand controller
 		this.hand_controller = null;
         transform.SetParent(null);
         GetComponent<Rigidbody>().isKinematic = false;
 
+        Debug.LogWarningFormat("{0} velocity: ", velocity);
+        Debug.LogWarningFormat("{0} force: ", velocity*throwForce);
+
         //Through the object with the velocity of the controller
-		GetComponent<Rigidbody>().AddForce(velocity * throwForce, ForceMode.Impulse);
+        GetComponent<Rigidbody>().AddForce(velocity, ForceMode.Impulse);
 
         // clamp the y-position of the Rigidbody to the floor limit
         Vector3 clampedPosition = GetComponent<Rigidbody>().position;

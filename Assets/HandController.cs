@@ -37,17 +37,17 @@ public class HandController : MonoBehaviour
 	{
 		// Case of a left hand
 		if (handType == HandType.LeftHand) return
-		  OVRInput.Get(OVRInput.Button.Three)                           // Check that the A button is pressed
-		  && OVRInput.Get(OVRInput.Button.Four)                         // Check that the B button is pressed
-		  && OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0.5     // Check that the middle finger is pressing
+          //OVRInput.Get(OVRInput.Button.Three)                           // Check that the A button is pressed
+          //&& OVRInput.Get(OVRInput.Button.Four)  &&                        // Check that the B button is pressed
+          OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0.5     // Check that the middle finger is pressing
 		  && OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5;   // Check that the index finger is pressing
 
 
 		// Case of a right hand
 		else return
-			OVRInput.Get(OVRInput.Button.One)                             // Check that the A button is pressed
-			&& OVRInput.Get(OVRInput.Button.Two)                          // Check that the B button is pressed
-			&& OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) > 0.5   // Check that the middle finger is pressing
+            //OVRInput.Get(OVRInput.Button.One)                             // Check that the A button is pressed
+            //&& OVRInput.Get(OVRInput.Button.Two)   &&                        // Check that the B button is pressed
+            OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) > 0.5   // Check that the middle finger is pressing
 			&& OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.5; // Check that the index finger is pressing
 	}
 
@@ -60,7 +60,7 @@ public class HandController : MonoBehaviour
 		// set the last position to the current position of the controller
 		lastPosition = this.transform.position;
 
-		return throwVelocity;
+        return throwVelocity;
 	}
 
 
