@@ -140,45 +140,24 @@ public class ObjectAnchorThrow : MonoBehaviour
     {
         Vector3 pos_rb = GetComponent<Rigidbody>().transform.position;
         Vector3 pos_target = collision.gameObject.transform.position;
-        if ((collision.gameObject.layer == LayerMask.NameToLayer("TargetObject")) && (Vector3.Distance(pos_rb, pos_target) < certainRadius))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("TargetObject"))
         {
             iscollision = true;
-            //Keep the collider on the target
-            if ((collision.gameObject.name == "targetstyle") && (Vector2.Distance(pos_rb, pos_target) < certainRadius-2))
-            {
-                Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y, GetComponent<Rigidbody>().transform.position.z + in_targ);
-                GetComponent<Rigidbody>().transform.position = new_pos;
-            }
-            else if (collision.gameObject.name != "targetstyle")
-            {
-                Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y, GetComponent<Rigidbody>().transform.position.z + in_targ);
-                GetComponent<Rigidbody>().transform.position = new_pos;
-            }
+            ////Keep the collider on the target
+            //if ((collision.gameObject.name == "targetstyle") && (Vector2.Distance(pos_rb, pos_target) < certainRadius-2))
+            //{
+            //    Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y, GetComponent<Rigidbody>().transform.position.z + in_targ);
+            //    GetComponent<Rigidbody>().transform.position = new_pos;
+            //}
+            //else if (collision.gameObject.name != "targetstyle")
+            //{
+            //    Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y, GetComponent<Rigidbody>().transform.position.z + in_targ);
+            //    GetComponent<Rigidbody>().transform.position = new_pos;
+            //}
+            Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y, GetComponent<Rigidbody>().transform.position.z + in_targ);
+            GetComponent<Rigidbody>().transform.position = new_pos;
             GetComponent<Rigidbody>().isKinematic = true;
         }
-        //if (collision.gameObject.name == "Target")
-        ////|| collision.gameObject.name == "targetstyle"
-        //{
-
-        //    //Keep the collider on the target
-        //    GetComponent<Rigidbody>().isKinematic = true;
-        //    if (collision.gameObject.name == "targetstyle")
-        //    {
-        //        //transform rb = collision.collider.attachedrigidbody.transform;
-        //        //transform childtransform = collision.collider.attachedrigidbody.transform.find("lod3");
-        //        //vector3 newvect = collision.collider.attachedrigidbody.getcomponentinchildren<rigidbody>().transform.position;
-        //        Vector3 new_pos = new(collision.collider.transform.position.x, collision.collider.transform.position.y + 5, collision.collider.transform.position.z);
-        //        collision.collider.attachedRigidbody.transform.position = new_pos;
-        //    }
-        //    else
-        //    {
-        //        collision.collider.attachedRigidbody.transform.position = collision.collider.transform.position;
-        //    }
-        //    //GetComponent<Rigidbody>().transform.position = collision.collider.transform.position;
-        //    //Debug.LogWarningFormat("{0} name: ", collision.gameObject.name);
-
-        //    iscollision = true;
-        //}
     }
 }
 

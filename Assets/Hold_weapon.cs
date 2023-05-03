@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Hold_weapon : MonoBehaviour
 {
+    public Rigidbody weapon1;
+    public Rigidbody weapon2;
+    public Rigidbody weapon3;
+
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        weapon1.isKinematic = true;
+        weapon2.isKinematic = true;
+        weapon3.isKinematic = true;
     }
 }
