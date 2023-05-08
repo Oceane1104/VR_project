@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class base_option : MonoBehaviour
 {
+
+    public Quaternion basic_rotation;
     public Vector3 basic_position;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +19,7 @@ public class base_option : MonoBehaviour
         if (collision.gameObject.name == "Terrain")
         {
             this.transform.position = basic_position;
+            this.transform.rotation = basic_rotation;
             this.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
