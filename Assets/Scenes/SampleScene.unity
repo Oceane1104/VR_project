@@ -2011,7 +2011,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: axe
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 781384959521164793, guid: 60453940c9af2514ab2f2303e1021197, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 60453940c9af2514ab2f2303e1021197, type: 3}
 --- !u!1001 &1935758292
 PrefabInstance:
