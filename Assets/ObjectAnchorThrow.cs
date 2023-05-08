@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEditor;
 using Debug = UnityEngine.Debug;
 
 public class ObjectAnchorThrow : MonoBehaviour
@@ -40,6 +41,9 @@ public class ObjectAnchorThrow : MonoBehaviour
 
     public float certainRadius = 3;
     public float in_targ = 3 / 10;
+    public bool is_trigger = false;
+
+    //protected ThereCollision it_is;
 
     Quaternion targetRotation_step = Quaternion.Euler(0f, 0f, 0f);
 
@@ -92,6 +96,7 @@ public class ObjectAnchorThrow : MonoBehaviour
                 n_step = 0;
                 iscollision = false;
                 play_door = true;
+                //it_is.set_is_trigger();
             }
 
             //door.transform.rotation = Quaternion.RotateTowards(door.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
@@ -124,7 +129,8 @@ public class ObjectAnchorThrow : MonoBehaviour
                 n_step_close = 0;
                 iscollision = false;
                 play_door = true;
-            }
+                //it_is.set_is_trigger();
+            } 
         }
     }
 
@@ -143,21 +149,28 @@ public class ObjectAnchorThrow : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("TargetObject"))
         {
             iscollision = true;
-            ////Keep the collider on the target
-            //if ((collision.gameObject.name == "targetstyle") && (Vector2.Distance(pos_rb, pos_target) < certainRadius-2))
-            //{
-            //    Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y, GetComponent<Rigidbody>().transform.position.z + in_targ);
-            //    GetComponent<Rigidbody>().transform.position = new_pos;
-            //}
-            //else if (collision.gameObject.name != "targetstyle")
-            //{
-            //    Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y, GetComponent<Rigidbody>().transform.position.z + in_targ);
-            //    GetComponent<Rigidbody>().transform.position = new_pos;
-            //}
-            Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y, GetComponent<Rigidbody>().transform.position.z + in_targ);
+            //Keep the collider on the target
+            Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y + in_targ, GetComponent<Rigidbody>().transform.position.z);
             GetComponent<Rigidbody>().transform.position = new_pos;
             GetComponent<Rigidbody>().isKinematic = true;
         }
     }
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    is_trigger = true;
+    //    //Vector3 pos_rb = GetComponent<Rigidbody>().transform.position;
+    //    //Vector3 pos_target = other.gameObject.transform.position;
+    //    //if (other.gameObject.layer == LayerMask.NameToLayer("TargetObject"))
+    //    //{
+    //    //    iscollision = true;
+    //    //    //Keep the collider on the target
+    //    //    Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y + in_targ, GetComponent<Rigidbody>().transform.position.z);
+    //    //    GetComponent<Rigidbody>().transform.position = new_pos;
+    //    //    GetComponent<Rigidbody>().isKinematic = true;
+    //    //}
+    //}
+
+
 }
 

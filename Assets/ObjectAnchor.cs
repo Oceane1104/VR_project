@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Specialized;
 using UnityEngine;
+using UnityEditor;
 using Debug = UnityEngine.Debug;
 
 public class ObjectAnchor : MonoBehaviour
