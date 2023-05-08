@@ -7,15 +7,20 @@ public class AxePosn : MonoBehaviour
     Vector3 startPosn;
     Vector3 posn;
     Transform glued = null; // is it stuck to door?
-    public Vector3 doorPosn = Vector3.zero;
+    Vector3 doorPosn = Vector3.zero;
     public Transform target;
     bool no_move = true; // false if door is gone so can take axe w you
+    bool prev_orient = false; // true if axe oriented in previous frame
 
     // Start is called before the first frame update
     void Start()
     {
         posn = this.transform.position;
         startPosn = posn;
+        if (target)
+        {
+            doorPosn = target.position;
+        }
     }
 
     // Update is called once per frame
@@ -34,10 +39,16 @@ public class AxePosn : MonoBehaviour
         }
 
         // check if this/child is held & if so face forward
-        /*else if (!anchor.is_available())
+        // only if haven't oriented yet
+        /*else if (!anchor.is_available() && !prev_orient)
         {
             Debug.Log("Transform obj to face door");
             transform.LookAt(target);
+            transform.Rotate(0, 0, -90);
+            prev_orient = true;
+        }else if (anchor.is_available())
+        {
+            prev_orient = false;
         }*/
     }
 

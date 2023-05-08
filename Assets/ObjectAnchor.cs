@@ -14,8 +14,17 @@ public class ObjectAnchor : MonoBehaviour
 	public float teleportRadius = 1.5f;
 	public bool can_teleport = true;
 
-    // Store initial transform parent
-    protected Transform initial_transform_parent;
+	// instead of having object distance, radius, etc be defined here
+	// have specific object deal with wheter it is "close enough"
+	// reason: allows for more complex logic (ex. if long object) without many if clauses
+	// Keep in mind: should thus have the same name and input variables; can add extra but make them optional
+	// Function: bool getDistance(Vector3 posn, out float dist) where posn is the hand controller position,
+	//				dist is the object_distance to be modified, and the function returns
+	//				a bool which is true if the object is "close enough" to be grasped
+	public string objScript = "ObjectAnchor"; // default
+
+	// Store initial transform parent
+	protected Transform initial_transform_parent;
 	void Start()
 	{
 		initial_transform_parent = transform.parent;
@@ -100,6 +109,14 @@ public class ObjectAnchor : MonoBehaviour
 		
 		Debug.Log("Detatching...");
 	}
+
+	public bool getDistance(Vector3 posn, out float object_distance, bool teleport = false)
+    {
+		object_distance = Vector3.Distance(posn, transform.position);
+		if (teleport) return (object_distance < teleportRadius);
+		return (object_distance < graspingRadius);
+	}
+
 	public bool is_available() { return hand_controller == null; }
 
 	public float get_grasping_radius() { return graspingRadius; }

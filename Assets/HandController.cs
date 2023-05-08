@@ -146,25 +146,36 @@ public class HandController : MonoBehaviour
 
 	// which object to grab?
 	// calculate distance
-	protected int which_object(Vector3 posn)
+	protected int which_object(Vector3 posn, bool teleport = false)
 	{
 		int best_object_id = -1;
 		float best_object_distance = float.MaxValue;
 		float object_distance;
 
+		ObjectAnchor[] temp = teleport ? special_anchors_in_scene : anchors_in_the_scene;
+
 		// Iterate over objects to determine if we can interact with it
-		for (int i = 0; i < special_anchors_in_scene.Length; i++)
+		for (int i = 0; i < temp.Length; i++)
 		{
 			// Skip object not available
 			if (!special_anchors_in_scene[i].is_available()) continue;
-
+			bool close_enough = false;
+			ObjectAnchor tempScript = special_anchors_in_scene[i].transform.gameObject.GetComponent<ObjectAnchor>();
 			// Compute the distance to the object
-			object_distance = Vector3.Distance(posn, special_anchors_in_scene[i].transform.position);
+			if (tempScript.objScript.Equals("AxeHandle"))
+            {
+				close_enough = special_anchors_in_scene[i].transform.gameObject.GetComponent<AxeHandle>().getDistance(posn, out object_distance, teleport);
+			}
+			else // make this the default
+			{
+				close_enough = tempScript.getDistance(posn, out object_distance, teleport);
+			} 
+
 			Debug.LogWarningFormat("Object {0} distance: {1}", special_anchors_in_scene[i].transform.gameObject.name, object_distance);
 
 			// Keep in memory the closest object
 			// N.B. We can extend this selection using priorities
-			if (object_distance < best_object_distance && object_distance <= special_anchors_in_scene[i].get_teleport_radius())
+			if (object_distance < best_object_distance && close_enough)
 			{
 				best_object_id = i;
 				best_object_distance = object_distance;
@@ -218,7 +229,7 @@ public class HandController : MonoBehaviour
 			// check if can grab object & if so pick it up
 			if (grabbing)
 			{
-				int best_object_id = which_object(marker_prefab_instanciated.transform.position);//target_point);
+				int best_object_id = which_object(marker_prefab_instanciated.transform.position, true);//target_point);
 				// If the best object is in range grab it
 				if (best_object_id != -1)
 				{
@@ -306,7 +317,7 @@ public class HandController : MonoBehaviour
 			float object_distance;
 
 			// Iterate over objects to determine if we can interact with it
-			for (int i = 0; i < anchors_in_the_scene.Length; i++)
+			/*for (int i = 0; i < anchors_in_the_scene.Length; i++)
 			{
 
 				// Skip object not available
@@ -323,8 +334,8 @@ public class HandController : MonoBehaviour
 					best_object_distance = object_distance;
 				}
 				Debug.LogWarningFormat("Obj dist: {0} vs grasping radius: {1}", object_distance, anchors_in_the_scene[i].get_grasping_radius());
-			}
-
+			}*/
+			best_object_id = which_object(transform.position);
 			// If the best object is in range grab it
 			if (best_object_id != -1)
 			{
