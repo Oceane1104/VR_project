@@ -40,6 +40,7 @@ public class ObjectAnchorThrow : MonoBehaviour
 
     public float certainRadius = 3;
     public float in_targ = 3 / 10;
+    public target_script it_enter;
 
     Quaternion targetRotation_step = Quaternion.Euler(0f, 0f, 0f);
 
@@ -54,22 +55,16 @@ public class ObjectAnchorThrow : MonoBehaviour
         Doorgrinch = audioSources[0];
         DoorClick = audioSources[1];
 
-        //moveSpeed = -rotationSpeed * 2 * Mathf.PI * length * 2 / 360;
-
-        //DoorOpen_final = new Vector3(door.transform.position.x + length, door.transform.position.y, door.transform.position.z - length);
+        //The path of the door to open it
         DoorOpen_final = new Vector3(length, 0, -length);
+        //The position of the door at the beginning
         DoorOpen = new Vector3(door.transform.position.x, door.transform.position.y, door.transform.position.z);
-        //AngleDoorOpen = new Vector3(door.transform.rotation.x, door.transform.rotation.y + 90, door.transform.rotation.z);
     }
 
     protected void coll()
     {
-        if ((iscollision) && (door_not_open))
+        if ((it_enter.iscollision) && (door_not_open))
         {
-            // rotate non smoothly the door
-            //door.transform.position = Vector3.MoveTowards(door.transform.position, DoorOpen, moveSpeed * Time.deltaTime);
-            //door.transform.rotation = Quaternion.RotateTowards(door.transform.rotation, Quaternion.Euler(AngleDoorOpen), rotationSpeed * Time.deltaTime);
-
             Quaternion targetRotation = Quaternion.Euler(0f, -doorOpenAngle, 0f);
             if (n_step < counter)
             {
@@ -88,42 +83,8 @@ public class ObjectAnchorThrow : MonoBehaviour
             }
             if (n_step == counter)
             {
-                door_not_open = false;
                 n_step = 0;
-                iscollision = false;
-                play_door = true;
-            }
-
-            //door.transform.rotation = Quaternion.RotateTowards(door.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-            //door.transform.position = Vector3.MoveTowards(door.transform.position, DoorOpen, moveSpeed * Time.deltaTime);
-
-            ////Keep the collider on the target
-            //GetComponent<Rigidbody>().isKinematic = true;
-            //GetComponent<Rigidbody>().transform.position = box.transform.position;
-            //GetComponent<Rigidbody>().transform.SetParent(box.transform);
-        } else if ((iscollision) && !(door_not_open))
-        {
-            if (n_step_close < counter)
-            {
-                doorAngleStep = doorAngleStep + (doorOpenAngle / counter);
-                targetRotation_step = Quaternion.Euler(0f, -doorAngleStep, 0f);
-                DoorOpen = DoorOpen + DoorOpen_final / counter;
-                door.transform.rotation = Quaternion.RotateTowards(door.transform.rotation, targetRotation_step, rotationSpeed * Time.deltaTime);
-                door.transform.position = Vector3.MoveTowards(door.transform.position, DoorOpen, moveSpeed * Time.deltaTime);
-                n_step_close++;
-                if (play_door)
-                {
-                    Doorgrinch.Play();
-                    DoorClick.Play();
-                    play_door = false;
-                }
-            }
-            if (n_step_close == counter)
-            {
-                door_not_open = true;
-                n_step_close = 0;
-                iscollision = false;
-                play_door = true;
+                it_enter.reset_collision;
             }
         }
     }
@@ -136,28 +97,17 @@ public class ObjectAnchorThrow : MonoBehaviour
     }
 
     //Detect when the object collides with the target and open the door if it is the case
-    private void OnCollisionEnter(Collision collision)
-    {
-        Vector3 pos_rb = GetComponent<Rigidbody>().transform.position;
-        Vector3 pos_target = collision.gameObject.transform.position;
-        if (collision.gameObject.layer == LayerMask.NameToLayer("TargetObject"))
-        {
-            iscollision = true;
-            ////Keep the collider on the target
-            //if ((collision.gameObject.name == "targetstyle") && (Vector2.Distance(pos_rb, pos_target) < certainRadius-2))
-            //{
-            //    Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y, GetComponent<Rigidbody>().transform.position.z + in_targ);
-            //    GetComponent<Rigidbody>().transform.position = new_pos;
-            //}
-            //else if (collision.gameObject.name != "targetstyle")
-            //{
-            //    Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y, GetComponent<Rigidbody>().transform.position.z + in_targ);
-            //    GetComponent<Rigidbody>().transform.position = new_pos;
-            //}
-            Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y, GetComponent<Rigidbody>().transform.position.z + in_targ);
-            GetComponent<Rigidbody>().transform.position = new_pos;
-            GetComponent<Rigidbody>().isKinematic = true;
-        }
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    Vector3 pos_rb = GetComponent<Rigidbody>().transform.position;
+    //    Vector3 pos_target = collision.gameObject.transform.position;
+    //    if (collision.gameObject.layer == LayerMask.NameToLayer("TargetObject"))
+    //    {
+    //        iscollision = true;
+    //        Vector3 new_pos = new(GetComponent<Rigidbody>().transform.position.x, GetComponent<Rigidbody>().transform.position.y, GetComponent<Rigidbody>().transform.position.z + in_targ);
+    //        GetComponent<Rigidbody>().transform.position = new_pos;
+    //        GetComponent<Rigidbody>().isKinematic = true;
+    //    }
+    //}
 }
 
