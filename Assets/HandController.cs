@@ -20,6 +20,10 @@ public class HandController : MonoBehaviour
 	public Vector3 throwVelocity;
 	public Vector3 currentPosition;
 
+	public Door_script door_tuto1;
+    public Door_script door_tuto2;
+	public bool open_now = false;
+
 
     // Store all gameobjects containing an Anchor
     // N.B. This list is static as it is the same list for all hands controller
@@ -51,6 +55,12 @@ public class HandController : MonoBehaviour
 			&& OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.5; // Check that the index finger is pressing
 	}
 
+	protected bool is_tutorial_finish()
+	{
+		if (handType == HandType.RightHand) return OVRInput.Get(OVRInput.Button.Three);
+		else return false;
+    }
+
 	protected Vector3 calculatorVelocity()
 	{
 		// get the current position of the controller
@@ -75,6 +85,15 @@ public class HandController : MonoBehaviour
 	{
 		//Check if we grab something
         handle_controller_behavior();
+		if (is_tutorial_finish())
+		{
+			open_now = true;
+        }
+		if (open_now)
+		{
+            door_tuto1.open_the_door();
+            door_tuto2.open_the_door();
+        }
 	}
 
 
