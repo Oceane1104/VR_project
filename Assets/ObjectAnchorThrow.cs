@@ -19,9 +19,6 @@
 
 //    public bool iscollision = false;
 //    public bool not_position_final = false;
-//    public int counter = 1000;
-//    public int n_step = 0;
-//    public int n_step_close = 0;
 
 //    public float certainRadius = 3;
 //    public float in_targ = 3 / 10;

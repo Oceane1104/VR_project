@@ -54,8 +54,8 @@ public class ObjectAnchor : MonoBehaviour
         transform.SetParent(null);
         GetComponent<Rigidbody>().isKinematic = false;
 
-        Debug.LogWarningFormat("{0} velocity: ", velocity);
-        Debug.LogWarningFormat("{0} force: ", velocity*throwForce);
+        //Debug.LogWarningFormat("{0} velocity: ", velocity);
+        //Debug.LogWarningFormat("{0} force: ", velocity*throwForce);
 
         //Through the object with the velocity of the controller
         GetComponent<Rigidbody>().AddForce(velocity, ForceMode.Impulse);
