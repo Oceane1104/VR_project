@@ -6,8 +6,8 @@ using UnityEngine;
 public class BreakDoor : MonoBehaviour
 {
     public AudioSource[] audioSources; 
-    public AudioSource HitSound; // make noise if hit w something
-    public AudioSource ShatterSound; // make noise if shatter
+    private AudioSource HitSound; // make noise if hit w something
+    private AudioSource ShatterSound; // make noise if shatter
 
     protected float Resistance = 30F; // "strength"/"XP"; goes to zero => break
     protected string Weakness = "blade";//"axe"; // thing it can be damaged by
