@@ -17,7 +17,13 @@ public class EndGame : MonoBehaviour
     }
 
     // game ends & you lost because out of time
-    public void outOfTime() { 
-    
+    public void outOfTime() {
+        if (minotaur) minotaur.Play();
+        
+    }
+
+    public void wonGame()
+    {
+        if (winner) winner.Play();
     }
 }
