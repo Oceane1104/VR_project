@@ -7,6 +7,7 @@ public class Hold_weapon : MonoBehaviour
     public Rigidbody weapon1;
     public Rigidbody weapon2;
     public Rigidbody weapon3;
+    public Rigidbody weapon4;
 
     // Start is called before the first frame update
     void Start()
@@ -14,5 +15,6 @@ public class Hold_weapon : MonoBehaviour
         weapon1.isKinematic = true;
         weapon2.isKinematic = true;
         weapon3.isKinematic = true;
+        weapon4.isKinematic = true;
     }
 }

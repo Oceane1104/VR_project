@@ -26,7 +26,7 @@ public class Door_script : MonoBehaviour
     public bool play_door = true; //Tell if we must play the music of the door or not
     public bool door_not_open = true;
     public int n_step = 0;
-    public int counter = 100;
+    public int counter = 10;
 
     public float TheRotationBase;
 

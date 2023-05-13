@@ -14,18 +14,19 @@ public class target_script : MonoBehaviour
     //Set if there is a collision and if this is the first time
     public bool first_collision = true;
     public bool its_happen = false;
+    public bool good_target = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (this.name == "Target_Wolf") good_target = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         //If this is the first collision, you must open the door
-        if (first_collision && its_happen)
+        if (first_collision && its_happen && good_target)
         {
             first_collision = Thedoor.open_the_door();
         }
@@ -35,7 +36,7 @@ public class target_script : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //If the collider name is TargetObject, it must stay on the target and open the door
-        if (collision.gameObject.layer == LayerMask.NameToLayer("TargetObject"))
+        if ((collision.gameObject.layer == LayerMask.NameToLayer("TargetObject")))
         {
             //make the rb stay on the target
             Rigidbody rb = collision.collider.attachedRigidbody;
