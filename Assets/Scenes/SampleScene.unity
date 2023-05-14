@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minotaur: {fileID: 125056576}
   winner: {fileID: 612411475}
-  menu: {fileID: 0}
+  menu: {fileID: 1416200439}
 --- !u!114 &598581653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3149,6 +3149,7 @@ GameObject:
   - component: {fileID: 1416200437}
   - component: {fileID: 1416200436}
   - component: {fileID: 1416200435}
+  - component: {fileID: 1416200439}
   m_Layer: 0
   m_Name: MenuCard
   m_TagString: Untagged
@@ -3241,6 +3242,18 @@ Transform:
   m_Father: {fileID: 1932142285}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 89.926, y: -3, z: 177.8}
+--- !u!114 &1416200439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416200434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16da5f110c58a7a4eb322039f2d8f9a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1587514106
 GameObject:
   m_ObjectHideFlags: 0

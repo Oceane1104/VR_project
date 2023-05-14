@@ -45,6 +45,7 @@ public class EndGame : MonoBehaviour
     {
         Debug.Log("Restarting. Reload Scene...");
         menu.toggleActive(); // make sure menu inactive
+        menu.disable();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
