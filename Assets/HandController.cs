@@ -20,6 +20,8 @@ public class HandController : MonoBehaviour
 	public Vector3 throwVelocity;
 	public Vector3 currentPosition;
 
+	public bool activeMenu = false; // if true instead of grabbing objects, hand used for quit, etc
+
 	[Header("Maximum Distance")]
 	[Range(2f, 30f)]
 	// Max distance of object from player
@@ -36,6 +38,25 @@ public class HandController : MonoBehaviour
 	protected bool hand_pointing = false;
 
 	protected ObjectAnchor special_object_grasped = null;
+
+	// If "X" is pressed quit game
+	// if "A" is pressed restart game
+
+	bool quitGame()
+	{
+		return OVRInput.Get(OVRInput.Button.Three)                           // Check that the X button is pressed but others not
+		  && !OVRInput.Get(OVRInput.Button.Four)
+		  && !(OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0.5)
+		  && !(OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5);
+	}
+
+	bool restartGame()
+	{
+		return OVRInput.Get(OVRInput.Button.One)
+			&& !OVRInput.Get(OVRInput.Button.Two)
+			&& !(OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) > 0.5)
+			&& !(OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.5);
+	}
 
 	// return true if either hand pointing 
 	protected bool is_pointing()
@@ -194,8 +215,21 @@ public class HandController : MonoBehaviour
 	// Automatically called at each frame
 	void Update()
 	{
-		handle_controller_behavior();
-		handle_teleport_behavior();
+		if (activeMenu)
+        {
+			if (quitGame() && !restartGame())
+            {
+				GetComponent<EndGame>().quitGame();
+            }else if (restartGame() && !quitGame())
+            {
+				GetComponent<EndGame>().restartGame();
+            }
+        }
+        else
+        {
+			handle_controller_behavior();
+			handle_teleport_behavior();
+		}
 	}
 
 
