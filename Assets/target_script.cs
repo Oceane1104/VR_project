@@ -9,7 +9,7 @@ public class target_script : MonoBehaviour
     //The script that will open the door
     public Door_script Thedoor;
 
-    public float in_targ = 3 / 10;
+    public float in_targ = 1;
 
     //Set if there is a collision and if this is the first time
     public bool first_collision = true;
@@ -38,12 +38,16 @@ public class target_script : MonoBehaviour
         //If the collider name is TargetObject, it must stay on the target and open the door
         if ((collision.gameObject.layer == LayerMask.NameToLayer("TargetObject")))
         {
-            //make the rb stay on the target
-            Rigidbody rb = collision.collider.attachedRigidbody;
-            Vector3 new_pos = new(rb.transform.position.x, rb.transform.position.y, rb.transform.position.z + in_targ);
-            rb.transform.position = new_pos;
-            rb.isKinematic = true;
-            its_happen = true;
+            Collider targetCollider = GetComponent<Collider>();
+            if (targetCollider.bounds.Contains(collision.contacts[0].point))
+            {
+                // Make the rb stay on the target
+                Rigidbody rb = collision.collider.attachedRigidbody;
+                Vector3 new_pos = new Vector3(rb.transform.position.x + in_targ, rb.transform.position.y, rb.transform.position.z);
+                rb.transform.position = new_pos;
+                rb.isKinematic = true;
+                its_happen = true;
+            }
         }
     }
 }

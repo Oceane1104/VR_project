@@ -14,8 +14,8 @@ public class Door_script : MonoBehaviour
     //parameter of the speed and angle of the door
     public float doorOpenAngle = 90f; // the angle to open the door
     public float doorAngleStep = 0f;
-    public float rotationSpeed = 120;
-    public float moveSpeed = 90;
+    public float rotationSpeed = 170; //Was 120
+    public float moveSpeed = 140; //Was 90
 
     //The position of the door when it is open
     public Vector3 DoorOpen;

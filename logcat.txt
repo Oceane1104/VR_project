@@ -1,42 +1,51 @@
+--------- beginning of main
 --------- beginning of system
 --------- beginning of tracking
---------- beginning of main
-05-10 12:21:11.499 13040 13062 I Unity   : MemoryManager: Using 'Dynamic Heap' Allocator.
-05-10 12:21:11.530 13040 13062 I Unity   : SystemInfo CPU = ARM64 FP ASIMD AES, Cores = 4, Memory = 3808mb
-05-10 12:21:11.530 13040 13062 I Unity   : SystemInfo ARM big.LITTLE configuration: 0 big (mask: 0x0), 4 little (mask: 0xf)
-05-10 12:21:11.530 13040 13062 I Unity   : XR UsableCoreMask: 0xf
-05-10 12:21:11.530 13040 13062 I Unity   : ApplicationInfo com.VR_project04.H02 version 0.1
-05-10 12:21:11.530 13040 13062 I Unity   : Built from '2021.3/staging' branch, Version '2021.3.20f1 (577897200b8b)', Build type 'Release', Scripting Backend 'mono', CPU 'armeabi-v7a', Stripping 'Disabled'
-05-10 12:21:14.425 13040 13158 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
-05-10 12:21:19.086 13040 13062 E Unity   : DllNotFoundException: AudioPluginOculusSpatializer assembly:<unknown assembly> type:<unknown type> member:(null)
-05-10 12:21:19.086 13040 13062 E Unity   :   at (wrapper managed-to-native) ONSPAudioSource.OSP_SetGlobalVoiceLimit(int)
-05-10 12:21:19.086 13040 13062 E Unity   :   at ONSPAudioSource.OnBeforeSceneLoadRuntimeMethod () [0x00005] in <37071baeb5724db6a2912c664b5e9516>:0 
-05-10 12:21:19.086 13040 13062 E Unity   : 
-05-10 12:21:19.133 13040 13062 I Unity   : Unity v2021.3.20f1, Oculus Utilities v1.82.0, OVRPlugin v1.82.0, SDK v1.0.26.
-05-10 12:21:19.143 13040 13062 I Unity   : SystemHeadset Oculus_Quest, API OpenXR
-05-10 12:21:19.147 13040 13062 I Unity   : OpenXR instance 0x100000000000002 session 0x200000000000020
-05-10 12:21:19.166 13040 13062 I Unity   : OVRPlugin.Media initialized
-05-10 12:21:19.167 13040 13062 I Unity   : [MRC] SetMrcAudioSampleRate(48000)
-05-10 12:21:19.169 13040 13062 I Unity   : [MRC] Active InputVideoBufferType:TextureHandle
-05-10 12:21:19.169 13040 13062 I Unity   : [MRC] ActivateMode: Automatic
-05-10 12:21:19.204 13040 13062 I Unity   : Current display frequency 72, available frequencies [60, 60, 72, 72]
-05-10 12:21:19.206 13040 13062 W Unity   : Local Dimming feature is not supported
-05-10 12:21:19.280 13040 13062 W Unity   : 254.5585 the rotation: 
-05-10 12:21:19.280 13040 13062 W Unity   : 0 the rotation: 
-05-10 12:21:19.286 13040 13062 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandRight)
-05-10 12:21:19.295 13040 13062 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandLeft)
-05-10 12:21:19.296 13040 13062 W Unity   : 0 the rotation: 
-05-10 12:21:19.296 13040 13062 W Unity   : 0 the rotation: 
-05-10 12:21:19.296 13040 13062 W Unity   : 254.5585 the rotation: 
-05-10 12:21:19.296 13040 13062 W Unity   : 0 the rotation: 
-05-10 12:21:19.296 13040 13062 W Unity   : 254.5585 the rotation: 
-05-10 12:21:19.296 13040 13062 W Unity   : 0 the rotation: 
-05-10 12:21:19.296 13040 13062 W Unity   : 0 the rotation: 
-05-10 12:21:19.322 13040 13062 I Unity   : The current MSAA level is 0, but the recommended MSAA level is 4. Switching to the recommended level.
-05-10 12:21:19.322 13040 13062 I Unity   : [OVRManager] HMDAcquired event
-05-10 12:21:19.322 13040 13062 I Unity   : [OVRManager] HMDMounted event
-05-10 12:21:19.323 13040 13062 I Unity   : [OVRManager] VrFocusAcquired event
-05-10 12:21:19.327 13040 13062 I Unity   : [OVRManager] TrackingAcquired event
-05-10 12:21:19.328 13040 13062 I Unity   : Recenter event detected
-05-10 12:21:19.566 13040 13062 W Unity   : Ignoring depth surface store action as it is memoryless
-05-10 12:21:31.600 13040 13062 I Unity   : [OVRManager] HMDUnmounted event
+05-13 22:45:04.254  7060  7082 I Unity   : MemoryManager: Using 'Dynamic Heap' Allocator.
+05-13 22:45:04.329  7060  7082 I Unity   : SystemInfo CPU = ARM64 FP ASIMD AES, Cores = 4, Memory = 3808mb
+05-13 22:45:04.329  7060  7082 I Unity   : SystemInfo ARM big.LITTLE configuration: 0 big (mask: 0x0), 4 little (mask: 0xf)
+05-13 22:45:04.329  7060  7082 I Unity   : XR UsableCoreMask: 0xf
+05-13 22:45:04.329  7060  7082 I Unity   : ApplicationInfo com.VR_project04.H02 version 0.1
+05-13 22:45:04.329  7060  7082 I Unity   : Built from '2021.3/staging' branch, Version '2021.3.20f1 (577897200b8b)', Build type 'Release', Scripting Backend 'mono', CPU 'armeabi-v7a', Stripping 'Disabled'
+05-13 22:45:04.472  7060  7082 I Unity   : Company Name: VR_project04
+05-13 22:45:04.472  7060  7082 I Unity   : Product Name: H02
+05-13 22:45:07.002  7060  7082 I Unity   : XRGeneral Settings awakening...
+05-13 22:45:07.777  7060  7200 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
+05-13 22:45:14.350  7060  7082 E Unity   : DllNotFoundException: AudioPluginOculusSpatializer assembly:<unknown assembly> type:<unknown type> member:(null)
+05-13 22:45:14.350  7060  7082 E Unity   :   at (wrapper managed-to-native) ONSPAudioSource.OSP_SetGlobalVoiceLimit(int)
+05-13 22:45:14.350  7060  7082 E Unity   :   at ONSPAudioSource.OnBeforeSceneLoadRuntimeMethod () [0x00005] in <37071baeb5724db6a2912c664b5e9516>:0 
+05-13 22:45:14.350  7060  7082 E Unity   : 
+05-13 22:45:14.423  7060  7082 I Unity   : Unity v2021.3.20f1, Oculus Utilities v1.82.0, OVRPlugin v1.82.0, SDK v1.0.26.
+05-13 22:45:14.434  7060  7082 I Unity   : SystemHeadset Oculus_Quest, API OpenXR
+05-13 22:45:14.437  7060  7082 I Unity   : OpenXR instance 0x100000000000002 session 0x200000000000020
+05-13 22:45:14.457  7060  7082 I Unity   : OVRPlugin.Media initialized
+05-13 22:45:14.458  7060  7082 I Unity   : [MRC] SetMrcAudioSampleRate(48000)
+05-13 22:45:14.460  7060  7082 I Unity   : [MRC] Active InputVideoBufferType:TextureHandle
+05-13 22:45:14.461  7060  7082 I Unity   : [MRC] ActivateMode: Automatic
+05-13 22:45:14.495  7060  7082 I Unity   : Current display frequency 72, available frequencies [60, 60, 72, 72]
+05-13 22:45:14.497  7060  7082 W Unity   : Local Dimming feature is not supported
+05-13 22:45:14.691  7060  7082 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandRight)
+05-13 22:45:14.704  7060  7082 E Unity   : NullReferenceException: Object reference not set to an instance of an object
+05-13 22:45:14.704  7060  7082 E Unity   :   at Hold_weapon.Start () [0x00024] in <88aff5c5e09149b2b13e50a97da247eb>:0 
+05-13 22:45:14.704  7060  7082 E Unity   : 
+05-13 22:45:14.705  7060  7082 E Unity   : NullReferenceException: Object reference not set to an instance of an object
+05-13 22:45:14.705  7060  7082 E Unity   :   at Hold_weapon.Start () [0x00024] in <88aff5c5e09149b2b13e50a97da247eb>:0 
+05-13 22:45:14.705  7060  7082 E Unity   : 
+05-13 22:45:14.705  7060  7082 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandLeft)
+05-13 22:45:14.707  7060  7082 W Unity   : 0 the rotation: 
+05-13 22:45:14.707  7060  7082 W Unity   : 0 the rotation: 
+05-13 22:45:14.707  7060  7082 W Unity   : 90 the rotation: 
+05-13 22:45:14.707  7060  7082 W Unity   : 0 the rotation: 
+05-13 22:45:14.707  7060  7082 W Unity   : 270 the rotation: 
+05-13 22:45:14.707  7060  7082 W Unity   : 0 the rotation: 
+05-13 22:45:14.707  7060  7082 W Unity   : 0 the rotation: 
+05-13 22:45:14.752  7060  7082 I Unity   : The current MSAA level is 0, but the recommended MSAA level is 4. Switching to the recommended level.
+05-13 22:45:14.752  7060  7082 I Unity   : [OVRManager] HMDAcquired event
+05-13 22:45:14.753  7060  7082 I Unity   : [OVRManager] HMDMounted event
+05-13 22:45:14.753  7060  7082 I Unity   : [OVRManager] VrFocusAcquired event
+05-13 22:45:14.757  7060  7082 I Unity   : [OVRManager] TrackingAcquired event
+05-13 22:45:14.759  7060  7082 I Unity   : Recenter event detected
+05-13 22:45:15.323  7060  7082 W Unity   : Ignoring depth surface store action as it is memoryless
+05-13 22:45:34.127  7060  7082 I Unity   : [OVRManager] HMDUnmounted event
+05-13 22:45:39.471  7060  7082 I Unity   : [OVRManager] TrackingLost event
+05-13 22:45:49.237  7060  7082 I Unity   : [OVRManager] OnApplicationPause(true)

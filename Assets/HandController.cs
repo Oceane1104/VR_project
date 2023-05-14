@@ -20,15 +20,17 @@ public class HandController : MonoBehaviour
 	public Vector3 throwVelocity;
 	public Vector3 currentPosition;
 
+	//Door script
 	public Door_script door_tuto1;
     public Door_script door_tuto2;
 	public bool open_now = false;
+	public Timer timer;
 
 
-    // Store all gameobjects containing an Anchor
-    // N.B. This list is static as it is the same list for all hands controller
-    // thus there is no need to duplicate it for each instance
-    static protected ObjectAnchor[] anchors_in_the_scene;
+	// Store all gameobjects containing an Anchor
+	// N.B. This list is static as it is the same list for all hands controller
+	// thus there is no need to duplicate it for each instance
+	static protected ObjectAnchor[] anchors_in_the_scene;
 	void Start()
 	{
 		// Prevent multiple fetch
@@ -57,11 +59,17 @@ public class HandController : MonoBehaviour
 
 	protected bool is_tutorial_finish()
 	{
-		if (handType == HandType.RightHand) return OVRInput.Get(OVRInput.Button.Three);
+		if (handType == HandType.RightHand) return OVRInput.Get(OVRInput.Button.Four);
 		else return false;
+	}
+
+    protected bool restart_game()
+    {
+        if (handType == HandType.LeftHand) return OVRInput.Get(OVRInput.Button.One);
+        else return false;
     }
 
-	protected Vector3 calculatorVelocity()
+    protected Vector3 calculatorVelocity()
 	{
 		// get the current position of the controller
 		currentPosition = this.transform.position;
@@ -83,17 +91,33 @@ public class HandController : MonoBehaviour
 	// Automatically called at each frame
 	void Update() 
 	{
-		//Check if we grab something
-        handle_controller_behavior();
-		if (is_tutorial_finish())
+		if(timer.gameFinished)
 		{
-			open_now = true;
-        }
-		if (open_now)
+			if (restart_game())
+			{
+                timer.RestartGame();
+            }
+        } else
 		{
-            door_tuto1.open_the_door();
-            door_tuto2.open_the_door();
-        }
+            //Check if we grab something
+            handle_controller_behavior();
+            if (is_tutorial_finish())
+            {
+                open_now = true;
+            }
+            if (open_now)
+            {
+                Debug.LogWarningFormat("Je suis la");
+                door_tuto1.open_the_door();
+                door_tuto2.open_the_door();
+                timer.StartTimer();
+            }
+
+			if ((this.transform.position.z > 85) && (this.transform.position.x < -10) && (this.transform.position.x > -20))
+			{
+				timer.WinGame();
+            }
+        }   
 	}
 
 
