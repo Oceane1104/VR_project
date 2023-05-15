@@ -17,6 +17,7 @@ public class GameMusic : MonoBehaviour
 
     public static double prob = 0.5f; // "probability" of playing sound; play if rand # gen > prob
     private System.Random rnd = new System.Random(); // use this to generate random numbers
+    private float soundPause = 100f; // min second between sounds 
 
     private float timeLeft = 120f; // minutes for game
     private bool ticking = true; // must be set to true by another script
@@ -47,13 +48,14 @@ public class GameMusic : MonoBehaviour
     // use this to update time
     void Update()
     {
-        if (ticking) { timeLeft -= Time.deltaTime; }
+        if (ticking) { timeLeft -= Time.deltaTime; soundPause -= Time.deltaTime; }
         if (timeLeft <= 1) Debug.LogWarningFormat("Time left: {0}", timeLeft);
         if (timeLeft <= 0) { GetComponent<EndGame>().outOfTime(); }
 
         double r = rnd.NextDouble();
-        if (r > prob)
+        if (r > prob && soundPause <= 0)
         {
+            soundPause = 100f;
             // play sound; choose random one from list
             if (len == 0) return; // nothing to play :(
 

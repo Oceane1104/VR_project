@@ -10,7 +10,7 @@ public class BreakDoor : MonoBehaviour
     private AudioSource ShatterSound; // make noise if shatter
 
     protected float Resistance = 30F; // "strength"/"XP"; goes to zero => break
-    protected string Weakness = "blade";//"axe"; // thing it can be damaged by
+    protected string Weakness = "blade";  //"axe"; // thing it can be damaged by
 
 
     // Start is called before the first frame update
