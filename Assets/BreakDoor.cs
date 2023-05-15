@@ -17,9 +17,17 @@ public class BreakDoor : MonoBehaviour
     void Start()
     {
         // load audio
-        audioSources = GetComponents<AudioSource>();
-        HitSound = audioSources[0];
-        ShatterSound = audioSources[1];
+        audioSources = gameObject.GetComponentsInChildren<AudioSource>(); // load both
+        foreach (AudioSource child in audioSources)
+        {
+            if (child.name.Contains("Hit"))
+            {
+                HitSound = child;
+            }else if (child.name.Contains("Break"))
+            {
+                ShatterSound = child;
+            }
+        }
     }
 
     // called by axe if hits door
@@ -35,8 +43,9 @@ public class BreakDoor : MonoBehaviour
             if (Resistance <= 0)
             {
                 // door successfully broken!
-                if (ShatterSound) ShatterSound.Play();
+                if (ShatterSound) ShatterSound.PlayOneShot(ShatterSound.clip);
                 Debug.LogWarningFormat("Destroying...");
+                GameObject.Find("BreakInfo").GetComponent<SpriteRenderer>().enabled = false;
                 Destroy(this); // removed once call is done
                 Destroy(gameObject);
 
@@ -44,8 +53,7 @@ public class BreakDoor : MonoBehaviour
             }
             else
             {
-                if (HitSound) HitSound.Play();
-                HitSound.Play(); // some damage => provide feedback
+                if (HitSound) HitSound.PlayOneShot(HitSound.clip); // some damage => provide feedback
             }
         }
         return 0;

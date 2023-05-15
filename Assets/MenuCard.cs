@@ -12,11 +12,14 @@ public class MenuCard : MonoBehaviour
     static GameObject[] allObj;
     bool active = false;
 
+    public Transform[] Hands;
+
     void Start()
     {
         disable();
         Texts = FindObjectsOfType<SpriteRenderer>(); // all possible images on card
         allObj = FindObjectsOfType<GameObject>();
+
     }
 
     public void disable()
@@ -72,6 +75,10 @@ public class MenuCard : MonoBehaviour
     public void toggleActive(bool act = false)
     {
         active = act;
-        GetComponent<HandController>().activeMenu = act;
+        foreach (Transform hand in Hands)
+        {
+            hand.GetComponent<HandController>().activeMenu = act;
+        }
+        
     }
 }
