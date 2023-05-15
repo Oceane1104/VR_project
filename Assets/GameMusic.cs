@@ -17,9 +17,9 @@ public class GameMusic : MonoBehaviour
 
     public static double prob = 0.5f; // "probability" of playing sound; play if rand # gen > prob
     private System.Random rnd = new System.Random(); // use this to generate random numbers
-    private float soundPause = 100f; // min second between sounds 
+    private float soundPause = 10f; // min second between sounds 
 
-    private float timeLeft = 120f; // minutes for game
+    private float timeLeft = 50f; // minutes for game
     private bool ticking = true; // must be set to true by another script
     // after tutorial ends: set to true
     // if pause is pressed, etc: set to false & reset to true when you keep going
@@ -55,13 +55,13 @@ public class GameMusic : MonoBehaviour
         double r = rnd.NextDouble();
         if (r > prob && soundPause <= 0)
         {
-            soundPause = 100f;
+            soundPause = 10f;
             // play sound; choose random one from list
             if (len == 0) return; // nothing to play :(
 
-            int i = rnd.Next(0, len);
+            int i = rnd.Next(3, len);
             Debug.LogWarningFormat("Play {0}^th clip", i);
-            backgroundSounds[i + 1].Play();
+            backgroundSounds[i].Play();
         }
     }
 }

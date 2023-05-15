@@ -8,15 +8,15 @@ using UnityEngine.UI;
 
 public class EndGame : MonoBehaviour
 {
-    public AudioSource minotaur; // sound to play if captured
-    public AudioSource winner; // sound to play if finised game & won 
+    private AudioSource minotaur; // sound to play if captured
+    private AudioSource winner; // sound to play if finised game & won 
     public MenuCard menu;
 
     // Start is called before the first frame update
     void Start()
     {
-        minotaur = GetComponent<AudioSource>();
-        winner = GetComponent<AudioSource>();
+        minotaur = gameObject.transform.GetChild(1).GetComponent<AudioSource>();
+        winner = gameObject.transform.GetChild(2).GetComponent<AudioSource>();
 
     }
 

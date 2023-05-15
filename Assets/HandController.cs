@@ -219,10 +219,10 @@ public class HandController : MonoBehaviour
         {
 			if (quitGame() && !restartGame())
             {
-				GetComponent<EndGame>().quitGame();
+				GameObject.Find("Sounds").GetComponent<EndGame>().quitGame();
             }else if (restartGame() && !quitGame())
             {
-				GetComponent<EndGame>().restartGame();
+				GameObject.Find("Sounds").GetComponent<EndGame>().restartGame();
             }
         }
         else
@@ -347,8 +347,6 @@ public class HandController : MonoBehaviour
 
 			// Determine which object available is the closest from the left hand
 			int best_object_id = -1;
-			float best_object_distance = float.MaxValue;
-			float object_distance;
 
 			// Iterate over objects to determine if we can interact with it
 			/*for (int i = 0; i < anchors_in_the_scene.Length; i++)

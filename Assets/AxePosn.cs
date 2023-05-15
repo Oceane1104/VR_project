@@ -10,7 +10,7 @@ public class AxePosn : MonoBehaviour
     Vector3 doorPosn = Vector3.zero;
     public Transform target;
     bool no_move = true; // false if door is gone so can take axe w you
-    bool prev_orient = false; // true if axe oriented in previous frame
+//    bool prev_orient = false; // true if axe oriented in previous frame
 
     // Start is called before the first frame update
     void Start()

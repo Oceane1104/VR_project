@@ -22,10 +22,16 @@ public class BreakDoor : MonoBehaviour
         {
             if (child.name.Contains("Hit"))
             {
+                Debug.LogWarningFormat("Loading sound {0}", child.name);
                 HitSound = child;
             }else if (child.name.Contains("Break"))
             {
+                Debug.LogWarningFormat("Loading sound {0}", child.name);
                 ShatterSound = child;
+            }
+            else
+            {
+                Debug.LogWarningFormat("Not loading sound {0}", child.name);
             }
         }
     }
@@ -43,9 +49,9 @@ public class BreakDoor : MonoBehaviour
             if (Resistance <= 0)
             {
                 // door successfully broken!
-                if (ShatterSound) ShatterSound.PlayOneShot(ShatterSound.clip);
+                if (ShatterSound) ShatterSound.Play();
                 Debug.LogWarningFormat("Destroying...");
-                GameObject.Find("BreakInfo").GetComponent<SpriteRenderer>().enabled = false;
+//                GameObject.Find("BreakInfo").GetComponent<SpriteRenderer>().enabled = false;
                 Destroy(this); // removed once call is done
                 Destroy(gameObject);
 
@@ -53,7 +59,7 @@ public class BreakDoor : MonoBehaviour
             }
             else
             {
-                if (HitSound) HitSound.PlayOneShot(HitSound.clip); // some damage => provide feedback
+                if (HitSound) HitSound.Play(); // some damage => provide feedback
             }
         }
         return 0;

@@ -12,14 +12,14 @@ public class MenuCard : MonoBehaviour
     static GameObject[] allObj;
     bool active = false;
 
-    public Transform[] Hands;
+    private HandController[] Hands;
 
     void Start()
     {
         disable();
         Texts = FindObjectsOfType<SpriteRenderer>(); // all possible images on card
         allObj = FindObjectsOfType<GameObject>();
-
+        Hands = FindObjectsOfType<HandController>();
     }
 
     public void disable()
@@ -31,7 +31,7 @@ public class MenuCard : MonoBehaviour
             renderer.enabled = false;
         }
 
-        gameObject.active = false; // have it off by default
+        gameObject.SetActive(false);
     }
 
     void enable()
@@ -47,7 +47,7 @@ public class MenuCard : MonoBehaviour
         foreach(GameObject g in allObj)
         {
             if (g == this) continue;
-            g.active = !active; // opposite to whatever menu is
+            g.SetActive(!active); // opposite to whatever menu is
         }
     }
 
@@ -55,8 +55,8 @@ public class MenuCard : MonoBehaviour
     public void displayFailure()
     {
         toggleActive(true);
-        toggleBackground();
-        gameObject.active = active;
+        //toggleBackground();
+        gameObject.SetActive(active);
         enable();
         GameObject.Find("GameOverTxt").GetComponent<SpriteRenderer>().enabled = true;
         GameObject.Find("LostTxt").GetComponent<SpriteRenderer>().enabled = true;
@@ -65,8 +65,8 @@ public class MenuCard : MonoBehaviour
     public void displayWinner()
     {
         toggleActive(true);
-        toggleBackground();
-        gameObject.active = active;
+        //toggleBackground();
+        gameObject.SetActive(active);
         enable();
         GameObject.Find("GameOverTxt").GetComponent<SpriteRenderer>().enabled = true;
         GameObject.Find("WinnerTxt").GetComponent<SpriteRenderer>().enabled = true;
@@ -75,7 +75,7 @@ public class MenuCard : MonoBehaviour
     public void toggleActive(bool act = false)
     {
         active = act;
-        foreach (Transform hand in Hands)
+        foreach (HandController hand in Hands)
         {
             hand.GetComponent<HandController>().activeMenu = act;
         }
