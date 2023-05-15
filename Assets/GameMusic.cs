@@ -19,7 +19,7 @@ public class GameMusic : MonoBehaviour
     private System.Random rnd = new System.Random(); // use this to generate random numbers
     private float soundPause = 10f; // min second between sounds 
 
-    private float timeLeft = 50f; // minutes for game
+    private float timeLeft = 750f; // minutes for game
     private bool ticking = true; // must be set to true by another script
     // after tutorial ends: set to true
     // if pause is pressed, etc: set to false & reset to true when you keep going
@@ -49,7 +49,7 @@ public class GameMusic : MonoBehaviour
     void Update()
     {
         if (ticking) { timeLeft -= Time.deltaTime; soundPause -= Time.deltaTime; }
-        if (timeLeft <= 1) Debug.LogWarningFormat("Time left: {0}", timeLeft);
+
         if (timeLeft <= 0) { GetComponent<EndGame>().outOfTime(); }
 
         double r = rnd.NextDouble();
@@ -60,7 +60,6 @@ public class GameMusic : MonoBehaviour
             if (len == 0) return; // nothing to play :(
 
             int i = rnd.Next(3, len);
-            Debug.LogWarningFormat("Play {0}^th clip", i);
             backgroundSounds[i].Play();
         }
     }

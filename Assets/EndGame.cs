@@ -11,13 +11,14 @@ public class EndGame : MonoBehaviour
     private AudioSource minotaur; // sound to play if captured
     private AudioSource winner; // sound to play if finised game & won 
     public MenuCard menu;
+    private HandController[] Hands;
 
     // Start is called before the first frame update
     void Start()
     {
         minotaur = gameObject.transform.GetChild(1).GetComponent<AudioSource>();
         winner = gameObject.transform.GetChild(2).GetComponent<AudioSource>();
-
+        Hands = FindObjectsOfType<HandController>();
     }
 
     // game ends & you lost because out of time
@@ -46,6 +47,10 @@ public class EndGame : MonoBehaviour
         Debug.Log("Restarting. Reload Scene...");
         menu.toggleActive(); // make sure menu inactive
         menu.disable();
+        foreach (HandController hand in Hands)
+        {
+            hand.GetComponent<HandController>().cleanup();
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
