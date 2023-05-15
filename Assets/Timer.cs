@@ -28,6 +28,8 @@ public class Timer : MonoBehaviour
     {
         Invoke("GameOver", timerDuration);
         game_start = true;
+        //gameOverCanvas.SetActive(false);
+        //winCanvas.SetActive(false);
     }
 
     private void Update()
@@ -47,8 +49,14 @@ public class Timer : MonoBehaviour
         }
     }
 
+    public void testCanva()
+    {
+        gameOverCanvas.enabled = true;
+    }
+
     private void GameOver()
     {
+        //gameOverCanvas.SetActive(true);
         gameOverCanvas.enabled = true;
         audioSource.PlayOneShot(gameOverSound);
         gameFinished = true;
@@ -64,7 +72,8 @@ public class Timer : MonoBehaviour
 
     public void WinGame()
     {
-        winCanvas.enabled = true;
+        //winCanvas.SetActive(true);
+        winCanvas.enabled = false;
         audioSource.PlayOneShot(winSound);
     }
 }

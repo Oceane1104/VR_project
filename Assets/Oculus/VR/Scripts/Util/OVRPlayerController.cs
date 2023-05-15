@@ -335,7 +335,7 @@ public class OVRPlayerController : MonoBehaviour
 
 	public virtual void UpdateMovement()
 	{
-		//todo: enable for Unity Input System
+        //todo: enable for Unity Input System
 #if ENABLE_LEGACY_INPUT_MANAGER
 		if (HaltUpdateMovement)
 			return;
@@ -501,17 +501,18 @@ public class OVRPlayerController : MonoBehaviour
 			}
 			else
 			{
-				transform.RotateAround(CameraRig.centerEyeAnchor.position, Vector3.up, euler.y);
+				//transform.RotateAround(CameraRig.centerEyeAnchor.position, Vector3.up, euler.y);
+				transform.RotateAround(this.transform.position, Vector3.up, euler.y);
 			}
 		}
 #endif
-	}
+    }
 
 
-	/// <summary>
-	/// Invoked by OVRCameraRig's UpdatedAnchors callback. Allows the Hmd rotation to update the facing direction of the player.
-	/// </summary>
-	public void UpdateTransform(OVRCameraRig rig)
+    /// <summary>
+    /// Invoked by OVRCameraRig's UpdatedAnchors callback. Allows the Hmd rotation to update the facing direction of the player.
+    /// </summary>
+    public void UpdateTransform(OVRCameraRig rig)
 	{
 		Transform root = CameraRig.trackingSpace;
 		Transform centerEye = CameraRig.centerEyeAnchor;

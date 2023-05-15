@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Threading;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
@@ -26,16 +28,23 @@ public class HandController : MonoBehaviour
 	public bool open_now = false;
 	public Timer timer;
 
+	public Vector3[] velocitySamples = new Vector3[5];
+	//private List<int> myElements;
+	public int threshold = 5;
+	public int count = 0;
+	public bool not_first_vel = false;
+	public Vector3 m_vel;
+	public Vector3 addition;
 
-	// Store all gameobjects containing an Anchor
-	// N.B. This list is static as it is the same list for all hands controller
-	// thus there is no need to duplicate it for each instance
-	static protected ObjectAnchor[] anchors_in_the_scene;
+    // Store all gameobjects containing an Anchor
+    // N.B. This list is static as it is the same list for all hands controller
+    // thus there is no need to duplicate it for each instance
+    static protected ObjectAnchor[] anchors_in_the_scene;
 	void Start()
 	{
 		// Prevent multiple fetch
 		if (anchors_in_the_scene == null) anchors_in_the_scene = GameObject.FindObjectsOfType<ObjectAnchor>();
-	}
+    }
 
 
 	// This method checks that the hand is closed depending on the hand side
@@ -81,26 +90,66 @@ public class HandController : MonoBehaviour
         return throwVelocity;
 	}
 
+	protected Vector3 meanVelocity(Vector3[] velocitySamples)
+	{
+		addition = new Vector3 (0, 0, 0);
+		for (int i = 0; i < velocitySamples.Length; i++)
+		{
+			addition += velocitySamples[i];
+		}
+		Vector3 meanVelocity = addition / velocitySamples.Length;
+        Debug.LogWarningFormat("{0} the mean: ", meanVelocity);
+
+        return meanVelocity;
+	}
 
 	void FixedUpdate()
 	{
 		//Before update, calculate each time the velocity of the controller
         velocity = calculatorVelocity();
-    }
+
+		if (!(not_first_vel))
+		{
+			velocitySamples[count] = velocity;
+			count += 1;
+			if (count == velocitySamples.Length - 1)
+			{
+				not_first_vel = true;
+				m_vel = meanVelocity(velocitySamples);
+				count = 0;
+			}
+		}
+		else
+		{
+			velocitySamples[count] = velocity;
+			m_vel = meanVelocity(velocitySamples);
+            if (count == velocitySamples.Length - 1)
+			{
+				count = 0;
+			} else
+			{
+                count += 1;
+            }
+		}
+	}
 
 	// Automatically called at each frame
 	void Update() 
 	{
-		if(timer.gameFinished)
-		{
-			if (restart_game())
-			{
-                timer.RestartGame();
-            }
-        } else
-		{
-            //Check if we grab something
-            handle_controller_behavior();
+		//if(timer.gameFinished)
+		//{
+		//	if (restart_game())
+		//	{
+		//              timer.RestartGame();
+		//          }
+		//      } else
+		//{
+		//if (restart_game())
+		//{
+		//	timer.testCanva();
+		//}
+		//Check if we grab something
+		handle_controller_behavior();
             if (is_tutorial_finish())
             {
                 open_now = true;
@@ -117,7 +166,7 @@ public class HandController : MonoBehaviour
 			{
 				timer.WinGame();
             }
-        }   
+        //}   
 	}
 
 
@@ -198,7 +247,7 @@ public class HandController : MonoBehaviour
 			Debug.LogWarningFormat("{0} released {1}", this.transform.parent.name, object_grasped.name);
 
             // Release the object
-            object_grasped.detach_from(this, velocity);
+            object_grasped.detach_from(this, m_vel);
 		}
 	}
 }

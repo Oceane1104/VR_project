@@ -14,8 +14,8 @@ public class Door_script : MonoBehaviour
     //parameter of the speed and angle of the door
     public float doorOpenAngle = 90f; // the angle to open the door
     public float doorAngleStep = 0f;
-    public float rotationSpeed = 170; //Was 120
-    public float moveSpeed = 140; //Was 90
+    public float rotationSpeed = 120; 
+    public float moveSpeed = 90; 
 
     //The position of the door when it is open
     public Vector3 DoorOpen;
@@ -26,14 +26,23 @@ public class Door_script : MonoBehaviour
     public bool play_door = true; //Tell if we must play the music of the door or not
     public bool door_not_open = true;
     public int n_step = 0;
-    public int counter = 10;
+    public int counter = 500;
+
+    public float Size_X;
+    public float Size_Y;
+    public float Size_Z;
 
     public float TheRotationBase;
+    private BoxCollider boxCollider;
 
     void Start()
     {
         TheRotationBase = this.transform.rotation.eulerAngles.y;
         Debug.LogWarningFormat("{0} the rotation: ", TheRotationBase);
+        boxCollider = GetComponent<BoxCollider>();
+        Size_X = boxCollider.size.x;
+        Size_Y = boxCollider.size.y;
+        Size_Z = boxCollider.size.z;
     }
 
     public bool open_the_door () 
@@ -106,6 +115,8 @@ public class Door_script : MonoBehaviour
             //Turn and translate the door of a little step
             this.transform.rotation = Quaternion.RotateTowards(this.transform.rotation, targetRotation_step, rotationSpeed * Time.deltaTime);
             this.transform.position = Vector3.MoveTowards(this.transform.position, DoorOpen, moveSpeed * Time.deltaTime);
+            
+
 
             //Tell to the program that we have done a step more
             n_step++;
@@ -120,6 +131,10 @@ public class Door_script : MonoBehaviour
         } else
         {
             door_not_open = false;
+            boxCollider.transform.position = this.transform.position;
+            boxCollider.transform.rotation = this.transform.rotation;
+            //boxCollider.size = new Vector3(Size_Z, Size_Y, Size_X);
+            //boxCollider.center = this.transform.localPosition;
         }
         //The door is now open, we can stop
         return door_not_open;
