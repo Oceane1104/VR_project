@@ -9,6 +9,8 @@ public class BreakDoor : MonoBehaviour
     private AudioSource HitSound; // make noise if hit w something
     private AudioSource ShatterSound; // make noise if shatter
 
+    public bool exit = false; // true => door to exit => break to win
+
     protected float Resistance = 30F; // "strength"/"XP"; goes to zero => break
     protected string Weakness = "blade";  //"axe"; // thing it can be damaged by
 
@@ -45,10 +47,12 @@ public class BreakDoor : MonoBehaviour
                 // door successfully broken!
                 if (ShatterSound) ShatterSound.Play();
                 Debug.LogWarningFormat("Destroying...");
-//                GameObject.Find("BreakInfo").GetComponent<SpriteRenderer>().enabled = false;
                 Destroy(this); // removed once call is done
                 Destroy(gameObject);
-
+                if (exit) // call winner func
+                {
+                    GameObject.Find("Sounds").GetComponent<EndGame>().wonGame();
+                }
                 return 1;
             }
             else
