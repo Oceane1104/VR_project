@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Threading;
 using UnityEngine;
+using System;
 using Debug = UnityEngine.Debug;
 
 public class HandController : MonoBehaviour
@@ -215,9 +216,8 @@ public class HandController : MonoBehaviour
 		ObjectAnchor[] temp = teleport ? special_anchors_in_scene : anchors_in_the_scene;
 		if (temp == null) return best_object_id;
 		// Iterate over objects to determine if we can interact with it
-		for (int i = 0; i < temp.Length; i++)
+		for (int i = 0; i < temp.Length; ++i)
 		{
-			Debug.Log("{0}/{1} obj in temp", i, temp.Length);
 			// Skip object not available
 			if (!temp[i].is_available()) continue;
 			bool close_enough = false;
@@ -231,7 +231,6 @@ public class HandController : MonoBehaviour
 			{
 				close_enough = tempScript.getDistance(posn, out object_distance, teleport);
 			}
-			Debug.LogWarningFormat("Null? Obj dist {0}, best_obj {1}, close {2}", object_distance, best_object_distance, close_enough);
 			// Keep in memory the closest object
 			// N.B. We can extend this selection using priorities
 			if (object_distance < best_object_distance && close_enough)
@@ -240,9 +239,6 @@ public class HandController : MonoBehaviour
 				best_object_distance = object_distance;
 			}
 		}
-
-		Debug.LogWarningFormat("Best object id: {0}, name: {1}", best_object_id, temp[best_object_id].transform.gameObject.name);
-
 		return best_object_id;
 	}
 
@@ -304,7 +300,7 @@ public class HandController : MonoBehaviour
 			GameObject[] doors = GameObject.FindGameObjectsWithTag("tutoDoor");
 			foreach(GameObject door in doors)
             {
-				door.GetComponent<Door_script>().breakDoor();
+				door.GetComponent<BreakDoor>().tutoBreak();
             }
 			Debug.Log("Game begins, start timer...");
 			GameObject.Find("Sounds").GetComponent<GameMusic>().setTicking(true);

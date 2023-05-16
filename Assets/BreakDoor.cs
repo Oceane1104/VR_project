@@ -32,6 +32,14 @@ public class BreakDoor : MonoBehaviour
         }
     }
 
+    public void tutoBreak()
+    {
+        if (ShatterSound) ShatterSound.Play();
+        Debug.LogWarningFormat("Destroying tuto door...");
+        Destroy(this); // removed once call is done
+        Destroy(gameObject);
+    }
+
     // called by axe if hits door
     public int onBladeHit(GameObject child)
     {
