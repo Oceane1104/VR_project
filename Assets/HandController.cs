@@ -23,8 +23,8 @@ public class HandController : MonoBehaviour
 	public Vector3 currentPosition;
 
 	//Door script
-	public Door_script door_tuto1;
-    public Door_script door_tuto2;
+	/*public Door_script door_tuto1;
+    public Door_script door_tuto2;*/
 	public bool open_now = false;
 
 	public Vector3[] velocitySamples = new Vector3[5];
@@ -130,7 +130,6 @@ public class HandController : MonoBehaviour
 			}
 			special_anchors_in_scene = temp.ToArray();
 		}
-
 	}
 
 
@@ -211,29 +210,28 @@ public class HandController : MonoBehaviour
 	{
 		int best_object_id = -1;
 		float best_object_distance = float.MaxValue;
-		float object_distance;
+		float object_distance = best_object_distance;
 
 		ObjectAnchor[] temp = teleport ? special_anchors_in_scene : anchors_in_the_scene;
 		if (temp == null) return best_object_id;
 		// Iterate over objects to determine if we can interact with it
 		for (int i = 0; i < temp.Length; i++)
 		{
+			Debug.Log("{0}/{1} obj in temp", i, temp.Length);
 			// Skip object not available
-			if (!special_anchors_in_scene[i].is_available()) continue;
+			if (!temp[i].is_available()) continue;
 			bool close_enough = false;
-			ObjectAnchor tempScript = special_anchors_in_scene[i].transform.gameObject.GetComponent<ObjectAnchor>();
+			ObjectAnchor tempScript = temp[i].transform.gameObject.GetComponent<ObjectAnchor>();
 			// Compute the distance to the object
 			if (tempScript.objScript.Equals("AxeHandle"))
             {
-				close_enough = special_anchors_in_scene[i].transform.gameObject.GetComponent<AxeHandle>().getDistance(posn, out object_distance, teleport);
+				close_enough = temp[i].transform.gameObject.GetComponent<AxeHandle>().getDistance(posn, out object_distance, teleport);
 			}
 			else // make this the default
 			{
 				close_enough = tempScript.getDistance(posn, out object_distance, teleport);
-			} 
-
-			Debug.LogWarningFormat("Object {0} distance: {1}", special_anchors_in_scene[i].transform.gameObject.name, object_distance);
-
+			}
+			Debug.LogWarningFormat("Null? Obj dist {0}, best_obj {1}, close {2}", object_distance, best_object_distance, close_enough);
 			// Keep in memory the closest object
 			// N.B. We can extend this selection using priorities
 			if (object_distance < best_object_distance && close_enough)
@@ -242,6 +240,8 @@ public class HandController : MonoBehaviour
 				best_object_distance = object_distance;
 			}
 		}
+
+		Debug.LogWarningFormat("Best object id: {0}, name: {1}", best_object_id, temp[best_object_id].transform.gameObject.name);
 
 		return best_object_id;
 	}
@@ -295,11 +295,17 @@ public class HandController : MonoBehaviour
 			handle_controller_behavior();
 			handle_teleport_behavior();
 		}
+
 		if (!open_now && is_tutorial_finish()) // don't keep running this if already open
         {
 			open_now = true;
-            door_tuto1.open_the_door();
-            door_tuto2.open_the_door();
+			/*door_tuto1.open_the_door();
+            door_tuto2.open_the_door();*/
+			GameObject[] doors = GameObject.FindGameObjectsWithTag("tutoDoor");
+			foreach(GameObject door in doors)
+            {
+				door.GetComponent<Door_script>().breakDoor();
+            }
 			Debug.Log("Game begins, start timer...");
 			GameObject.Find("Sounds").GetComponent<GameMusic>().setTicking(true);
 		}    

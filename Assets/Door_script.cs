@@ -44,9 +44,10 @@ public class Door_script : MonoBehaviour
         Size_Z = boxCollider.size.z;
     }
 
-    bool destroyDoor()
+    public bool breakDoor()
     {
         // load audio
+        Debug.Low("Destroying tuto door...");
         audioSources = this.GetComponents<AudioSource>();
         Doorgrinch = audioSources[0];
         DoorClick = audioSources[1];
@@ -61,7 +62,7 @@ public class Door_script : MonoBehaviour
 
     public bool open_the_door () 
     {
-        return destroyDoor(); // REMOVE THIS ONCE ROTATION WORKS PROPERLY
+        return breakDoor(); // REMOVE THIS ONCE ROTATION WORKS PROPERLY
         //Initialisation
         if (n_step == 0)
         {
