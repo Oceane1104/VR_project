@@ -19,7 +19,7 @@ public class GameMusic : MonoBehaviour
     private System.Random rnd = new System.Random(); // use this to generate random numbers
     private float soundPause = 10f; // min second between sounds 
 
-    private float timeLeft = 60f;//750f; // minutes for game
+    private float timeLeft = 750f; // minutes for game
     private bool ticking = false; // must be set to when end tutorial
     // after tutorial ends: set to true
     // if pause is pressed, etc: set to false & reset to true when you keep going

@@ -59,7 +59,7 @@ public class BreakDoor : MonoBehaviour
                 Destroy(gameObject);
                 if (exit) // call winner func
                 {
-                    GameObject.Find("Sounds").GetComponent<EndGame>().wonGame();
+                    GameObject.Find("Sounds").GetComponent<EndGame>().Invoke("wonGame", 5);
                 }
                 return 1;
             }
