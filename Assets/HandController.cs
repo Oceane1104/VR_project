@@ -26,7 +26,6 @@ public class HandController : MonoBehaviour
 	public Door_script door_tuto1;
     public Door_script door_tuto2;
 	public bool open_now = false;
-	public Timer timer;
 
 	public Vector3[] velocitySamples = new Vector3[5];
 	//private List<int> myElements;
@@ -124,8 +123,11 @@ public class HandController : MonoBehaviour
 			var temp = new System.Collections.Generic.List<ObjectAnchor>();
 			foreach(ObjectAnchor obj in anchors_in_the_scene)
             {
-				temp.Add(obj);
-            }
+				if (obj.can_teleport)
+                {
+					temp.Add(obj);
+				}
+			}
 			special_anchors_in_scene = temp.ToArray();
 		}
 
@@ -171,7 +173,7 @@ public class HandController : MonoBehaviour
 	protected bool is_tutorial_finish()
 	{
 		if (handType == HandType.RightHand) return OVRInput.Get(OVRInput.Button.Four);
-		else return false;
+		return false;
 	}
 
     protected bool restart_game()
@@ -200,7 +202,6 @@ public class HandController : MonoBehaviour
 			addition += velocitySamples[i];
 		}
 		Vector3 meanVelocity = addition / velocitySamples.Length;
-        Debug.LogWarningFormat("{0} the mean: ", meanVelocity);
 
         return meanVelocity;
 	}
@@ -213,7 +214,7 @@ public class HandController : MonoBehaviour
 		float object_distance;
 
 		ObjectAnchor[] temp = teleport ? special_anchors_in_scene : anchors_in_the_scene;
-
+		if (temp == null) return best_object_id;
 		// Iterate over objects to determine if we can interact with it
 		for (int i = 0; i < temp.Length; i++)
 		{

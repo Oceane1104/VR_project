@@ -38,15 +38,30 @@ public class Door_script : MonoBehaviour
     void Start()
     {
         TheRotationBase = this.transform.rotation.eulerAngles.y;
-        Debug.LogWarningFormat("{0} the rotation: ", TheRotationBase);
         boxCollider = GetComponent<BoxCollider>();
         Size_X = boxCollider.size.x;
         Size_Y = boxCollider.size.y;
         Size_Z = boxCollider.size.z;
     }
 
+    bool destroyDoor()
+    {
+        // load audio
+        audioSources = this.GetComponents<AudioSource>();
+        Doorgrinch = audioSources[0];
+        DoorClick = audioSources[1];
+        DoorClick.Play();
+        Doorgrinch.Play();
+
+        Destroy(this); // removed once call is done
+        Destroy(gameObject);
+
+        return true;
+    }
+
     public bool open_the_door () 
     {
+        return destroyDoor(); // REMOVE THIS ONCE ROTATION WORKS PROPERLY
         //Initialisation
         if (n_step == 0)
         {

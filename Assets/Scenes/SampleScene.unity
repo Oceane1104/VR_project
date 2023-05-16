@@ -2335,6 +2335,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 798897859}
     - target: {fileID: 2200082112481519215, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: markerPrefab
+      value: 
+      objectReference: {fileID: 7010335341993225735, guid: 77b39a5b95b8f2b45b7ea334bf0a8021, type: 3}
+    - target: {fileID: 2200082112481519215, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: handController
+      value: 
+      objectReference: {fileID: 1794962238}
+    - target: {fileID: 2200082112481519215, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 40919620}
@@ -2358,6 +2366,14 @@ PrefabInstance:
       propertyPath: door_tuto2
       value: 
       objectReference: {fileID: 798897859}
+    - target: {fileID: 7530201106161510755, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: markerPrefab
+      value: 
+      objectReference: {fileID: 7010335341993225735, guid: 77b39a5b95b8f2b45b7ea334bf0a8021, type: 3}
+    - target: {fileID: 7530201106161510755, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: handController
+      value: 
+      objectReference: {fileID: 1606044196}
     - target: {fileID: 7530201106161510755, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: playerController
       value: 
@@ -4793,7 +4809,6 @@ MonoBehaviour:
   weapon1: {fileID: 2023612943}
   weapon2: {fileID: 650100876}
   weapon3: {fileID: 456581508}
-  weapon4: {fileID: 0}
 --- !u!4 &1123306828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 453322, guid: 71fd0361512edbf49a373fb8a8f8d0a9, type: 3}
@@ -6570,6 +6585,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40de025ead5f0a64f9b464254680cd8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1606044196 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
+  m_PrefabInstance: {fileID: 2135307061}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1631406207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7388,6 +7408,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &1794962238 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
+  m_PrefabInstance: {fileID: 339373333}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1806738588
 GameObject:
   m_ObjectHideFlags: 0
@@ -9234,7 +9259,6 @@ MonoBehaviour:
   weapon1: {fileID: 2023612943}
   weapon2: {fileID: 650100876}
   weapon3: {fileID: 456581508}
-  weapon4: {fileID: 0}
 --- !u!4 &2099821052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 453322, guid: 71fd0361512edbf49a373fb8a8f8d0a9, type: 3}
