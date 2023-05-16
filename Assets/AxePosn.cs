@@ -55,8 +55,13 @@ public class AxePosn : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         GameObject obj = collision.gameObject;
-        if (obj.name == "Door")
+        Debug.LogWarningFormat("Collided w {0} w tag {1}", obj.name, obj.tag);
+        if (obj.tag.Equals("DoorToBreak"))
         {
+            // change target/etc so new door in case there are multiple
+            target = collision.gameObject.transform;
+            doorPosn = target.position;
+
             GameObject child = this.transform.GetChild(1).gameObject; // get which part of object collided
             //GameObject child = obj;
             if (child == null) Debug.Log("Null :(");

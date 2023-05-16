@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 200132035}
     m_Modifications:
+    - target: {fileID: 7813052449329300291, guid: 873d93dc3686020429dca6f86d0a45e9, type: 3}
+      propertyPath: m_TagString
+      value: DoorToBreak
+      objectReference: {fileID: 0}
     - target: {fileID: 7813052449605617922, guid: 873d93dc3686020429dca6f86d0a45e9, type: 3}
       propertyPath: m_Name
       value: breakDoor_fake
@@ -332,7 +336,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &80047550
 GameObject:
@@ -596,7 +600,7 @@ Transform:
   - {fileID: 1122870139}
   - {fileID: 91194397}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &186382887
 GameObject:
@@ -717,7 +721,7 @@ Transform:
   - {fileID: 854905463}
   - {fileID: 455567993}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &203184459
 GameObject:
@@ -1042,7 +1046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6307650861004482840, guid: 60453940c9af2514ab2f2303e1021197, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6307650861004482840, guid: 60453940c9af2514ab2f2303e1021197, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1370,7 +1374,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &272928274
 GameObject:
@@ -1619,7 +1623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6307650861004482840, guid: 60453940c9af2514ab2f2303e1021197, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6307650861004482840, guid: 60453940c9af2514ab2f2303e1021197, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2203,6 +2207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: exitDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 7813052449329300291, guid: 873d93dc3686020429dca6f86d0a45e9, type: 3}
+      propertyPath: m_TagString
+      value: DoorToBreak
+      objectReference: {fileID: 0}
     - target: {fileID: 7813052449605617922, guid: 873d93dc3686020429dca6f86d0a45e9, type: 3}
       propertyPath: m_Name
       value: exitWall
@@ -2343,6 +2351,7 @@ MonoBehaviour:
   throwDirection: {x: 0, y: 0, z: 0}
   teleportRadius: 1.5
   can_teleport: 1
+  need_parent: 0
   objScript: ObjectAnchor
   hand_controller: {fileID: 0}
 --- !u!65 &456581511
@@ -2486,19 +2495,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.05
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.423
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.84
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3245,6 +3254,7 @@ MonoBehaviour:
   throwDirection: {x: 0, y: 0, z: 0}
   teleportRadius: 1.5
   can_teleport: 1
+  need_parent: 0
   objScript: ObjectAnchor
   hand_controller: {fileID: 0}
 --- !u!65 &650100879
@@ -4003,6 +4013,17 @@ MonoBehaviour:
   first_collision: 1
   its_happen: 0
   good_target: 0
+--- !u!114 &819525520 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5631175127995952253, guid: 43cea8ee6f73e2142acd246a54da794f, type: 3}
+  m_PrefabInstance: {fileID: 256908250}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16da5f110c58a7a4eb322039f2d8f9a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &827557854 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7813052449605617923, guid: 873d93dc3686020429dca6f86d0a45e9, type: 3}
@@ -4203,7 +4224,7 @@ Transform:
   - {fileID: 2128246740}
   - {fileID: 503475192}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1017961487
 GameObject:
@@ -4241,7 +4262,7 @@ Transform:
   - {fileID: 398017485}
   - {fileID: 1241308894}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1025531607
 PrefabInstance:
@@ -4431,7 +4452,7 @@ Transform:
   - {fileID: 630913260}
   - {fileID: 1400934217}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1122870138
 GameObject:
@@ -4904,7 +4925,7 @@ Transform:
   - {fileID: 1123306828}
   - {fileID: 1437129691}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1286425419
 PrefabInstance:
@@ -5015,6 +5036,7 @@ MonoBehaviour:
   throwDirection: {x: 0, y: 0, z: 0}
   teleportRadius: 1.5
   can_teleport: 1
+  need_parent: 0
   objScript: ObjectAnchor
   hand_controller: {fileID: 0}
 --- !u!65 &1286425423
@@ -5281,6 +5303,10 @@ PrefabInstance:
     - target: {fileID: 7813052449329300291, guid: 873d93dc3686020429dca6f86d0a45e9, type: 3}
       propertyPath: m_Name
       value: breakDoorRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813052449329300291, guid: 873d93dc3686020429dca6f86d0a45e9, type: 3}
+      propertyPath: m_TagString
+      value: DoorToBreak
       objectReference: {fileID: 0}
     - target: {fileID: 7813052449605617922, guid: 873d93dc3686020429dca6f86d0a45e9, type: 3}
       propertyPath: m_Name
@@ -5725,6 +5751,7 @@ MonoBehaviour:
   throwDirection: {x: 0, y: 0, z: 0}
   teleportRadius: 1.5
   can_teleport: 1
+  need_parent: 0
   objScript: ObjectAnchor
   hand_controller: {fileID: 0}
 --- !u!54 &1437129696
@@ -6932,7 +6959,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 43ad8d6454509d449aac3c91903c81c3, type: 2}
     - target: {fileID: -8679921383154817045, guid: 9099deeda3111434cbb7efea48347f64, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9099deeda3111434cbb7efea48347f64, type: 3}
       propertyPath: m_LocalScale.x
@@ -7562,7 +7589,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1834220594 stripped
 Transform:
@@ -7576,9 +7603,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1207461712861012834, guid: a1fa2995ae27b6f418235c2a0502eeae, type: 3}
+      propertyPath: menu
+      value: 
+      objectReference: {fileID: 819525520}
     - target: {fileID: 4042530044676013048, guid: a1fa2995ae27b6f418235c2a0502eeae, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4042530044676013048, guid: a1fa2995ae27b6f418235c2a0502eeae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7735,6 +7766,7 @@ MonoBehaviour:
   throwDirection: {x: 0, y: 0, z: 0}
   teleportRadius: 1.5
   can_teleport: 1
+  need_parent: 0
   objScript: ObjectAnchor
   hand_controller: {fileID: 0}
 --- !u!65 &1842514433
@@ -8502,7 +8534,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2010060956
 GameObject:
@@ -8535,7 +8567,7 @@ Transform:
   - {fileID: 272928275}
   - {fileID: 1116781242}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2023612939 stripped
 GameObject:
@@ -8577,6 +8609,7 @@ MonoBehaviour:
   throwDirection: {x: 0, y: 0, z: 0}
   teleportRadius: 1.5
   can_teleport: 1
+  need_parent: 0
   objScript: ObjectAnchor
   hand_controller: {fileID: 0}
 --- !u!65 &2023612946
@@ -9346,6 +9379,7 @@ MonoBehaviour:
   throwDirection: {x: 0, y: 0, z: 0}
   teleportRadius: 1.5
   can_teleport: 1
+  need_parent: 0
   objScript: ObjectAnchor
   hand_controller: {fileID: 0}
 --- !u!82 &2143396858

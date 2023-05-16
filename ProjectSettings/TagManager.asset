@@ -6,6 +6,7 @@ TagManager:
   tags:
   - blade
   - tutoDoor
+  - DoorToBreak
   layers:
   - Default
   - TransparentFX
