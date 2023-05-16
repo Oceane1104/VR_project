@@ -32,7 +32,7 @@ public class EndGame : MonoBehaviour
     public void wonGame()
     {
         menu.displayWinner();
-        
+        GameObject.Find("Sounds").GetComponent<GameMusic>().setTicking(false);
         if (winner) winner.Play();
     }
 
@@ -51,6 +51,7 @@ public class EndGame : MonoBehaviour
         {
             hand.GetComponent<HandController>().cleanup();
         }
+        GameObject.Find("Sounds").GetComponent<GameMusic>().setTicking(true);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

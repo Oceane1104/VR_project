@@ -119,8 +119,6 @@ public class HandController : MonoBehaviour
 	void Start()
 	{
 		// Prevent multiple fetch
-		Debug.Log("Starting hand controller stuf...");
-		Debug.LogWarningFormat("Anchors null? {0} Special null? {1}", anchors_in_the_scene == null, special_anchors_in_scene == null);
 		if (anchors_in_the_scene == null) anchors_in_the_scene = GameObject.FindObjectsOfType<ObjectAnchor>();
 		if (special_anchors_in_scene == null) {
 			var temp = new System.Collections.Generic.List<ObjectAnchor>();

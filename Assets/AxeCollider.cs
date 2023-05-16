@@ -22,11 +22,4 @@ public class AxeCollider : MonoBehaviour
         Vector3 temp = dist / Time.deltaTime;
         if (temp.magnitude != 0) vel = temp;
     }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        Debug.LogWarningFormat("{0} collided with {1}", this.gameObject.tag,
-             collision.gameObject.name);
-        Debug.LogWarningFormat("Collision vel: {0}", vel.magnitude);
-    }
 }

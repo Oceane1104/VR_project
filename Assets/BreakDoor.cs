@@ -22,16 +22,10 @@ public class BreakDoor : MonoBehaviour
         {
             if (child.name.Contains("Hit"))
             {
-                Debug.LogWarningFormat("Loading sound {0}", child.name);
                 HitSound = child;
             }else if (child.name.Contains("Break"))
             {
-                Debug.LogWarningFormat("Loading sound {0}", child.name);
                 ShatterSound = child;
-            }
-            else
-            {
-                Debug.LogWarningFormat("Not loading sound {0}", child.name);
             }
         }
     }

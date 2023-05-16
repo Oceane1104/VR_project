@@ -24,7 +24,7 @@ public class GameMusic : MonoBehaviour
     // after tutorial ends: set to true
     // if pause is pressed, etc: set to false & reset to true when you keep going
     
-    void setTicking(bool val) { ticking = val; }
+    public void setTicking(bool val) { ticking = val; }
 
     // add/remove time; use function sparingly
     void addTime(float time) { timeLeft += time; }
