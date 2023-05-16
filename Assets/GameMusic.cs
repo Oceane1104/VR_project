@@ -20,7 +20,7 @@ public class GameMusic : MonoBehaviour
     private float soundPause = 10f; // min second between sounds 
 
     private float timeLeft = 750f; // minutes for game
-    private bool ticking = true; // must be set to true by another script
+    private bool ticking = false; // must be set to when end tutorial
     // after tutorial ends: set to true
     // if pause is pressed, etc: set to false & reset to true when you keep going
     
@@ -50,7 +50,7 @@ public class GameMusic : MonoBehaviour
     {
         if (ticking) { timeLeft -= Time.deltaTime; soundPause -= Time.deltaTime; }
 
-        if (timeLeft <= 0) { GetComponent<EndGame>().outOfTime(); }
+        if (timeLeft <= 0) { setTicking(false);  GetComponent<EndGame>().outOfTime(); return; }
 
         double r = rnd.NextDouble();
         if (r > prob && soundPause <= 0)

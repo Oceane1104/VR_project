@@ -294,17 +294,14 @@ public class HandController : MonoBehaviour
 			handle_controller_behavior();
 			handle_teleport_behavior();
 		}
-		if (is_tutorial_finish())
-            {
-                open_now = true;
-            }
-            if (open_now)
-            {
-                Debug.LogWarningFormat("Je suis la");
-                door_tuto1.open_the_door();
-                door_tuto2.open_the_door();
-                //timer.StartTimer();
-            }
+		if (!open_now && is_tutorial_finish()) // don't keep running this if already open
+        {
+			open_now = true;
+            door_tuto1.open_the_door();
+            door_tuto2.open_the_door();
+			Debug.Log("Game begins, start timer...");
+			GameObject.Find("Sounds").GetComponent<GameMusic>().setTicking(true);
+		}    
 	}
 
 	// remove anchors
