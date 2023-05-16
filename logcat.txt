@@ -1,939 +1,314 @@
---------- beginning of system
 --------- beginning of tracking
+--------- beginning of system
 --------- beginning of main
-05-16 15:11:38.089 19533 19557 I Unity   : XRGeneral Settings awakening...
-05-16 15:11:38.089 19533 19557 I Unity   : UnityEngine.XR.Management.XRGeneralSettings:Awake()
-05-16 15:11:38.089 19533 19557 I Unity   : 
-05-16 15:11:38.790 19533 19600 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
-05-16 15:11:50.246 19533 19557 E Unity   : DllNotFoundException: Unable to load DLL 'AudioPluginOculusSpatializer'. Tried the load the following dynamic libraries: Unable to load dynamic library 'AudioPluginOculusSpatializer' because of 'Failed to open the requested dynamic library (0x06000000) dlerror() = dlopen failed: library "AudioPluginOculusSpatializer" not found
-05-16 15:11:50.246 19533 19557 E Unity   :   at ONSPAudioSource.OSP_SetGlobalVoiceLimit (System.Int32 VoiceLimit) [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:50.246 19533 19557 E Unity   : 
-05-16 15:11:50.278 19533 19557 I Unity   : Unity v2021.3.20f1, Oculus Utilities v1.82.0, OVRPlugin v1.82.0, SDK v1.0.26.
-05-16 15:11:50.278 19533 19557 I Unity   : OVRManager:InitOVRManager()
-05-16 15:11:50.278 19533 19557 I Unity   : 
-05-16 15:11:50.282 19533 19557 I Unity   : SystemHeadset Oculus_Quest, API OpenXR
-05-16 15:11:50.282 19533 19557 I Unity   : OVRManager:InitOVRManager()
-05-16 15:11:50.282 19533 19557 I Unity   : 
-05-16 15:11:50.283 19533 19557 I Unity   : OpenXR instance 0x100000000000002 session 0x200000000000020
-05-16 15:11:50.283 19533 19557 I Unity   : OVRManager:InitOVRManager()
-05-16 15:11:50.283 19533 19557 I Unity   : 
-05-16 15:11:50.291 19533 19557 I Unity   : OVRPlugin.Media initialized
-05-16 15:11:50.291 19533 19557 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
-05-16 15:11:50.291 19533 19557 I Unity   : OVRManager:InitOVRManager()
-05-16 15:11:50.291 19533 19557 I Unity   : 
-05-16 15:11:50.293 19533 19557 I Unity   : [MRC] SetMrcAudioSampleRate(48000)
-05-16 15:11:50.293 19533 19557 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
-05-16 15:11:50.293 19533 19557 I Unity   : OVRManager:InitOVRManager()
-05-16 15:11:50.293 19533 19557 I Unity   : 
-05-16 15:11:50.294 19533 19557 I Unity   : [MRC] Active InputVideoBufferType:TextureHandle
-05-16 15:11:50.294 19533 19557 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
-05-16 15:11:50.294 19533 19557 I Unity   : OVRManager:InitOVRManager()
-05-16 15:11:50.294 19533 19557 I Unity   : 
-05-16 15:11:50.296 19533 19557 I Unity   : [MRC] ActivateMode: Automatic
-05-16 15:11:50.296 19533 19557 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
-05-16 15:11:50.296 19533 19557 I Unity   : OVRManager:InitOVRManager()
-05-16 15:11:50.296 19533 19557 I Unity   : 
-05-16 15:11:50.303 19533 19557 I Unity   : Current display frequency 72, available frequencies [60, 60, 72, 72]
-05-16 15:11:50.303 19533 19557 I Unity   : OVRManager:InitOVRManager()
-05-16 15:11:50.303 19533 19557 I Unity   : 
-05-16 15:11:50.305 19533 19557 W Unity   : Local Dimming feature is not supported
-05-16 15:11:50.305 19533 19557 W Unity   : OVRManager:InitOVRManager()
-05-16 15:11:50.305 19533 19557 W Unity   : 
-05-16 15:11:50.436 19533 19557 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandRight)
-05-16 15:11:50.436 19533 19557 I Unity   : OVRControllerHelper:InitializeControllerModels()
-05-16 15:11:50.436 19533 19557 I Unity   : 
-05-16 15:11:50.444 19533 19557 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandLeft)
-05-16 15:11:50.444 19533 19557 I Unity   : OVRControllerHelper:InitializeControllerModels()
-05-16 15:11:50.444 19533 19557 I Unity   : 
-05-16 15:11:50.480 19533 19557 I Unity   : The current MSAA level is 0, but the recommended MSAA level is 4. Switching to the recommended level.
-05-16 15:11:50.480 19533 19557 I Unity   : OVRManager:Update()
-05-16 15:11:50.480 19533 19557 I Unity   : 
-05-16 15:11:50.481 19533 19557 I Unity   : [OVRManager] HMDAcquired event
-05-16 15:11:50.481 19533 19557 I Unity   : OVRManager:Update()
-05-16 15:11:50.481 19533 19557 I Unity   : 
-05-16 15:11:50.482 19533 19557 I Unity   : [OVRManager] HMDMounted event
-05-16 15:11:50.482 19533 19557 I Unity   : OVRManager:Update()
-05-16 15:11:50.482 19533 19557 I Unity   : 
-05-16 15:11:50.483 19533 19557 I Unity   : [OVRManager] VrFocusAcquired event
-05-16 15:11:50.483 19533 19557 I Unity   : OVRManager:Update()
-05-16 15:11:50.483 19533 19557 I Unity   : 
-05-16 15:11:50.485 19533 19557 I Unity   : [OVRManager] TrackingAcquired event
-05-16 15:11:50.485 19533 19557 I Unity   : OVRManager:Update()
-05-16 15:11:50.485 19533 19557 I Unity   : 
-05-16 15:11:50.719 19533 19557 W Unity   : Ignoring depth surface store action as it is memoryless
-05-16 15:11:51.041 19533 19557 W Unity   : Axe collided w Terrain
-05-16 15:11:51.041 19533 19557 W Unity   : AxePosn:OnCollisionEnter(Collision)
-05-16 15:11:51.041 19533 19557 W Unity   : 
-05-16 15:11:51.042 19533 19557 W Unity   : Axe collided w Terrain
-05-16 15:11:51.042 19533 19557 W Unity   : AxePosn:OnCollisionEnter(Collision)
-05-16 15:11:51.042 19533 19557 W Unity   : 
-05-16 15:11:51.058 19533 19557 W Unity   : Axe collided w Terrain
-05-16 15:11:51.058 19533 19557 W Unity   : AxePosn:OnCollisionEnter(Collision)
-05-16 15:11:51.058 19533 19557 W Unity   : 
-05-16 15:11:51.061 19533 19557 W Unity   : Axe collided w Terrain
-05-16 15:11:51.061 19533 19557 W Unity   : AxePosn:OnCollisionEnter(Collision)
-05-16 15:11:51.061 19533 19557 W Unity   : 
-05-16 15:11:54.465 19533 19557 I Unity   : Teleport grabbing/etc...
-05-16 15:11:54.465 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.465 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.465 19533 19557 I Unity   : 
-05-16 15:11:54.924 19533 19557 I Unity   : Teleport grabbing/etc...
-05-16 15:11:54.924 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.924 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.924 19533 19557 I Unity   : 
-05-16 15:11:54.927 19533 19557 W Unity   : 0/9 obj in temp
-05-16 15:11:54.927 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.927 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.927 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.927 19533 19557 W Unity   : 
-05-16 15:11:54.928 19533 19557 W Unity   : temp[i] Spear2H_Epic (ObjectAnchor)
-05-16 15:11:54.928 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.928 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.928 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.928 19533 19557 W Unity   : 
-05-16 15:11:54.928 19533 19557 I Unity   : here
-05-16 15:11:54.928 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.928 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.928 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.928 19533 19557 I Unity   : 
-05-16 15:11:54.929 19533 19557 I Unity   : Not axe
-05-16 15:11:54.929 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.929 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.929 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.929 19533 19557 I Unity   : 
-05-16 15:11:54.929 19533 19557 W Unity   : Null? Obj dist 29.96674, best_obj 3.402823E+38, close False
-05-16 15:11:54.929 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.929 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.929 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.929 19533 19557 W Unity   : 
-05-16 15:11:54.930 19533 19557 W Unity   : 1/9 obj in temp
-05-16 15:11:54.930 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.930 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.930 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.930 19533 19557 W Unity   : 
-05-16 15:11:54.931 19533 19557 W Unity   : temp[i] Staff_Epic (ObjectAnchor)
-05-16 15:11:54.931 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.931 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.931 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.931 19533 19557 W Unity   : 
-05-16 15:11:54.931 19533 19557 I Unity   : here
-05-16 15:11:54.931 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.931 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.931 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.931 19533 19557 I Unity   : 
-05-16 15:11:54.932 19533 19557 I Unity   : Not axe
-05-16 15:11:54.932 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.932 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.932 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.932 19533 19557 I Unity   : 
-05-16 15:11:54.932 19533 19557 W Unity   : Null? Obj dist 29.47609, best_obj 3.402823E+38, close False
-05-16 15:11:54.932 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.932 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.932 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.932 19533 19557 W Unity   : 
-05-16 15:11:54.933 19533 19557 W Unity   : 2/9 obj in temp
-05-16 15:11:54.933 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.933 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.933 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.933 19533 19557 W Unity   : 
-05-16 15:11:54.933 19533 19557 W Unity   : temp[i] Low-Poly Skull_tutorial_1 (ObjectAnchor)
-05-16 15:11:54.933 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.933 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.933 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.933 19533 19557 W Unity   : 
-05-16 15:11:54.934 19533 19557 I Unity   : here
-05-16 15:11:54.934 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.934 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.934 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.934 19533 19557 I Unity   : 
-05-16 15:11:54.934 19533 19557 I Unity   : Not axe
-05-16 15:11:54.934 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.934 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.934 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.934 19533 19557 I Unity   : 
-05-16 15:11:54.935 19533 19557 W Unity   : Null? Obj dist 2.254316, best_obj 3.402823E+38, close False
-05-16 15:11:54.935 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.935 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.935 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.935 19533 19557 W Unity   : 
-05-16 15:11:54.935 19533 19557 W Unity   : 3/9 obj in temp
-05-16 15:11:54.935 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.935 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.935 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.935 19533 19557 W Unity   : 
-05-16 15:11:54.936 19533 19557 W Unity   : temp[i] Spear1H_Epic (ObjectAnchor)
-05-16 15:11:54.936 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.936 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.936 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.936 19533 19557 W Unity   : 
-05-16 15:11:54.937 19533 19557 I Unity   : here
-05-16 15:11:54.937 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.937 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.937 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.937 19533 19557 I Unity   : 
-05-16 15:11:54.937 19533 19557 I Unity   : Not axe
-05-16 15:11:54.937 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.937 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.937 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.937 19533 19557 I Unity   : 
-05-16 15:11:54.938 19533 19557 W Unity   : Null? Obj dist 29.80762, best_obj 3.402823E+38, close False
-05-16 15:11:54.938 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.938 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.938 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.938 19533 19557 W Unity   : 
-05-16 15:11:54.938 19533 19557 W Unity   : 4/9 obj in temp
-05-16 15:11:54.938 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.938 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.938 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.938 19533 19557 W Unity   : 
-05-16 15:11:54.939 19533 19557 W Unity   : temp[i] Low-Poly Skull_tutorial_2 (ObjectAnchor)
-05-16 15:11:54.939 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.939 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.939 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.939 19533 19557 W Unity   : 
-05-16 15:11:54.939 19533 19557 I Unity   : here
-05-16 15:11:54.939 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.939 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.939 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.939 19533 19557 I Unity   : 
-05-16 15:11:54.940 19533 19557 I Unity   : Not axe
-05-16 15:11:54.940 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.940 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.940 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.940 19533 19557 I Unity   : 
-05-16 15:11:54.940 19533 19557 W Unity   : Null? Obj dist 1.926753, best_obj 3.402823E+38, close False
-05-16 15:11:54.940 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.940 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.940 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.940 19533 19557 W Unity   : 
-05-16 15:11:54.941 19533 19557 W Unity   : 5/9 obj in temp
-05-16 15:11:54.941 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.941 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.941 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.941 19533 19557 W Unity   : 
-05-16 15:11:54.941 19533 19557 W Unity   : temp[i] Staff_Basic (ObjectAnchor)
-05-16 15:11:54.941 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.941 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.941 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.941 19533 19557 W Unity   : 
-05-16 15:11:54.942 19533 19557 I Unity   : here
-05-16 15:11:54.942 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.942 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.942 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.942 19533 19557 I Unity   : 
-05-16 15:11:54.943 19533 19557 I Unity   : Not axe
-05-16 15:11:54.943 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.943 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.943 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.943 19533 19557 I Unity   : 
-05-16 15:11:54.943 19533 19557 W Unity   : Null? Obj dist 29.68539, best_obj 3.402823E+38, close False
-05-16 15:11:54.943 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.943 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.943 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.943 19533 19557 W Unity   : 
-05-16 15:11:54.944 19533 19557 W Unity   : 6/9 obj in temp
-05-16 15:11:54.944 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.944 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.944 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.944 19533 19557 W Unity   : 
-05-16 15:11:54.944 19533 19557 W Unity   : temp[i] Staff_Basic_tutorial (ObjectAnchor)
-05-16 15:11:54.944 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.944 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.944 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.944 19533 19557 W Unity   : 
-05-16 15:11:54.945 19533 19557 I Unity   : here
-05-16 15:11:54.945 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.945 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.945 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.945 19533 19557 I Unity   : 
-05-16 15:11:54.945 19533 19557 I Unity   : Not axe
-05-16 15:11:54.945 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.945 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.945 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.945 19533 19557 I Unity   : 
-05-16 15:11:54.946 19533 19557 W Unity   : Null? Obj dist 0.3216471, best_obj 3.402823E+38, close True
-05-16 15:11:54.946 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.946 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.946 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.946 19533 19557 W Unity   : 
-05-16 15:11:54.946 19533 19557 W Unity   : 7/9 obj in temp
-05-16 15:11:54.946 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.946 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.946 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.946 19533 19557 W Unity   : 
-05-16 15:11:54.947 19533 19557 W Unity   : temp[i] handle (ObjectAnchor)
-05-16 15:11:54.947 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.947 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.947 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:54.947 19533 19557 W Unity   : 
-05-16 15:11:54.947 19533 19557 I Unity   : here
-05-16 15:11:54.947 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.947 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.947 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.947 19533 19557 I Unity   : 
-05-16 15:11:54.948 19533 19557 I Unity   : Axe
-05-16 15:11:54.948 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:54.948 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:54.948 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:54.948 19533 19557 I Unity   : 
-05-16 15:11:54.953 19533 19557 E Unity   : UnityException: Transform child out of bounds
-05-16 15:11:54.953 19533 19557 E Unity   :   at AxeHandle.getEnd () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:54.953 19533 19557 E Unity   :   at AxeHandle.setVary () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:54.953 19533 19557 E Unity   :   at AxeHandle.getDistance (UnityEngine.Vector3 posn, System.Single& object_distance, System.Boolean teleport) [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:54.953 19533 19557 E Unity   :   at HandController.which_object (UnityEngine.Vector3 posn, System.Boolean teleport) [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:54.953 19533 19557 E Unity   :   at HandController.handle_teleport_behavior () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:54.953 19533 19557 E Unity   :   at HandController.Update () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:54.953 19533 19557 E Unity   : 
-05-16 15:11:55.187 19533 19557 I Unity   : Teleport grabbing/etc...
-05-16 15:11:55.187 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:55.187 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:55.187 19533 19557 I Unity   : 
-05-16 15:11:56.499 19533 19557 I Unity   : Teleport grabbing/etc...
-05-16 15:11:56.499 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.499 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.499 19533 19557 I Unity   : 
-05-16 15:11:56.500 19533 19557 W Unity   : 0/9 obj in temp
-05-16 15:11:56.500 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.500 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.500 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.500 19533 19557 W Unity   : 
-05-16 15:11:56.501 19533 19557 W Unity   : temp[i] Spear2H_Epic (ObjectAnchor)
-05-16 15:11:56.501 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.501 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.501 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.501 19533 19557 W Unity   : 
-05-16 15:11:56.501 19533 19557 I Unity   : here
-05-16 15:11:56.501 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.501 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.501 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.501 19533 19557 I Unity   : 
-05-16 15:11:56.502 19533 19557 I Unity   : Not axe
-05-16 15:11:56.502 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.502 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.502 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.502 19533 19557 I Unity   : 
-05-16 15:11:56.502 19533 19557 W Unity   : Null? Obj dist 29.8957, best_obj 3.402823E+38, close False
-05-16 15:11:56.502 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.502 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.502 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.502 19533 19557 W Unity   : 
-05-16 15:11:56.503 19533 19557 W Unity   : 1/9 obj in temp
-05-16 15:11:56.503 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.503 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.503 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.503 19533 19557 W Unity   : 
-05-16 15:11:56.503 19533 19557 W Unity   : temp[i] Staff_Epic (ObjectAnchor)
-05-16 15:11:56.503 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.503 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.503 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.503 19533 19557 W Unity   : 
-05-16 15:11:56.504 19533 19557 I Unity   : here
-05-16 15:11:56.504 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.504 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.504 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.504 19533 19557 I Unity   : 
-05-16 15:11:56.504 19533 19557 I Unity   : Not axe
-05-16 15:11:56.504 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.504 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.504 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.504 19533 19557 I Unity   : 
-05-16 15:11:56.505 19533 19557 W Unity   : Null? Obj dist 29.40359, best_obj 3.402823E+38, close False
-05-16 15:11:56.505 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.505 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.505 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.505 19533 19557 W Unity   : 
-05-16 15:11:56.506 19533 19557 W Unity   : 2/9 obj in temp
-05-16 15:11:56.506 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.506 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.506 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.506 19533 19557 W Unity   : 
-05-16 15:11:56.506 19533 19557 W Unity   : temp[i] Low-Poly Skull_tutorial_1 (ObjectAnchor)
-05-16 15:11:56.506 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.506 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.506 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.506 19533 19557 W Unity   : 
-05-16 15:11:56.507 19533 19557 I Unity   : here
-05-16 15:11:56.507 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.507 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.507 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.507 19533 19557 I Unity   : 
-05-16 15:11:56.507 19533 19557 I Unity   : Not axe
-05-16 15:11:56.507 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.507 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.507 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.507 19533 19557 I Unity   : 
-05-16 15:11:56.508 19533 19557 W Unity   : Null? Obj dist 2.294802, best_obj 3.402823E+38, close False
-05-16 15:11:56.508 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.508 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.508 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.508 19533 19557 W Unity   : 
-05-16 15:11:56.508 19533 19557 W Unity   : 3/9 obj in temp
-05-16 15:11:56.508 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.508 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.508 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.508 19533 19557 W Unity   : 
-05-16 15:11:56.509 19533 19557 W Unity   : temp[i] Spear1H_Epic (ObjectAnchor)
-05-16 15:11:56.509 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.509 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.509 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.509 19533 19557 W Unity   : 
-05-16 15:11:56.509 19533 19557 I Unity   : here
-05-16 15:11:56.509 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.509 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.509 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.509 19533 19557 I Unity   : 
-05-16 15:11:56.510 19533 19557 I Unity   : Not axe
-05-16 15:11:56.510 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.510 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.510 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.510 19533 19557 I Unity   : 
-05-16 15:11:56.510 19533 19557 W Unity   : Null? Obj dist 29.73603, best_obj 3.402823E+38, close False
-05-16 15:11:56.510 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.510 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.510 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.510 19533 19557 W Unity   : 
-05-16 15:11:56.511 19533 19557 W Unity   : 4/9 obj in temp
-05-16 15:11:56.511 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.511 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.511 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.511 19533 19557 W Unity   : 
-05-16 15:11:56.511 19533 19557 W Unity   : temp[i] Low-Poly Skull_tutorial_2 (ObjectAnchor)
-05-16 15:11:56.511 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.511 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.511 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.511 19533 19557 W Unity   : 
-05-16 15:11:56.512 19533 19557 I Unity   : here
-05-16 15:11:56.512 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.512 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.512 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.512 19533 19557 I Unity   : 
-05-16 15:11:56.513 19533 19557 I Unity   : Not axe
-05-16 15:11:56.513 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.513 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.513 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.513 19533 19557 I Unity   : 
-05-16 15:11:56.513 19533 19557 W Unity   : Null? Obj dist 1.970617, best_obj 3.402823E+38, close False
-05-16 15:11:56.513 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.513 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.513 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.513 19533 19557 W Unity   : 
-05-16 15:11:56.514 19533 19557 W Unity   : 5/9 obj in temp
-05-16 15:11:56.514 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.514 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.514 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.514 19533 19557 W Unity   : 
-05-16 15:11:56.514 19533 19557 W Unity   : temp[i] Staff_Basic (ObjectAnchor)
-05-16 15:11:56.514 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.514 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.514 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.514 19533 19557 W Unity   : 
-05-16 15:11:56.515 19533 19557 I Unity   : here
-05-16 15:11:56.515 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.515 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.515 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.515 19533 19557 I Unity   : 
-05-16 15:11:56.515 19533 19557 I Unity   : Not axe
-05-16 15:11:56.515 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.515 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.515 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.515 19533 19557 I Unity   : 
-05-16 15:11:56.516 19533 19557 W Unity   : Null? Obj dist 29.61358, best_obj 3.402823E+38, close False
-05-16 15:11:56.516 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.516 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.516 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.516 19533 19557 W Unity   : 
-05-16 15:11:56.516 19533 19557 W Unity   : 6/9 obj in temp
-05-16 15:11:56.516 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.516 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.516 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.516 19533 19557 W Unity   : 
-05-16 15:11:56.517 19533 19557 W Unity   : temp[i] Staff_Basic_tutorial (ObjectAnchor)
-05-16 15:11:56.517 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.517 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.517 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.517 19533 19557 W Unity   : 
-05-16 15:11:56.517 19533 19557 I Unity   : here
-05-16 15:11:56.517 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.517 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.517 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.517 19533 19557 I Unity   : 
-05-16 15:11:56.518 19533 19557 I Unity   : Not axe
-05-16 15:11:56.518 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.518 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.518 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.518 19533 19557 I Unity   : 
-05-16 15:11:56.518 19533 19557 W Unity   : Null? Obj dist 0.3114623, best_obj 3.402823E+38, close True
-05-16 15:11:56.518 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.518 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.518 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.518 19533 19557 W Unity   : 
-05-16 15:11:56.519 19533 19557 W Unity   : 7/9 obj in temp
-05-16 15:11:56.519 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.519 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.519 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.519 19533 19557 W Unity   : 
-05-16 15:11:56.520 19533 19557 W Unity   : temp[i] handle (ObjectAnchor)
-05-16 15:11:56.520 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.520 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.520 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:56.520 19533 19557 W Unity   : 
-05-16 15:11:56.520 19533 19557 I Unity   : here
-05-16 15:11:56.520 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.520 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.520 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.520 19533 19557 I Unity   : 
-05-16 15:11:56.521 19533 19557 I Unity   : Axe
-05-16 15:11:56.521 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:56.521 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.521 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.521 19533 19557 I Unity   : 
-05-16 15:11:56.524 19533 19557 E Unity   : UnityException: Transform child out of bounds
-05-16 15:11:56.524 19533 19557 E Unity   :   at AxeHandle.getEnd () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:56.524 19533 19557 E Unity   :   at AxeHandle.setVary () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:56.524 19533 19557 E Unity   :   at AxeHandle.getDistance (UnityEngine.Vector3 posn, System.Single& object_distance, System.Boolean teleport) [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:56.524 19533 19557 E Unity   :   at HandController.which_object (UnityEngine.Vector3 posn, System.Boolean teleport) [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:56.524 19533 19557 E Unity   :   at HandController.handle_teleport_behavior () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:56.524 19533 19557 E Unity   :   at HandController.Update () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:56.524 19533 19557 E Unity   : 
-05-16 15:11:56.944 19533 19557 I Unity   : Teleport grabbing/etc...
-05-16 15:11:56.944 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:56.944 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:56.944 19533 19557 I Unity   : 
-05-16 15:11:58.323 19533 19557 I Unity   : Teleport grabbing/etc...
-05-16 15:11:58.323 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.323 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.323 19533 19557 I Unity   : 
-05-16 15:11:58.323 19533 19557 W Unity   : 0/9 obj in temp
-05-16 15:11:58.323 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.323 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.323 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.323 19533 19557 W Unity   : 
-05-16 15:11:58.324 19533 19557 W Unity   : temp[i] Spear2H_Epic (ObjectAnchor)
-05-16 15:11:58.324 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.324 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.324 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.324 19533 19557 W Unity   : 
-05-16 15:11:58.324 19533 19557 I Unity   : here
-05-16 15:11:58.324 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.324 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.324 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.324 19533 19557 I Unity   : 
-05-16 15:11:58.325 19533 19557 I Unity   : Not axe
-05-16 15:11:58.325 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.325 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.325 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.325 19533 19557 I Unity   : 
-05-16 15:11:58.325 19533 19557 W Unity   : Null? Obj dist 29.17526, best_obj 3.402823E+38, close False
-05-16 15:11:58.325 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.325 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.325 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.325 19533 19557 W Unity   : 
-05-16 15:11:58.326 19533 19557 W Unity   : 1/9 obj in temp
-05-16 15:11:58.326 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.326 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.326 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.326 19533 19557 W Unity   : 
-05-16 15:11:58.327 19533 19557 W Unity   : temp[i] Staff_Epic (ObjectAnchor)
-05-16 15:11:58.327 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.327 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.327 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.327 19533 19557 W Unity   : 
-05-16 15:11:58.327 19533 19557 I Unity   : here
-05-16 15:11:58.327 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.327 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.327 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.327 19533 19557 I Unity   : 
-05-16 15:11:58.328 19533 19557 I Unity   : Not axe
-05-16 15:11:58.328 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.328 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.328 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.328 19533 19557 I Unity   : 
-05-16 15:11:58.328 19533 19557 W Unity   : Null? Obj dist 28.7222, best_obj 3.402823E+38, close False
-05-16 15:11:58.328 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.328 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.328 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.328 19533 19557 W Unity   : 
-05-16 15:11:58.329 19533 19557 W Unity   : 2/9 obj in temp
-05-16 15:11:58.329 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.329 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.329 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.329 19533 19557 W Unity   : 
-05-16 15:11:58.329 19533 19557 W Unity   : temp[i] Low-Poly Skull_tutorial_1 (ObjectAnchor)
-05-16 15:11:58.329 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.329 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.329 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.329 19533 19557 W Unity   : 
-05-16 15:11:58.330 19533 19557 I Unity   : here
-05-16 15:11:58.330 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.330 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.330 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.330 19533 19557 I Unity   : 
-05-16 15:11:58.330 19533 19557 I Unity   : Not axe
-05-16 15:11:58.330 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.330 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.330 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.330 19533 19557 I Unity   : 
-05-16 15:11:58.331 19533 19557 W Unity   : Null? Obj dist 0.3820524, best_obj 3.402823E+38, close True
-05-16 15:11:58.331 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.331 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.331 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.331 19533 19557 W Unity   : 
-05-16 15:11:58.331 19533 19557 W Unity   : 3/9 obj in temp
-05-16 15:11:58.331 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.331 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.331 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.331 19533 19557 W Unity   : 
-05-16 15:11:58.332 19533 19557 W Unity   : temp[i] Spear1H_Epic (ObjectAnchor)
-05-16 15:11:58.332 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.332 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.332 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.332 19533 19557 W Unity   : 
-05-16 15:11:58.333 19533 19557 I Unity   : here
-05-16 15:11:58.333 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.333 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.333 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.333 19533 19557 I Unity   : 
-05-16 15:11:58.333 19533 19557 I Unity   : Not axe
-05-16 15:11:58.333 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.333 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.333 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.333 19533 19557 I Unity   : 
-05-16 15:11:58.334 19533 19557 W Unity   : Null? Obj dist 29.02614, best_obj 0.3820524, close False
-05-16 15:11:58.334 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.334 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.334 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.334 19533 19557 W Unity   : 
-05-16 15:11:58.334 19533 19557 W Unity   : 4/9 obj in temp
-05-16 15:11:58.334 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.334 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.334 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.334 19533 19557 W Unity   : 
-05-16 15:11:58.335 19533 19557 W Unity   : temp[i] Low-Poly Skull_tutorial_2 (ObjectAnchor)
-05-16 15:11:58.335 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.335 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.335 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.335 19533 19557 W Unity   : 
-05-16 15:11:58.335 19533 19557 I Unity   : here
-05-16 15:11:58.335 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.335 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.335 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.335 19533 19557 I Unity   : 
-05-16 15:11:58.336 19533 19557 I Unity   : Not axe
-05-16 15:11:58.336 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.336 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.336 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.336 19533 19557 I Unity   : 
-05-16 15:11:58.336 19533 19557 W Unity   : Null? Obj dist 0.05505609, best_obj 0.3820524, close True
-05-16 15:11:58.336 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.336 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.336 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.336 19533 19557 W Unity   : 
-05-16 15:11:58.337 19533 19557 W Unity   : 5/9 obj in temp
-05-16 15:11:58.337 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.337 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.337 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.337 19533 19557 W Unity   : 
-05-16 15:11:58.337 19533 19557 W Unity   : temp[i] Staff_Basic (ObjectAnchor)
-05-16 15:11:58.337 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.337 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.337 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.337 19533 19557 W Unity   : 
-05-16 15:11:58.338 19533 19557 I Unity   : here
-05-16 15:11:58.338 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.338 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.338 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.338 19533 19557 I Unity   : 
-05-16 15:11:58.338 19533 19557 I Unity   : Not axe
-05-16 15:11:58.338 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.338 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.338 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.338 19533 19557 I Unity   : 
-05-16 15:11:58.339 19533 19557 W Unity   : Null? Obj dist 28.91693, best_obj 0.05505609, close False
-05-16 15:11:58.339 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.339 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.339 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.339 19533 19557 W Unity   : 
-05-16 15:11:58.340 19533 19557 W Unity   : 6/9 obj in temp
-05-16 15:11:58.340 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.340 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.340 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.340 19533 19557 W Unity   : 
-05-16 15:11:58.340 19533 19557 W Unity   : temp[i] Staff_Basic_tutorial (ObjectAnchor)
-05-16 15:11:58.340 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.340 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.340 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.340 19533 19557 W Unity   : 
-05-16 15:11:58.341 19533 19557 I Unity   : here
-05-16 15:11:58.341 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.341 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.341 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.341 19533 19557 I Unity   : 
-05-16 15:11:58.341 19533 19557 I Unity   : Not axe
-05-16 15:11:58.341 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.341 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.341 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.341 19533 19557 I Unity   : 
-05-16 15:11:58.342 19533 19557 W Unity   : Null? Obj dist 1.981948, best_obj 0.05505609, close False
-05-16 15:11:58.342 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.342 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.342 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.342 19533 19557 W Unity   : 
-05-16 15:11:58.342 19533 19557 W Unity   : 7/9 obj in temp
-05-16 15:11:58.342 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.342 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.342 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.342 19533 19557 W Unity   : 
-05-16 15:11:58.343 19533 19557 W Unity   : temp[i] handle (ObjectAnchor)
-05-16 15:11:58.343 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.343 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.343 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:58.343 19533 19557 W Unity   : 
-05-16 15:11:58.343 19533 19557 I Unity   : here
-05-16 15:11:58.343 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.343 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.343 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.343 19533 19557 I Unity   : 
-05-16 15:11:58.344 19533 19557 I Unity   : Axe
-05-16 15:11:58.344 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:58.344 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.344 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.344 19533 19557 I Unity   : 
-05-16 15:11:58.346 19533 19557 E Unity   : UnityException: Transform child out of bounds
-05-16 15:11:58.346 19533 19557 E Unity   :   at AxeHandle.getEnd () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:58.346 19533 19557 E Unity   :   at AxeHandle.setVary () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:58.346 19533 19557 E Unity   :   at AxeHandle.getDistance (UnityEngine.Vector3 posn, System.Single& object_distance, System.Boolean teleport) [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:58.346 19533 19557 E Unity   :   at HandController.which_object (UnityEngine.Vector3 posn, System.Boolean teleport) [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:58.346 19533 19557 E Unity   :   at HandController.handle_teleport_behavior () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:58.346 19533 19557 E Unity   :   at HandController.Update () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:58.346 19533 19557 E Unity   : 
-05-16 15:11:58.851 19533 19557 I Unity   : Teleport grabbing/etc...
-05-16 15:11:58.851 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:58.851 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:58.851 19533 19557 I Unity   : 
-05-16 15:11:59.534 19533 19557 I Unity   : Teleport grabbing/etc...
-05-16 15:11:59.534 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.534 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.534 19533 19557 I Unity   : 
-05-16 15:11:59.535 19533 19557 W Unity   : 0/9 obj in temp
-05-16 15:11:59.535 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.535 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.535 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.535 19533 19557 W Unity   : 
-05-16 15:11:59.535 19533 19557 W Unity   : temp[i] Spear2H_Epic (ObjectAnchor)
-05-16 15:11:59.535 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.535 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.535 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.535 19533 19557 W Unity   : 
-05-16 15:11:59.536 19533 19557 I Unity   : here
-05-16 15:11:59.536 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.536 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.536 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.536 19533 19557 I Unity   : 
-05-16 15:11:59.537 19533 19557 I Unity   : Not axe
-05-16 15:11:59.537 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.537 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.537 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.537 19533 19557 I Unity   : 
-05-16 15:11:59.537 19533 19557 W Unity   : Null? Obj dist 28.92097, best_obj 3.402823E+38, close False
-05-16 15:11:59.537 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.537 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.537 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.537 19533 19557 W Unity   : 
-05-16 15:11:59.538 19533 19557 W Unity   : 1/9 obj in temp
-05-16 15:11:59.538 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.538 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.538 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.538 19533 19557 W Unity   : 
-05-16 15:11:59.538 19533 19557 W Unity   : temp[i] Staff_Epic (ObjectAnchor)
-05-16 15:11:59.538 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.538 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.538 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.538 19533 19557 W Unity   : 
-05-16 15:11:59.539 19533 19557 I Unity   : here
-05-16 15:11:59.539 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.539 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.539 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.539 19533 19557 I Unity   : 
-05-16 15:11:59.539 19533 19557 I Unity   : Not axe
-05-16 15:11:59.539 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.539 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.539 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.539 19533 19557 I Unity   : 
-05-16 15:11:59.540 19533 19557 W Unity   : Null? Obj dist 28.47534, best_obj 3.402823E+38, close False
-05-16 15:11:59.540 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.540 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.540 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.540 19533 19557 W Unity   : 
-05-16 15:11:59.540 19533 19557 W Unity   : 2/9 obj in temp
-05-16 15:11:59.540 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.540 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.540 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.540 19533 19557 W Unity   : 
-05-16 15:11:59.541 19533 19557 W Unity   : temp[i] Low-Poly Skull_tutorial_1 (ObjectAnchor)
-05-16 15:11:59.541 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.541 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.541 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.541 19533 19557 W Unity   : 
-05-16 15:11:59.541 19533 19557 I Unity   : here
-05-16 15:11:59.541 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.541 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.541 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.541 19533 19557 I Unity   : 
-05-16 15:11:59.542 19533 19557 I Unity   : Not axe
-05-16 15:11:59.542 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.542 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.542 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.542 19533 19557 I Unity   : 
-05-16 15:11:59.543 19533 19557 W Unity   : Null? Obj dist 0.05543822, best_obj 3.402823E+38, close True
-05-16 15:11:59.543 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.543 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.543 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.543 19533 19557 W Unity   : 
-05-16 15:11:59.543 19533 19557 W Unity   : 3/9 obj in temp
-05-16 15:11:59.543 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.543 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.543 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.543 19533 19557 W Unity   : 
-05-16 15:11:59.544 19533 19557 W Unity   : temp[i] Spear1H_Epic (ObjectAnchor)
-05-16 15:11:59.544 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.544 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.544 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.544 19533 19557 W Unity   : 
-05-16 15:11:59.544 19533 19557 I Unity   : here
-05-16 15:11:59.544 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.544 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.544 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.544 19533 19557 I Unity   : 
-05-16 15:11:59.545 19533 19557 I Unity   : Not axe
-05-16 15:11:59.545 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.545 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.545 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.545 19533 19557 I Unity   : 
-05-16 15:11:59.545 19533 19557 W Unity   : Null? Obj dist 28.77409, best_obj 0.05543822, close False
-05-16 15:11:59.545 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.545 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.545 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.545 19533 19557 W Unity   : 
-05-16 15:11:59.546 19533 19557 W Unity   : 4/9 obj in temp
-05-16 15:11:59.546 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.546 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.546 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.546 19533 19557 W Unity   : 
-05-16 15:11:59.546 19533 19557 W Unity   : temp[i] Low-Poly Skull_tutorial_2 (ObjectAnchor)
-05-16 15:11:59.546 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.546 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.546 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.546 19533 19557 W Unity   : 
-05-16 15:11:59.547 19533 19557 I Unity   : here
-05-16 15:11:59.547 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.547 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.547 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.547 19533 19557 I Unity   : 
-05-16 15:11:59.547 19533 19557 I Unity   : Not axe
-05-16 15:11:59.547 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.547 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.547 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.547 19533 19557 I Unity   : 
-05-16 15:11:59.548 19533 19557 W Unity   : Null? Obj dist 0.3829403, best_obj 0.05543822, close True
-05-16 15:11:59.548 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.548 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.548 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.548 19533 19557 W Unity   : 
-05-16 15:11:59.548 19533 19557 W Unity   : 5/9 obj in temp
-05-16 15:11:59.548 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.548 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.548 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.548 19533 19557 W Unity   : 
-05-16 15:11:59.549 19533 19557 W Unity   : temp[i] Staff_Basic (ObjectAnchor)
-05-16 15:11:59.549 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.549 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.549 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.549 19533 19557 W Unity   : 
-05-16 15:11:59.550 19533 19557 I Unity   : here
-05-16 15:11:59.550 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.550 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.550 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.550 19533 19557 I Unity   : 
-05-16 15:11:59.550 19533 19557 I Unity   : Not axe
-05-16 15:11:59.550 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.550 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.550 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.550 19533 19557 I Unity   : 
-05-16 15:11:59.551 19533 19557 W Unity   : Null? Obj dist 28.66696, best_obj 0.05543822, close False
-05-16 15:11:59.551 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.551 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.551 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.551 19533 19557 W Unity   : 
-05-16 15:11:59.551 19533 19557 W Unity   : 6/9 obj in temp
-05-16 15:11:59.551 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.551 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.551 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.551 19533 19557 W Unity   : 
-05-16 15:11:59.552 19533 19557 W Unity   : temp[i] Staff_Basic_tutorial (ObjectAnchor)
-05-16 15:11:59.552 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.552 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.552 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.552 19533 19557 W Unity   : 
-05-16 15:11:59.552 19533 19557 I Unity   : here
-05-16 15:11:59.552 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.552 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.552 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.552 19533 19557 I Unity   : 
-05-16 15:11:59.553 19533 19557 I Unity   : Not axe
-05-16 15:11:59.553 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.553 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.553 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.553 19533 19557 I Unity   : 
-05-16 15:11:59.553 19533 19557 W Unity   : Null? Obj dist 2.383491, best_obj 0.05543822, close False
-05-16 15:11:59.553 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.553 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.553 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.553 19533 19557 W Unity   : 
-05-16 15:11:59.554 19533 19557 W Unity   : 7/9 obj in temp
-05-16 15:11:59.554 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.554 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.554 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.554 19533 19557 W Unity   : 
-05-16 15:11:59.554 19533 19557 W Unity   : temp[i] handle (ObjectAnchor)
-05-16 15:11:59.554 19533 19557 W Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.554 19533 19557 W Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.554 19533 19557 W Unity   : HandController:Update()
-05-16 15:11:59.554 19533 19557 W Unity   : 
-05-16 15:11:59.555 19533 19557 I Unity   : here
-05-16 15:11:59.555 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.555 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.555 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.555 19533 19557 I Unity   : 
-05-16 15:11:59.555 19533 19557 I Unity   : Axe
-05-16 15:11:59.555 19533 19557 I Unity   : HandController:which_object(Vector3, Boolean)
-05-16 15:11:59.555 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:11:59.555 19533 19557 I Unity   : HandController:Update()
-05-16 15:11:59.555 19533 19557 I Unity   : 
-05-16 15:11:59.557 19533 19557 E Unity   : UnityException: Transform child out of bounds
-05-16 15:11:59.557 19533 19557 E Unity   :   at AxeHandle.getEnd () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:59.557 19533 19557 E Unity   :   at AxeHandle.setVary () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:59.557 19533 19557 E Unity   :   at AxeHandle.getDistance (UnityEngine.Vector3 posn, System.Single& object_distance, System.Boolean teleport) [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:59.557 19533 19557 E Unity   :   at HandController.which_object (UnityEngine.Vector3 posn, System.Boolean teleport) [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:59.557 19533 19557 E Unity   :   at HandController.handle_teleport_behavior () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:59.557 19533 19557 E Unity   :   at HandController.Update () [0x00000] in <00000000000000000000000000000000>:0 
-05-16 15:11:59.557 19533 19557 E Unity   : 
-05-16 15:12:00.383 19533 19557 I Unity   : Teleport grabbing/etc...
-05-16 15:12:00.383 19533 19557 I Unity   : HandController:handle_teleport_behavior()
-05-16 15:12:00.383 19533 19557 I Unity   : HandController:Update()
-05-16 15:12:00.383 19533 19557 I Unity   : 
-05-16 15:12:03.323 19533 19557 W Unity   : Destroying tuto door...
-05-16 15:12:03.323 19533 19557 W Unity   : BreakDoor:tutoBreak()
-05-16 15:12:03.323 19533 19557 W Unity   : HandController:Update()
-05-16 15:12:03.323 19533 19557 W Unity   : 
-05-16 15:12:03.323 19533 19557 W Unity   : Destroying tuto door...
-05-16 15:12:03.323 19533 19557 W Unity   : BreakDoor:tutoBreak()
-05-16 15:12:03.323 19533 19557 W Unity   : HandController:Update()
-05-16 15:12:03.323 19533 19557 W Unity   : 
-05-16 15:12:03.324 19533 19557 I Unity   : Game begins, start timer...
-05-16 15:12:03.324 19533 19557 I Unity   : HandController:Update()
-05-16 15:12:03.324 19533 19557 I Unity   : 
-05-16 15:12:10.480 19533 19557 I Unity   : [OVRManager] InputFocusLost event
-05-16 15:12:10.480 19533 19557 I Unity   : OVRManager:Update()
-05-16 15:12:10.480 19533 19557 I Unity   : 
-05-16 15:12:10.525 19533 19557 I Unity   : [OVRManager] OnApplicationFocus(false)
-05-16 15:12:13.984 19533 19557 I Unity   : [OVRManager] OnApplicationPause(true)
+05-16 15:49:48.713 22644 22644 W Unity   : Timeout while trying to pause the Unity Engine.
+05-16 15:49:53.093 22644 22644 W Unity   : Timeout while trying detaching primary window.
+05-16 15:49:55.398 22644 22802 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
+05-16 15:49:55.817 22644 22666 E Unity   : DllNotFoundException: Unable to load DLL 'AudioPluginOculusSpatializer'. Tried the load the following dynamic libraries: Unable to load dynamic library 'AudioPluginOculusSpatializer' because of 'Failed to open the requested dynamic library (0x06000000) dlerror() = dlopen failed: library "AudioPluginOculusSpatializer" not found
+05-16 15:49:55.817 22644 22666 E Unity   :   at ONSPAudioSource.OSP_SetGlobalVoiceLimit (System.Int32 VoiceLimit) [0x00000] in <00000000000000000000000000000000>:0 
+05-16 15:49:55.817 22644 22666 E Unity   : 
+05-16 15:49:55.858 22644 22666 I Unity   : Unity v2021.3.20f1, Oculus Utilities v1.82.0, OVRPlugin v1.82.0, SDK v1.0.26.
+05-16 15:49:55.858 22644 22666 I Unity   : OVRManager:InitOVRManager()
+05-16 15:49:55.858 22644 22666 I Unity   : 
+05-16 15:49:55.864 22644 22666 I Unity   : SystemHeadset Oculus_Quest, API OpenXR
+05-16 15:49:55.864 22644 22666 I Unity   : OVRManager:InitOVRManager()
+05-16 15:49:55.864 22644 22666 I Unity   : 
+05-16 15:49:55.866 22644 22666 I Unity   : OpenXR instance 0x100000000000002 session 0x200000000000020
+05-16 15:49:55.866 22644 22666 I Unity   : OVRManager:InitOVRManager()
+05-16 15:49:55.866 22644 22666 I Unity   : 
+05-16 15:49:55.887 22644 22666 I Unity   : OVRPlugin.Media initialized
+05-16 15:49:55.887 22644 22666 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
+05-16 15:49:55.887 22644 22666 I Unity   : OVRManager:InitOVRManager()
+05-16 15:49:55.887 22644 22666 I Unity   : 
+05-16 15:49:55.889 22644 22666 I Unity   : [MRC] SetMrcAudioSampleRate(48000)
+05-16 15:49:55.889 22644 22666 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
+05-16 15:49:55.889 22644 22666 I Unity   : OVRManager:InitOVRManager()
+05-16 15:49:55.889 22644 22666 I Unity   : 
+05-16 15:49:55.890 22644 22666 I Unity   : [MRC] Active InputVideoBufferType:TextureHandle
+05-16 15:49:55.890 22644 22666 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
+05-16 15:49:55.890 22644 22666 I Unity   : OVRManager:InitOVRManager()
+05-16 15:49:55.890 22644 22666 I Unity   : 
+05-16 15:49:55.892 22644 22666 I Unity   : [MRC] ActivateMode: Automatic
+05-16 15:49:55.892 22644 22666 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
+05-16 15:49:55.892 22644 22666 I Unity   : OVRManager:InitOVRManager()
+05-16 15:49:55.892 22644 22666 I Unity   : 
+05-16 15:49:55.909 22644 22666 I Unity   : Current display frequency 72, available frequencies [60, 60, 72, 72]
+05-16 15:49:55.909 22644 22666 I Unity   : OVRManager:InitOVRManager()
+05-16 15:49:55.909 22644 22666 I Unity   : 
+05-16 15:49:55.911 22644 22666 W Unity   : Local Dimming feature is not supported
+05-16 15:49:55.911 22644 22666 W Unity   : OVRManager:InitOVRManager()
+05-16 15:49:55.911 22644 22666 W Unity   : 
+05-16 15:49:56.037 22644 22666 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandRight)
+05-16 15:49:56.037 22644 22666 I Unity   : OVRControllerHelper:InitializeControllerModels()
+05-16 15:49:56.037 22644 22666 I Unity   : 
+05-16 15:49:56.071 22644 22666 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandLeft)
+05-16 15:49:56.071 22644 22666 I Unity   : OVRControllerHelper:InitializeControllerModels()
+05-16 15:49:56.071 22644 22666 I Unity   : 
+05-16 15:49:56.110 22644 22666 I Unity   : The current MSAA level is 0, but the recommended MSAA level is 4. Switching to the recommended level.
+05-16 15:49:56.110 22644 22666 I Unity   : OVRManager:Update()
+05-16 15:49:56.110 22644 22666 I Unity   : 
+05-16 15:49:56.110 22644 22666 I Unity   : [OVRManager] HMDAcquired event
+05-16 15:49:56.110 22644 22666 I Unity   : OVRManager:Update()
+05-16 15:49:56.110 22644 22666 I Unity   : 
+05-16 15:49:56.111 22644 22666 I Unity   : [OVRManager] HMDMounted event
+05-16 15:49:56.111 22644 22666 I Unity   : OVRManager:Update()
+05-16 15:49:56.111 22644 22666 I Unity   : 
+05-16 15:49:56.112 22644 22666 I Unity   : [OVRManager] VrFocusAcquired event
+05-16 15:49:56.112 22644 22666 I Unity   : OVRManager:Update()
+05-16 15:49:56.112 22644 22666 I Unity   : 
+05-16 15:49:56.115 22644 22666 I Unity   : [OVRManager] TrackingAcquired event
+05-16 15:49:56.115 22644 22666 I Unity   : OVRManager:Update()
+05-16 15:49:56.115 22644 22666 I Unity   : 
+05-16 15:49:56.116 22644 22666 I Unity   : Recenter event detected
+05-16 15:49:56.116 22644 22666 I Unity   : OVRDisplay:Update()
+05-16 15:49:56.116 22644 22666 I Unity   : OVRManager:Update()
+05-16 15:49:56.116 22644 22666 I Unity   : 
+05-16 15:49:56.449 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:49:56.449 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:49:56.449 22644 22666 I Unity   : HandController:Update()
+05-16 15:49:56.449 22644 22666 I Unity   : 
+05-16 15:49:56.552 22644 22666 W Unity   : Ignoring depth surface store action as it is memoryless
+05-16 15:49:58.327 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:49:58.327 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:49:58.327 22644 22666 I Unity   : HandController:Update()
+05-16 15:49:58.327 22644 22666 I Unity   : 
+05-16 15:49:58.908 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:49:58.908 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:49:58.908 22644 22666 I Unity   : HandController:Update()
+05-16 15:49:58.908 22644 22666 I Unity   : 
+05-16 15:49:58.908 22644 22666 W Unity   : Best object is Staff_Basic_tutorial w distance 44.32539
+05-16 15:49:58.908 22644 22666 W Unity   : HandController:which_object(Vector3, Boolean)
+05-16 15:49:58.908 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:49:58.908 22644 22666 W Unity   : HandController:Update()
+05-16 15:49:58.908 22644 22666 W Unity   : 
+05-16 15:49:58.912 22644 22666 W Unity   : Regular attaching... Object has parent: False
+05-16 15:49:58.912 22644 22666 W Unity   : ObjectAnchor:attach_to(HandController)
+05-16 15:49:58.912 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:49:58.912 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:49:58.912 22644 22666 W Unity   : HandController:Update()
+05-16 15:49:58.912 22644 22666 W Unity   : 
+05-16 15:49:58.913 22644 22666 W Unity   : Moving object Staff_Basic_tutorial from (4.10, 1.36, -4.54) to (2.64, 1.38, -4.59)
+05-16 15:49:58.913 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:49:58.913 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:49:58.913 22644 22666 W Unity   : HandController:Update()
+05-16 15:49:58.913 22644 22666 W Unity   : 
+05-16 15:50:02.014 22644 22666 I Unity   : Detatching...
+05-16 15:50:02.014 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:02.014 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:02.014 22644 22666 I Unity   : 
+05-16 15:50:04.213 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:04.213 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:04.213 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:04.213 22644 22666 I Unity   : 
+05-16 15:50:04.867 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:04.867 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:04.867 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:04.867 22644 22666 I Unity   : 
+05-16 15:50:04.868 22644 22666 W Unity   : Best object is Low-Poly Skull_tutorial_2 w distance 43.21695
+05-16 15:50:04.868 22644 22666 W Unity   : HandController:which_object(Vector3, Boolean)
+05-16 15:50:04.868 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:04.868 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:04.868 22644 22666 W Unity   : 
+05-16 15:50:04.868 22644 22666 W Unity   : Regular attaching... Object has parent: False
+05-16 15:50:04.868 22644 22666 W Unity   : ObjectAnchor:attach_to(HandController)
+05-16 15:50:04.868 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:50:04.868 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:04.868 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:04.868 22644 22666 W Unity   : 
+05-16 15:50:04.869 22644 22666 W Unity   : Moving object Low-Poly Skull_tutorial_2 from (3.57, 0.85, -2.65) to (2.26, 1.36, -3.05)
+05-16 15:50:04.869 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:50:04.869 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:04.869 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:04.869 22644 22666 W Unity   : 
+05-16 15:50:09.462 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:09.462 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:09.462 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:09.462 22644 22666 I Unity   : 
+05-16 15:50:09.463 22644 22666 I Unity   : Detatching...
+05-16 15:50:09.463 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:09.463 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:09.463 22644 22666 I Unity   : 
+05-16 15:50:11.456 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:11.456 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:11.456 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:11.456 22644 22666 I Unity   : 
+05-16 15:50:12.361 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:12.361 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:12.361 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:12.361 22644 22666 I Unity   : 
+05-16 15:50:12.362 22644 22666 W Unity   : Best object is Low-Poly Skull_tutorial_1 w distance 42.67838
+05-16 15:50:12.362 22644 22666 W Unity   : HandController:which_object(Vector3, Boolean)
+05-16 15:50:12.362 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:12.362 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:12.362 22644 22666 W Unity   : 
+05-16 15:50:12.362 22644 22666 W Unity   : Regular attaching... Object has parent: False
+05-16 15:50:12.362 22644 22666 W Unity   : ObjectAnchor:attach_to(HandController)
+05-16 15:50:12.362 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:50:12.362 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:12.362 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:12.362 22644 22666 W Unity   : 
+05-16 15:50:12.363 22644 22666 W Unity   : Moving object Low-Poly Skull_tutorial_1 from (3.62, 0.85, -2.22) to (2.57, 1.37, -2.69)
+05-16 15:50:12.363 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:50:12.363 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:12.363 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:12.363 22644 22666 W Unity   : 
+05-16 15:50:12.707 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:12.707 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:12.707 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:12.707 22644 22666 I Unity   : 
+05-16 15:50:13.739 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:13.739 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:13.739 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:13.739 22644 22666 I Unity   : 
+05-16 15:50:13.740 22644 22666 W Unity   : Best object is Low-Poly Skull_tutorial_2 w distance 42.77571
+05-16 15:50:13.740 22644 22666 W Unity   : HandController:which_object(Vector3, Boolean)
+05-16 15:50:13.740 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:13.740 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:13.740 22644 22666 W Unity   : 
+05-16 15:50:13.741 22644 22666 W Unity   : Regular attaching... Object has parent: False
+05-16 15:50:13.741 22644 22666 W Unity   : ObjectAnchor:attach_to(HandController)
+05-16 15:50:13.741 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:50:13.741 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:13.741 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:13.741 22644 22666 W Unity   : 
+05-16 15:50:13.741 22644 22666 W Unity   : Moving object Low-Poly Skull_tutorial_2 from (3.97, 0.85, -2.39) to (2.65, 1.35, -2.86)
+05-16 15:50:13.741 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:50:13.741 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:13.741 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:13.741 22644 22666 W Unity   : 
+05-16 15:50:15.146 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:15.146 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:15.146 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:15.146 22644 22666 I Unity   : 
+05-16 15:50:15.147 22644 22666 I Unity   : Detatching...
+05-16 15:50:15.147 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:15.147 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:15.147 22644 22666 I Unity   : 
+05-16 15:50:15.187 22644 22666 I Unity   : Detatching...
+05-16 15:50:15.187 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:15.187 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:15.187 22644 22666 I Unity   : 
+05-16 15:50:18.766 22644 22666 W Unity   : Destroying tuto door...
+05-16 15:50:18.766 22644 22666 W Unity   : BreakDoor:tutoBreak()
+05-16 15:50:18.766 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:18.766 22644 22666 W Unity   : 
+05-16 15:50:18.766 22644 22666 W Unity   : Destroying tuto door...
+05-16 15:50:18.766 22644 22666 W Unity   : BreakDoor:tutoBreak()
+05-16 15:50:18.766 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:18.766 22644 22666 W Unity   : 
+05-16 15:50:18.767 22644 22666 I Unity   : Game begins, start timer...
+05-16 15:50:18.767 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:18.767 22644 22666 I Unity   : 
+05-16 15:50:30.493 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:30.493 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:30.493 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:30.493 22644 22666 I Unity   : 
+05-16 15:50:32.472 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:32.472 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:32.472 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:32.472 22644 22666 I Unity   : 
+05-16 15:50:32.472 22644 22666 W Unity   : Best object is Spear1H_Epic w distance 16.80635
+05-16 15:50:32.472 22644 22666 W Unity   : HandController:which_object(Vector3, Boolean)
+05-16 15:50:32.472 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:32.472 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:32.472 22644 22666 W Unity   : 
+05-16 15:50:32.473 22644 22666 W Unity   : Regular attaching... Object has parent: False
+05-16 15:50:32.473 22644 22666 W Unity   : ObjectAnchor:attach_to(HandController)
+05-16 15:50:32.473 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:50:32.473 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:32.473 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:32.473 22644 22666 W Unity   : 
+05-16 15:50:32.473 22644 22666 W Unity   : Moving object Spear1H_Epic from (27.08, 0.79, 14.33) to (27.94, 1.36, 13.29)
+05-16 15:50:32.473 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:50:32.473 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:32.473 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:32.473 22644 22666 W Unity   : 
+05-16 15:50:34.438 22644 22666 I Unity   : Detatching...
+05-16 15:50:34.438 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:34.438 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:34.438 22644 22666 I Unity   : 
+05-16 15:50:42.419 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:42.419 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:42.419 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:42.419 22644 22666 I Unity   : 
+05-16 15:50:43.046 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:43.046 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:43.046 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:43.046 22644 22666 I Unity   : 
+05-16 15:50:43.373 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:43.373 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:43.373 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:43.373 22644 22666 I Unity   : 
+05-16 15:50:43.826 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:43.826 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:43.826 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:43.826 22644 22666 I Unity   : 
+05-16 15:50:44.258 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:44.258 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:44.258 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:44.258 22644 22666 I Unity   : 
+05-16 15:50:44.259 22644 22666 W Unity   : Best object is Spear2H_Epic w distance 15.91613
+05-16 15:50:44.259 22644 22666 W Unity   : HandController:which_object(Vector3, Boolean)
+05-16 15:50:44.259 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:44.259 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:44.259 22644 22666 W Unity   : 
+05-16 15:50:44.259 22644 22666 W Unity   : Regular attaching... Object has parent: False
+05-16 15:50:44.259 22644 22666 W Unity   : ObjectAnchor:attach_to(HandController)
+05-16 15:50:44.259 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:50:44.259 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:44.259 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:44.259 22644 22666 W Unity   : 
+05-16 15:50:44.260 22644 22666 W Unity   : Moving object Spear2H_Epic from (27.08, 0.91, 14.58) to (27.93, 1.39, 16.21)
+05-16 15:50:44.260 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:50:44.260 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:44.260 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:44.260 22644 22666 W Unity   : 
+05-16 15:50:47.475 22644 22666 I Unity   : Detatching...
+05-16 15:50:47.475 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:47.475 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:47.475 22644 22666 I Unity   : 
+05-16 15:50:47.914 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:47.914 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:47.914 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:47.914 22644 22666 I Unity   : 
+05-16 15:50:48.147 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:48.147 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:48.147 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:48.147 22644 22666 I Unity   : 
+05-16 15:50:48.148 22644 22666 W Unity   : Best object is Spear2H_Epic w distance 15.18754
+05-16 15:50:48.148 22644 22666 W Unity   : HandController:which_object(Vector3, Boolean)
+05-16 15:50:48.148 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:48.148 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:48.148 22644 22666 W Unity   : 
+05-16 15:50:48.148 22644 22666 W Unity   : Regular attaching... Object has parent: False
+05-16 15:50:48.148 22644 22666 W Unity   : ObjectAnchor:attach_to(HandController)
+05-16 15:50:48.148 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:50:48.148 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:48.148 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:48.148 22644 22666 W Unity   : 
+05-16 15:50:48.149 22644 22666 W Unity   : Moving object Spear2H_Epic from (28.36, 0.75, 15.21) to (28.04, 1.42, 16.26)
+05-16 15:50:48.149 22644 22666 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-16 15:50:48.149 22644 22666 W Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:48.149 22644 22666 W Unity   : HandController:Update()
+05-16 15:50:48.149 22644 22666 W Unity   : 
+05-16 15:50:50.934 22644 22666 I Unity   : Teleport grabbing/etc...
+05-16 15:50:50.934 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:50.934 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:50.934 22644 22666 I Unity   : 
+05-16 15:50:50.935 22644 22666 I Unity   : Detatching...
+05-16 15:50:50.935 22644 22666 I Unity   : HandController:handle_teleport_behavior()
+05-16 15:50:50.935 22644 22666 I Unity   : HandController:Update()
+05-16 15:50:50.935 22644 22666 I Unity   : 
+05-16 15:50:55.631 22644 22666 I Unity   : [OVRManager] InputFocusLost event
+05-16 15:50:55.631 22644 22666 I Unity   : OVRManager:Update()
+05-16 15:50:55.631 22644 22666 I Unity   : 
+05-16 15:50:55.770 22644 22666 I Unity   : [OVRManager] OnApplicationFocus(false)
+05-16 15:50:56.011 22644 22666 I Unity   : [OVRManager] OnApplicationFocus(true)
+05-16 15:50:56.027 22644 22666 I Unity   : [OVRManager] InputFocusAcquired event
+05-16 15:50:56.027 22644 22666 I Unity   : OVRManager:Update()
+05-16 15:50:56.027 22644 22666 I Unity   : 
+05-16 15:50:56.074 22644 22666 I Unity   : [OVRManager] InputFocusLost event
+05-16 15:50:56.074 22644 22666 I Unity   : OVRManager:Update()
+05-16 15:50:56.074 22644 22666 I Unity   : 
+05-16 15:50:56.143 22644 22666 I Unity   : [OVRManager] OnApplicationFocus(false)
+05-16 15:50:58.210 22644 22666 I Unity   : [OVRManager] OnApplicationPause(true)

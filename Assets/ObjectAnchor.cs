@@ -13,6 +13,7 @@ public class ObjectAnchor : MonoBehaviour
     public Vector3 throwDirection;
 	public float teleportRadius = 1.5f;
 	public bool can_teleport = true;
+	public bool need_parent = false;
 
 	// instead of having object distance, radius, etc be defined here
 	// have specific object deal with wheter it is "close enough"
@@ -36,7 +37,7 @@ public class ObjectAnchor : MonoBehaviour
 	public void attach_to(HandController hand_controller)
 	{
 		GameObject parent = null;
-		if (transform.parent)
+		if (transform.parent && need_parent)
 		{
 			parent = transform.parent.gameObject;
 		}
@@ -75,7 +76,7 @@ public class ObjectAnchor : MonoBehaviour
         if (this.hand_controller != hand_controller) return;
 
 		GameObject parent = null;
-		if (transform.parent)
+		if (transform.parent && need_parent)
 		{
 			parent = transform.parent.gameObject;
 			parent.transform.SetParent(null);
@@ -129,7 +130,7 @@ public class ObjectAnchor : MonoBehaviour
 		attach_to(hand_controller);
 
 		// also make sure object "flies to" hand
-		Debug.LogWarningFormat("Moving object from {0} to {1}", transform.position, hand_controller.transform.position);
+		Debug.LogWarningFormat("Moving object {2} from {0} to {1}", transform.position, hand_controller.transform.position, transform.gameObject.name);
 
 		//transform.position = hand_controller.transform.position;
 		if (transform.parent)

@@ -239,6 +239,7 @@ public class HandController : MonoBehaviour
 				best_object_distance = object_distance;
 			}
 		}
+		if (best_object_id != -1) Debug.LogWarningFormat("Best object is {0} w distance {1}", temp[best_object_id].name, object_distance);
 		return best_object_id;
 	}
 

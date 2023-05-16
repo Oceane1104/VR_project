@@ -70,7 +70,6 @@ public class AxeHandle : MonoBehaviour
 
         if (dir == Vector3.Normalize(L1_to_start) || dir != Vector3.Normalize(end_to_L1))
         {
-            Debug.LogWarningFormat("point L1 {0} is on the handle!", L1);
             L1b = true;
         }
 
@@ -84,7 +83,6 @@ public class AxeHandle : MonoBehaviour
 
         if (dir == Vector3.Normalize(L2_to_start) || dir != Vector3.Normalize(end_to_L2))
         {
-            Debug.LogWarningFormat("point L2 {0} is on the handle!", L2);
             L2b = true;
         }
     }

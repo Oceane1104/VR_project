@@ -55,15 +55,12 @@ public class AxePosn : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         GameObject obj = collision.gameObject;
-        Debug.LogWarningFormat("Axe collided w {0}", obj.name);
         if (obj.name == "Door")
         {
             GameObject child = this.transform.GetChild(1).gameObject; // get which part of object collided
             //GameObject child = obj;
             if (child == null) Debug.Log("Null :(");
-            Debug.LogWarningFormat("Collider (child) name: {0}", child.name);
             float vel = child.GetComponent<AxeCollider>().vel.magnitude;
-            Debug.LogWarningFormat("Velocity: {0}", vel);
 
             // detatch for hand & reatatch to door
             ObjectAnchor anchor = transform.GetChild(0).gameObject.GetComponent<ObjectAnchor>(); // anchor belongs to handle
