@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BreakDoor : MonoBehaviour
 {
-    public AudioSource[] audioSources; 
+    private AudioSource[] audioSources; 
     private AudioSource HitSound; // make noise if hit w something
     private AudioSource ShatterSound; // make noise if shatter
 
