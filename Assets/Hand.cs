@@ -4,21 +4,89 @@ using System.Collections;
 using System.Collections.Generic;
 
 
+/*public class Hand : MonoBehaviour
+{
+    public Climber climber = null;
+    public OVRInput.Controller controller = OVRInput.Controller.None;
+    public LayerMask climbPointLayer;
+    public float climbingSpeed = 2f;
+
+    private bool isGrabbing = false;
+    private Transform currentClimbPoint = null;
+
+    private void Update()
+    {
+
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, controller))
+        {
+            GrabClimbPoint();
+        }
+
+
+        if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger, controller))
+        {
+            ReleaseClimbPoint();
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (isGrabbing && currentClimbPoint != null)
+        {
+            Climb();
+        }
+    }
+
+    private void GrabClimbPoint()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, climbPointLayer))
+        {
+            currentClimbPoint = hit.transform;
+            climber.SetHand(this);
+            isGrabbing = true;
+        }
+    }
+
+    public void ReleaseClimbPoint()
+    {
+        climber.ClearHand();
+        currentClimbPoint = null;
+        isGrabbing = false;
+    }
+
+    private void Climb()
+    {
+        //float verticalInput = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick, controller).y;
+        //float climbSpeed = verticalInput * climbingSpeed;
+        climber.Climb(currentClimbPoint, climbingSpeed);
+    }
+}*/
+
+
+
+
+
+
+
+
 public class Hand : MonoBehaviour
 {
     public Climber climber = null;
     public OVRInput.Controller controller = OVRInput.Controller.None;
+    public Vector3 middleposition;
     public Vector3 Delta { private set; get; } = Vector3.zero;
 
     private Vector3 lastPosition = Vector3.zero;
     private GameObject currentPoint = null;
     public List<GameObject> contactPoints = new List<GameObject>();
-    private MeshRenderer meshRenderer = null;
+    //private bool BoolClimb = false;
+
+
 
 
     private void Awake()
     {
-        meshRenderer = GetComponentInChildren<MeshRenderer>();
     }
 
     private void Start()
@@ -28,19 +96,18 @@ public class Hand : MonoBehaviour
 
     private void Update()
     {
+
         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, controller))
         {
-            Debug.Log("Button activated ");
             GrabPoint();
         }
 
 
         if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger, controller))
         {
-            Debug.Log("Button desactivated ");
+            //Debug.LogWarning("Button is released");
             ReleasePoint();
         }
-
     }
 
     private void fixedUpdate()
@@ -52,54 +119,77 @@ public class Hand : MonoBehaviour
     {
         Delta = lastPosition - transform.position;
     }
-    private void GrabPoint()
+    public void GrabPoint()
     {
+
         currentPoint = Utility.GetNearest(transform.position, contactPoints);
+        //Debug.LogWarning("current" +currentPoint.transform.position);
         if (currentPoint)
         {
-            //climber.SetHand(this);
-            //meshRenderer.enabled = false;
+            //Debug.LogWarning("Grabpoint yes");
+            climber.SetHand(this);
         }
-
     }
 
     public void ReleasePoint()
     {
         if (currentPoint)
         {
-            //climber.Clearhand();
-            //meshRenderer.enabled = true;
+            //Debug.LogWarning("ReleasePoint yes");
+            climber.ClearHand();
         }
         currentPoint = null;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        AddPoint(other.gameObject);
-        Debug.Log("Trigger activated ");
+        if (other.CompareTag("ClimbPoint"))
+        {
+            //Debug.LogWarning("Trigger activated");
+            //AddPoint(other.gameObject);
+            contactPoints.Add(other.gameObject);
+        }
+
     }
 
-    private void AddPoint(GameObject newObject)
-    {
-        if (newObject.CompareTag("ClimbPoint"))
-        {
-            contactPoints.Add(newObject);
-        }
-            
-    }
+
 
     private void OnTriggerExit(Collider other)
     {
-        RemovePoint(other.gameObject);
-        Debug.Log("Trigger desactivated ");
-    }
-
-    private void RemovePoint(GameObject newObject)
-    {
-        if (newObject.CompareTag("ClimbPoint"))
+        if (other.CompareTag("ClimbPoint"))
         {
-            contactPoints.Remove(newObject);
+            contactPoints.Remove(other.gameObject);
+
         }
+        //Debug.LogWarning("Trigger desactivated");
     }
 
+
+    public GameObject GetCurrentPoint()
+    {
+        if (currentPoint != null)
+        {
+            return currentPoint;
+        }
+        else
+            return null;
+    }
 }
+
+
+/*private void AddPoint(GameObject newObject)
+{
+    if (newObject.CompareTag("ClimbPoint"))
+    {
+        contactPoints.Add(newObject);
+    }
+}
+private void RemovePoint(GameObject newObject)
+{
+    if (newObject.CompareTag("ClimbPoint"))
+    {
+        contactPoints.Remove(newObject);
+    }
+}
+
+}*/
