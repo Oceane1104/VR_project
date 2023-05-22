@@ -58,6 +58,14 @@ public class AxePosn : MonoBehaviour
         Debug.LogWarningFormat("Collided w {0} w tag {1}", obj.name, obj.tag);
         if (obj.tag.Equals("DoorToBreak"))
         {
+            if (obj.GetComponent<BreakDoor>().destroyed)
+            {
+                Debug.Log("Re-hit destroyed door?");
+                GetComponent<Rigidbody>().isKinematic = false;
+                target = null;
+                return;
+            }
+
             // change target/etc so new door in case there are multiple
             target = collision.gameObject.transform;
             doorPosn = target.position;
@@ -85,13 +93,16 @@ public class AxePosn : MonoBehaviour
 
            if (ret == 1)
             {
-                Debug.Log("Destroyed door, do it again?");
+                Destroy(target);
+                target = null;
+                GetComponent<Rigidbody>().isKinematic = false;
+                /*Debug.Log("Destroyed door, do it again?");
                 if (obj)
                 {
                     Debug.LogWarningFormat("Destroyed obj name {0}", obj.name);
                     Destroy(obj);
                     Debug.Log("Done it again!!");
-                }
+                }*/
                 no_move = false;
             }
         }

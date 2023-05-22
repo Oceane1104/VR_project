@@ -1,0 +1,457 @@
+--------- beginning of system
+--------- beginning of tracking
+--------- beginning of main
+05-22 15:11:39.013  5919  6065 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
+05-22 15:11:43.912  5919  5919 W Unity   : Timeout while trying to pause the Unity Engine.
+05-22 15:11:44.853  5919  6065 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
+05-22 15:11:44.915  5919  5940 E Unity   : DllNotFoundException: Unable to load DLL 'AudioPluginOculusSpatializer'. Tried the load the following dynamic libraries: Unable to load dynamic library 'AudioPluginOculusSpatializer' because of 'Failed to open the requested dynamic library (0x06000000) dlerror() = dlopen failed: library "AudioPluginOculusSpatializer" not found
+05-22 15:11:44.915  5919  5940 E Unity   :   at ONSPAudioSource.OSP_SetGlobalVoiceLimit (System.Int32 VoiceLimit) [0x00000] in <00000000000000000000000000000000>:0 
+05-22 15:11:44.915  5919  5940 E Unity   : 
+05-22 15:11:44.938  5919  5940 I Unity   : Unity v2021.3.20f1, Oculus Utilities v1.82.0, OVRPlugin v1.82.0, SDK v1.0.26.
+05-22 15:11:44.938  5919  5940 I Unity   : OVRManager:InitOVRManager()
+05-22 15:11:44.938  5919  5940 I Unity   : 
+05-22 15:11:44.940  5919  5940 I Unity   : SystemHeadset Oculus_Quest, API OpenXR
+05-22 15:11:44.940  5919  5940 I Unity   : OVRManager:InitOVRManager()
+05-22 15:11:44.940  5919  5940 I Unity   : 
+05-22 15:11:44.942  5919  5940 I Unity   : OpenXR instance 0x100000000000002 session 0x200000000000020
+05-22 15:11:44.942  5919  5940 I Unity   : OVRManager:InitOVRManager()
+05-22 15:11:44.942  5919  5940 I Unity   : 
+05-22 15:11:44.948  5919  5940 I Unity   : OVRPlugin.Media initialized
+05-22 15:11:44.948  5919  5940 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
+05-22 15:11:44.948  5919  5940 I Unity   : OVRManager:InitOVRManager()
+05-22 15:11:44.948  5919  5940 I Unity   : 
+05-22 15:11:44.950  5919  5940 I Unity   : [MRC] SetMrcAudioSampleRate(48000)
+05-22 15:11:44.950  5919  5940 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
+05-22 15:11:44.950  5919  5940 I Unity   : OVRManager:InitOVRManager()
+05-22 15:11:44.950  5919  5940 I Unity   : 
+05-22 15:11:44.951  5919  5940 I Unity   : [MRC] Active InputVideoBufferType:TextureHandle
+05-22 15:11:44.951  5919  5940 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
+05-22 15:11:44.951  5919  5940 I Unity   : OVRManager:InitOVRManager()
+05-22 15:11:44.951  5919  5940 I Unity   : 
+05-22 15:11:44.953  5919  5940 I Unity   : [MRC] ActivateMode: Automatic
+05-22 15:11:44.953  5919  5940 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
+05-22 15:11:44.953  5919  5940 I Unity   : OVRManager:InitOVRManager()
+05-22 15:11:44.953  5919  5940 I Unity   : 
+05-22 15:11:44.960  5919  5940 I Unity   : Current display frequency 72, available frequencies [60, 60, 72, 72]
+05-22 15:11:44.960  5919  5940 I Unity   : OVRManager:InitOVRManager()
+05-22 15:11:44.960  5919  5940 I Unity   : 
+05-22 15:11:44.962  5919  5940 W Unity   : Local Dimming feature is not supported
+05-22 15:11:44.962  5919  5940 W Unity   : OVRManager:InitOVRManager()
+05-22 15:11:44.962  5919  5940 W Unity   : 
+05-22 15:11:45.068  5919  5940 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandRight)
+05-22 15:11:45.068  5919  5940 I Unity   : OVRControllerHelper:InitializeControllerModels()
+05-22 15:11:45.068  5919  5940 I Unity   : 
+05-22 15:11:45.072  5919  5940 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandLeft)
+05-22 15:11:45.072  5919  5940 I Unity   : OVRControllerHelper:InitializeControllerModels()
+05-22 15:11:45.072  5919  5940 I Unity   : 
+05-22 15:11:45.104  5919  5940 I Unity   : The current MSAA level is 0, but the recommended MSAA level is 4. Switching to the recommended level.
+05-22 15:11:45.104  5919  5940 I Unity   : OVRManager:Update()
+05-22 15:11:45.104  5919  5940 I Unity   : 
+05-22 15:11:45.104  5919  5940 I Unity   : [OVRManager] HMDAcquired event
+05-22 15:11:45.104  5919  5940 I Unity   : OVRManager:Update()
+05-22 15:11:45.104  5919  5940 I Unity   : 
+05-22 15:11:45.105  5919  5940 I Unity   : [OVRManager] HMDMounted event
+05-22 15:11:45.105  5919  5940 I Unity   : OVRManager:Update()
+05-22 15:11:45.105  5919  5940 I Unity   : 
+05-22 15:11:45.106  5919  5940 I Unity   : [OVRManager] VrFocusAcquired event
+05-22 15:11:45.106  5919  5940 I Unity   : OVRManager:Update()
+05-22 15:11:45.106  5919  5940 I Unity   : 
+05-22 15:11:45.109  5919  5940 I Unity   : [OVRManager] TrackingAcquired event
+05-22 15:11:45.109  5919  5940 I Unity   : OVRManager:Update()
+05-22 15:11:45.109  5919  5940 I Unity   : 
+05-22 15:11:45.110  5919  5940 I Unity   : Recenter event detected
+05-22 15:11:45.110  5919  5940 I Unity   : OVRDisplay:Update()
+05-22 15:11:45.110  5919  5940 I Unity   : OVRManager:Update()
+05-22 15:11:45.110  5919  5940 I Unity   : 
+05-22 15:11:45.250  5919  5940 W Unity   : Ignoring depth surface store action as it is memoryless
+05-22 15:11:45.539  5919  5940 W Unity   : Collided w Terrain w tag Untagged
+05-22 15:11:45.539  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:45.539  5919  5940 W Unity   : 
+05-22 15:11:45.540  5919  5940 W Unity   : Collided w Terrain w tag Untagged
+05-22 15:11:45.540  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:45.540  5919  5940 W Unity   : 
+05-22 15:11:45.560  5919  5940 W Unity   : Collided w Terrain w tag Untagged
+05-22 15:11:45.560  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:45.560  5919  5940 W Unity   : 
+05-22 15:11:45.603  5919  5940 W Unity   : Collided w Terrain w tag Untagged
+05-22 15:11:45.603  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:45.603  5919  5940 W Unity   : 
+05-22 15:11:48.634  5919  5940 I Unity   : Teleport grabbing/etc...
+05-22 15:11:48.634  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:48.634  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:48.634  5919  5940 I Unity   : 
+05-22 15:11:49.781  5919  5940 I Unity   : Teleport grabbing/etc...
+05-22 15:11:49.781  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:49.781  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:49.781  5919  5940 I Unity   : 
+05-22 15:11:49.781  5919  5940 W Unity   : Best object is handle w distance 44.27179
+05-22 15:11:49.781  5919  5940 W Unity   : HandController:which_object(Vector3, Boolean)
+05-22 15:11:49.781  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:49.781  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:49.781  5919  5940 W Unity   : 
+05-22 15:11:49.782  5919  5940 W Unity   : Regular attaching... Object has parent: True
+05-22 15:11:49.782  5919  5940 W Unity   : ObjectAnchor:attach_to(HandController)
+05-22 15:11:49.782  5919  5940 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-22 15:11:49.782  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:49.782  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:49.782  5919  5940 W Unity   : 
+05-22 15:11:49.783  5919  5940 W Unity   : Moving object handle from (0.25, 0.03, -1.02) to (-0.19, 1.29, -1.79)
+05-22 15:11:49.783  5919  5940 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-22 15:11:49.783  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:49.783  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:49.783  5919  5940 W Unity   : 
+05-22 15:11:51.826  5919  5940 I Unity   : Detatching...
+05-22 15:11:51.826  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:51.826  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:51.826  5919  5940 I Unity   : 
+05-22 15:11:51.839  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:11:51.839  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:51.839  5919  5940 W Unity   : 
+05-22 15:11:51.840  5919  5940 I Unity   : Detatching...
+05-22 15:11:51.840  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:51.840  5919  5940 I Unity   : 
+05-22 15:11:51.840  5919  5940 W Unity   : Glued to posn (-0.97, -1.27, 0.44)
+05-22 15:11:51.840  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:51.840  5919  5940 W Unity   : 
+05-22 15:11:51.841  5919  5940 W Unity   : New resistance: 29.32124
+05-22 15:11:51.841  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:11:51.841  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:51.841  5919  5940 W Unity   : 
+05-22 15:11:51.842  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:11:51.842  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:51.842  5919  5940 W Unity   : 
+05-22 15:11:51.842  5919  5940 I Unity   : Detatching...
+05-22 15:11:51.842  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:51.842  5919  5940 I Unity   : 
+05-22 15:11:51.843  5919  5940 W Unity   : New resistance: 28.64248
+05-22 15:11:51.843  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:11:51.843  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:51.843  5919  5940 W Unity   : 
+05-22 15:11:53.247  5919  5940 I Unity   : Teleport grabbing/etc...
+05-22 15:11:53.247  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:53.247  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:53.247  5919  5940 I Unity   : 
+05-22 15:11:53.248  5919  5940 W Unity   : Best object is handle w distance 46.36176
+05-22 15:11:53.248  5919  5940 W Unity   : HandController:which_object(Vector3, Boolean)
+05-22 15:11:53.248  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:53.248  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:53.248  5919  5940 W Unity   : 
+05-22 15:11:53.248  5919  5940 W Unity   : Regular attaching... Object has parent: True
+05-22 15:11:53.248  5919  5940 W Unity   : ObjectAnchor:attach_to(HandController)
+05-22 15:11:53.248  5919  5940 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-22 15:11:53.248  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:53.248  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:53.248  5919  5940 W Unity   : 
+05-22 15:11:53.249  5919  5940 W Unity   : Moving object handle from (-1.91, 1.63, -1.42) to (-1.88, 1.51, -1.64)
+05-22 15:11:53.249  5919  5940 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-22 15:11:53.249  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:53.249  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:53.249  5919  5940 W Unity   : 
+05-22 15:11:54.125  5919  5940 I Unity   : Detatching...
+05-22 15:11:54.125  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:54.125  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:54.125  5919  5940 I Unity   : 
+05-22 15:11:54.138  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:11:54.138  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:54.138  5919  5940 W Unity   : 
+05-22 15:11:54.139  5919  5940 I Unity   : Detatching...
+05-22 15:11:54.139  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:54.139  5919  5940 I Unity   : 
+05-22 15:11:54.140  5919  5940 W Unity   : New resistance: 27.46129
+05-22 15:11:54.140  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:11:54.140  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:54.140  5919  5940 W Unity   : 
+05-22 15:11:54.140  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:11:54.140  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:54.140  5919  5940 W Unity   : 
+05-22 15:11:54.141  5919  5940 I Unity   : Detatching...
+05-22 15:11:54.141  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:54.141  5919  5940 I Unity   : 
+05-22 15:11:54.141  5919  5940 W Unity   : New resistance: 26.2801
+05-22 15:11:54.141  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:11:54.141  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:54.141  5919  5940 W Unity   : 
+05-22 15:11:54.835  5919  5940 I Unity   : Vanilla grabbing...
+05-22 15:11:54.835  5919  5940 I Unity   : HandController:handle_controller_behavior()
+05-22 15:11:54.835  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:54.835  5919  5940 I Unity   : 
+05-22 15:11:54.836  5919  5940 W Unity   : RightHandAnchor get closed
+05-22 15:11:54.836  5919  5940 W Unity   : HandController:handle_controller_behavior()
+05-22 15:11:54.836  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:54.836  5919  5940 W Unity   : 
+05-22 15:11:54.837  5919  5940 I Unity   : Get Distance via special method
+05-22 15:11:54.837  5919  5940 I Unity   : AxeHandle:getDistance(Vector3, Single&, Boolean)
+05-22 15:11:54.837  5919  5940 I Unity   : HandController:which_object(Vector3, Boolean)
+05-22 15:11:54.837  5919  5940 I Unity   : HandController:handle_controller_behavior()
+05-22 15:11:54.837  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:54.837  5919  5940 I Unity   : 
+05-22 15:11:54.838  5919  5940 I Unity   : Get Distance via special method
+05-22 15:11:54.838  5919  5940 I Unity   : AxeHandle:getDistance(Vector3, Single&, Boolean)
+05-22 15:11:54.838  5919  5940 I Unity   : HandController:which_object(Vector3, Boolean)
+05-22 15:11:54.838  5919  5940 I Unity   : HandController:handle_controller_behavior()
+05-22 15:11:54.838  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:54.838  5919  5940 I Unity   : 
+05-22 15:11:54.838  5919  5940 W Unity   : Best object is handle w distance Infinity
+05-22 15:11:54.838  5919  5940 W Unity   : HandController:which_object(Vector3, Boolean)
+05-22 15:11:54.838  5919  5940 W Unity   : HandController:handle_controller_behavior()
+05-22 15:11:54.838  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:54.838  5919  5940 W Unity   : 
+05-22 15:11:54.839  5919  5940 W Unity   : RightHandAnchor grasped handle
+05-22 15:11:54.839  5919  5940 W Unity   : HandController:handle_controller_behavior()
+05-22 15:11:54.839  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:54.839  5919  5940 W Unity   : 
+05-22 15:11:54.839  5919  5940 W Unity   : Regular attaching... Object has parent: True
+05-22 15:11:54.839  5919  5940 W Unity   : ObjectAnchor:attach_to(HandController)
+05-22 15:11:54.839  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:54.839  5919  5940 W Unity   : 
+05-22 15:11:55.587  5919  5940 W Unity   : RightHandAnchor released handle
+05-22 15:11:55.587  5919  5940 W Unity   : HandController:handle_controller_behavior()
+05-22 15:11:55.587  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:55.587  5919  5940 W Unity   : 
+05-22 15:11:55.588  5919  5940 I Unity   : Detatching...
+05-22 15:11:55.588  5919  5940 I Unity   : HandController:handle_controller_behavior()
+05-22 15:11:55.588  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:55.588  5919  5940 I Unity   : 
+05-22 15:11:55.615  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:11:55.615  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:55.615  5919  5940 W Unity   : 
+05-22 15:11:55.615  5919  5940 I Unity   : Detatching...
+05-22 15:11:55.615  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:55.615  5919  5940 I Unity   : 
+05-22 15:11:55.616  5919  5940 W Unity   : New resistance: 26.28007
+05-22 15:11:55.616  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:11:55.616  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:55.616  5919  5940 W Unity   : 
+05-22 15:11:55.617  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:11:55.617  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:55.617  5919  5940 W Unity   : 
+05-22 15:11:55.617  5919  5940 I Unity   : Detatching...
+05-22 15:11:55.617  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:55.617  5919  5940 I Unity   : 
+05-22 15:11:55.618  5919  5940 W Unity   : New resistance: 26.28003
+05-22 15:11:55.618  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:11:55.618  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:55.618  5919  5940 W Unity   : 
+05-22 15:11:56.466  5919  5940 I Unity   : Vanilla grabbing...
+05-22 15:11:56.466  5919  5940 I Unity   : HandController:handle_controller_behavior()
+05-22 15:11:56.466  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:56.466  5919  5940 I Unity   : 
+05-22 15:11:56.466  5919  5940 W Unity   : RightHandAnchor get closed
+05-22 15:11:56.466  5919  5940 W Unity   : HandController:handle_controller_behavior()
+05-22 15:11:56.466  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:56.466  5919  5940 W Unity   : 
+05-22 15:11:56.467  5919  5940 I Unity   : Get Distance via special method
+05-22 15:11:56.467  5919  5940 I Unity   : AxeHandle:getDistance(Vector3, Single&, Boolean)
+05-22 15:11:56.467  5919  5940 I Unity   : HandController:which_object(Vector3, Boolean)
+05-22 15:11:56.467  5919  5940 I Unity   : HandController:handle_controller_behavior()
+05-22 15:11:56.467  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:56.467  5919  5940 I Unity   : 
+05-22 15:11:56.468  5919  5940 I Unity   : Get Distance via special method
+05-22 15:11:56.468  5919  5940 I Unity   : AxeHandle:getDistance(Vector3, Single&, Boolean)
+05-22 15:11:56.468  5919  5940 I Unity   : HandController:which_object(Vector3, Boolean)
+05-22 15:11:56.468  5919  5940 I Unity   : HandController:handle_controller_behavior()
+05-22 15:11:56.468  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:56.468  5919  5940 I Unity   : 
+05-22 15:11:56.469  5919  5940 W Unity   : Best object is handle w distance Infinity
+05-22 15:11:56.469  5919  5940 W Unity   : HandController:which_object(Vector3, Boolean)
+05-22 15:11:56.469  5919  5940 W Unity   : HandController:handle_controller_behavior()
+05-22 15:11:56.469  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:56.469  5919  5940 W Unity   : 
+05-22 15:11:56.469  5919  5940 W Unity   : RightHandAnchor grasped handle
+05-22 15:11:56.469  5919  5940 W Unity   : HandController:handle_controller_behavior()
+05-22 15:11:56.469  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:56.469  5919  5940 W Unity   : 
+05-22 15:11:56.470  5919  5940 W Unity   : Regular attaching... Object has parent: True
+05-22 15:11:56.470  5919  5940 W Unity   : ObjectAnchor:attach_to(HandController)
+05-22 15:11:56.470  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:56.470  5919  5940 W Unity   : 
+05-22 15:11:57.258  5919  5940 W Unity   : RightHandAnchor released handle
+05-22 15:11:57.258  5919  5940 W Unity   : HandController:handle_controller_behavior()
+05-22 15:11:57.258  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:57.258  5919  5940 W Unity   : 
+05-22 15:11:57.259  5919  5940 I Unity   : Detatching...
+05-22 15:11:57.259  5919  5940 I Unity   : HandController:handle_controller_behavior()
+05-22 15:11:57.259  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:57.259  5919  5940 I Unity   : 
+05-22 15:11:57.272  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:11:57.272  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:57.272  5919  5940 W Unity   : 
+05-22 15:11:57.273  5919  5940 I Unity   : Detatching...
+05-22 15:11:57.273  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:57.273  5919  5940 I Unity   : 
+05-22 15:11:57.273  5919  5940 W Unity   : New resistance: 19.49182
+05-22 15:11:57.273  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:11:57.273  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:57.273  5919  5940 W Unity   : 
+05-22 15:11:57.274  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:11:57.274  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:57.274  5919  5940 W Unity   : 
+05-22 15:11:57.275  5919  5940 I Unity   : Detatching...
+05-22 15:11:57.275  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:57.275  5919  5940 I Unity   : 
+05-22 15:11:57.275  5919  5940 W Unity   : New resistance: 12.7036
+05-22 15:11:57.275  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:11:57.275  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:57.275  5919  5940 W Unity   : 
+05-22 15:11:58.374  5919  5940 I Unity   : Teleport grabbing/etc...
+05-22 15:11:58.374  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:58.374  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:58.374  5919  5940 I Unity   : 
+05-22 15:11:58.416  5919  5940 I Unity   : Teleport grabbing/etc...
+05-22 15:11:58.416  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:58.416  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:58.416  5919  5940 I Unity   : 
+05-22 15:11:58.416  5919  5940 W Unity   : Best object is handle w distance 46.87046
+05-22 15:11:58.416  5919  5940 W Unity   : HandController:which_object(Vector3, Boolean)
+05-22 15:11:58.416  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:58.416  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:58.416  5919  5940 W Unity   : 
+05-22 15:11:58.417  5919  5940 W Unity   : Regular attaching... Object has parent: True
+05-22 15:11:58.417  5919  5940 W Unity   : ObjectAnchor:attach_to(HandController)
+05-22 15:11:58.417  5919  5940 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-22 15:11:58.417  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:58.417  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:58.417  5919  5940 W Unity   : 
+05-22 15:11:58.418  5919  5940 W Unity   : Moving object handle from (-2.11, 1.72, -1.55) to (-1.89, 1.52, -1.92)
+05-22 15:11:58.418  5919  5940 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-22 15:11:58.418  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:58.418  5919  5940 W Unity   : HandController:Update()
+05-22 15:11:58.418  5919  5940 W Unity   : 
+05-22 15:11:59.237  5919  5940 I Unity   : Teleport grabbing/etc...
+05-22 15:11:59.237  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:59.237  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:59.237  5919  5940 I Unity   : 
+05-22 15:11:59.238  5919  5940 I Unity   : Detatching...
+05-22 15:11:59.238  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:11:59.238  5919  5940 I Unity   : HandController:Update()
+05-22 15:11:59.238  5919  5940 I Unity   : 
+05-22 15:11:59.251  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:11:59.251  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:59.251  5919  5940 W Unity   : 
+05-22 15:11:59.252  5919  5940 I Unity   : Detatching...
+05-22 15:11:59.252  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:59.252  5919  5940 I Unity   : 
+05-22 15:11:59.252  5919  5940 W Unity   : New resistance: 12.24578
+05-22 15:11:59.252  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:11:59.252  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:59.252  5919  5940 W Unity   : 
+05-22 15:11:59.253  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:11:59.253  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:59.253  5919  5940 W Unity   : 
+05-22 15:11:59.254  5919  5940 I Unity   : Detatching...
+05-22 15:11:59.254  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:59.254  5919  5940 I Unity   : 
+05-22 15:11:59.254  5919  5940 W Unity   : New resistance: 11.78796
+05-22 15:11:59.254  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:11:59.254  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:11:59.254  5919  5940 W Unity   : 
+05-22 15:12:00.031  5919  5940 I Unity   : Teleport grabbing/etc...
+05-22 15:12:00.031  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:12:00.031  5919  5940 I Unity   : HandController:Update()
+05-22 15:12:00.031  5919  5940 I Unity   : 
+05-22 15:12:00.032  5919  5940 W Unity   : Best object is handle w distance 46.98528
+05-22 15:12:00.032  5919  5940 W Unity   : HandController:which_object(Vector3, Boolean)
+05-22 15:12:00.032  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:12:00.032  5919  5940 W Unity   : HandController:Update()
+05-22 15:12:00.032  5919  5940 W Unity   : 
+05-22 15:12:00.033  5919  5940 W Unity   : Regular attaching... Object has parent: True
+05-22 15:12:00.033  5919  5940 W Unity   : ObjectAnchor:attach_to(HandController)
+05-22 15:12:00.033  5919  5940 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-22 15:12:00.033  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:12:00.033  5919  5940 W Unity   : HandController:Update()
+05-22 15:12:00.033  5919  5940 W Unity   : 
+05-22 15:12:00.034  5919  5940 W Unity   : Moving object handle from (-2.06, 1.74, -1.78) to (-1.87, 1.57, -1.98)
+05-22 15:12:00.034  5919  5940 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-22 15:12:00.034  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:12:00.034  5919  5940 W Unity   : HandController:Update()
+05-22 15:12:00.034  5919  5940 W Unity   : 
+05-22 15:12:00.672  5919  5940 I Unity   : Detatching...
+05-22 15:12:00.672  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:12:00.672  5919  5940 I Unity   : HandController:Update()
+05-22 15:12:00.672  5919  5940 I Unity   : 
+05-22 15:12:00.685  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:12:00.685  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:00.685  5919  5940 W Unity   : 
+05-22 15:12:00.686  5919  5940 I Unity   : Detatching...
+05-22 15:12:00.686  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:00.686  5919  5940 I Unity   : 
+05-22 15:12:00.687  5919  5940 W Unity   : New resistance: 9.70533
+05-22 15:12:00.687  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:12:00.687  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:00.687  5919  5940 W Unity   : 
+05-22 15:12:00.687  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:12:00.687  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:00.687  5919  5940 W Unity   : 
+05-22 15:12:00.688  5919  5940 I Unity   : Detatching...
+05-22 15:12:00.688  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:00.688  5919  5940 I Unity   : 
+05-22 15:12:00.688  5919  5940 W Unity   : New resistance: 7.622704
+05-22 15:12:00.688  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:12:00.688  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:00.688  5919  5940 W Unity   : 
+05-22 15:12:01.535  5919  5940 I Unity   : Teleport grabbing/etc...
+05-22 15:12:01.535  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:12:01.535  5919  5940 I Unity   : HandController:Update()
+05-22 15:12:01.535  5919  5940 I Unity   : 
+05-22 15:12:01.536  5919  5940 W Unity   : Best object is handle w distance 47.17914
+05-22 15:12:01.536  5919  5940 W Unity   : HandController:which_object(Vector3, Boolean)
+05-22 15:12:01.536  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:12:01.536  5919  5940 W Unity   : HandController:Update()
+05-22 15:12:01.536  5919  5940 W Unity   : 
+05-22 15:12:01.536  5919  5940 W Unity   : Regular attaching... Object has parent: True
+05-22 15:12:01.536  5919  5940 W Unity   : ObjectAnchor:attach_to(HandController)
+05-22 15:12:01.536  5919  5940 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-22 15:12:01.536  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:12:01.536  5919  5940 W Unity   : HandController:Update()
+05-22 15:12:01.536  5919  5940 W Unity   : 
+05-22 15:12:01.537  5919  5940 W Unity   : Moving object handle from (-2.10, 1.72, -1.75) to (-1.91, 1.55, -2.02)
+05-22 15:12:01.537  5919  5940 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-22 15:12:01.537  5919  5940 W Unity   : HandController:handle_teleport_behavior()
+05-22 15:12:01.537  5919  5940 W Unity   : HandController:Update()
+05-22 15:12:01.537  5919  5940 W Unity   : 
+05-22 15:12:02.218  5919  5940 I Unity   : Detatching...
+05-22 15:12:02.218  5919  5940 I Unity   : HandController:handle_teleport_behavior()
+05-22 15:12:02.218  5919  5940 I Unity   : HandController:Update()
+05-22 15:12:02.218  5919  5940 I Unity   : 
+05-22 15:12:02.231  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:12:02.231  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:02.231  5919  5940 W Unity   : 
+05-22 15:12:02.232  5919  5940 I Unity   : Detatching...
+05-22 15:12:02.232  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:02.232  5919  5940 I Unity   : 
+05-22 15:12:02.232  5919  5940 W Unity   : New resistance: 0.3244643
+05-22 15:12:02.232  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:12:02.232  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:02.232  5919  5940 W Unity   : 
+05-22 15:12:02.233  5919  5940 W Unity   : Collided w breakDoorTutorial w tag DoorToBreak
+05-22 15:12:02.233  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:02.233  5919  5940 W Unity   : 
+05-22 15:12:02.233  5919  5940 I Unity   : Detatching...
+05-22 15:12:02.233  5919  5940 I Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:02.233  5919  5940 I Unity   : 
+05-22 15:12:02.234  5919  5940 W Unity   : New resistance: -6.973775
+05-22 15:12:02.234  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:12:02.234  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:02.234  5919  5940 W Unity   : 
+05-22 15:12:02.235  5919  5940 W Unity   : Destroying...
+05-22 15:12:02.235  5919  5940 W Unity   : BreakDoor:onBladeHit(GameObject)
+05-22 15:12:02.235  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:02.235  5919  5940 W Unity   : 
+05-22 15:12:02.747  5919  5940 W Unity   : Collided w Terrain w tag Untagged
+05-22 15:12:02.747  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:02.747  5919  5940 W Unity   : 
+05-22 15:12:02.747  5919  5940 W Unity   : Collided w Terrain w tag Untagged
+05-22 15:12:02.747  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:02.747  5919  5940 W Unity   : 
+05-22 15:12:03.053  5919  5940 W Unity   : Collided w Terrain w tag Untagged
+05-22 15:12:03.053  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:03.053  5919  5940 W Unity   : 
+05-22 15:12:03.054  5919  5940 W Unity   : Collided w Terrain w tag Untagged
+05-22 15:12:03.054  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:03.054  5919  5940 W Unity   : 
+05-22 15:12:03.387  5919  5940 W Unity   : Collided w Terrain w tag Untagged
+05-22 15:12:03.387  5919  5940 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-22 15:12:03.387  5919  5940 W Unity   : 
+05-22 15:12:09.358  5919  5940 I Unity   : [OVRManager] HMDUnmounted event
+05-22 15:12:09.358  5919  5940 I Unity   : OVRManager:Update()
+05-22 15:12:09.358  5919  5940 I Unity   : 
