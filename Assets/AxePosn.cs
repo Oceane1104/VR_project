@@ -83,11 +83,12 @@ public class AxePosn : MonoBehaviour
 
             int ret = obj.GetComponent<BreakDoor>().onBladeHit(child);
 
-            if (ret == 1)
+           if (ret == 1)
             {
                 Debug.Log("Destroyed door, do it again?");
                 if (obj)
                 {
+                    Debug.LogWarningFormat("Destroyed obj name {0}", obj.name);
                     Destroy(obj);
                     Debug.Log("Done it again!!");
                 }

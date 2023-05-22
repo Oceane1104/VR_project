@@ -14,6 +14,7 @@ public class BreakDoor : MonoBehaviour
     protected float Resistance = 30F; // "strength"/"XP"; goes to zero => break
     protected string Weakness = "blade";  //"axe"; // thing it can be damaged by
 
+    bool destroyed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -50,17 +51,22 @@ public class BreakDoor : MonoBehaviour
 
             Debug.LogWarningFormat("New resistance: {0}", Resistance);
 
-            if (Resistance <= 0)
+            if (Resistance <= 0 && !destroyed)
             {
                 // door successfully broken!
-                if (ShatterSound) ShatterSound.Play();
+                if (ShatterSound) { Debug.Log("play..."); ShatterSound.Play(); }
                 Debug.LogWarningFormat("Destroying...");
+                destroyed = true;
                 Destroy(this); // removed once call is done
                 Destroy(gameObject);
                 if (exit) // call winner func
                 {
                     GameObject.Find("Sounds").GetComponent<EndGame>().Invoke("wonGame", 5);
                 }
+                return 1;
+            } else if (destroyed)
+            {
+                Debug.Log("I was destroyed :(");
                 return 1;
             }
             else
