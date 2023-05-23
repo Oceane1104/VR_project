@@ -133,15 +133,15 @@ public class ObjectAnchor : MonoBehaviour
 		Debug.LogWarningFormat("Moving object {2} from {0} to {1}", transform.position, hand_controller.transform.position, transform.gameObject.name);
 
 		//transform.position = hand_controller.transform.position;
-		if (transform.parent)
+		if (transform.parent && !gameObject.CompareTag("ColliderBucket"))
 		{
 			transform.parent.position = hand_controller.transform.position;
-
+			
 		}
         else
         {
 			transform.position = hand_controller.transform.position;
-
+			
 		}
 
 		Debug.LogWarningFormat("New posn: {0} vs parent {1}", transform.position, transform.parent.position);
