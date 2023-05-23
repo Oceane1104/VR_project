@@ -23,6 +23,8 @@ public class HandController : MonoBehaviour
 	public Vector3 throwVelocity;
 	public Vector3 currentPosition;
 
+	public MenuCard menu;
+
 	//Door script
 	/*public Door_script door_tuto1;
     public Door_script door_tuto2;*/
@@ -176,6 +178,25 @@ public class HandController : MonoBehaviour
 		return false;
 	}
 
+	bool only_y_press()
+    {
+		if (handType == HandType.RightHand) return OVRInput.Get(OVRInput.Button.Four)
+				&& !OVRInput.Get(OVRInput.Button.Three)
+		  && !(OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0.5)
+		  && !(OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5);
+		return false;
+	}
+
+	// make sure lhs no longer pressing anything
+	bool no_LHS_press()
+    {
+		if (handType == HandType.RightHand) return !OVRInput.Get(OVRInput.Button.Four)
+				&& !OVRInput.Get(OVRInput.Button.Three)
+		  && !(OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) > 0.5)
+		  && !(OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5);
+		return false;
+	}
+
     protected bool restart_game()
     {
         if (handType == HandType.LeftHand) return OVRInput.Get(OVRInput.Button.One);
@@ -274,6 +295,10 @@ public class HandController : MonoBehaviour
 		}
 	}
 
+	bool first_y = false;
+
+	bool y_press_prev_frame = false;
+
 	// Automatically called at each frame
 	void Update()
 	{
@@ -296,6 +321,8 @@ public class HandController : MonoBehaviour
 		if (!open_now && is_tutorial_finish()) // don't keep running this if already open
         {
 			open_now = true;
+			y_press_prev_frame = true; // pressed y already!
+			first_y = true; // first time pressing y
 			/*door_tuto1.open_the_door();
             door_tuto2.open_the_door();*/
 			GameObject[] doors = GameObject.FindGameObjectsWithTag("tutoDoor");
@@ -305,7 +332,33 @@ public class HandController : MonoBehaviour
             }
 			Debug.Log("Game begins, start timer...");
 			GameObject.Find("Sounds").GetComponent<GameMusic>().setTicking(true);
-		}    
+		} 
+		
+		// tutorial is finished but 'y' pressed again
+		// open up menu & pause count
+		// make sure doesn't run upon first 'y' press
+		// make sure only runs on key down AND up!!
+		else if (open_now && only_y_press() && !first_y) // make sure doesn't run if currently on first y-press
+        {
+			y_press_prev_frame = true; // y pressed down
+        }
+
+		// y used to be pressed but not anymore!
+		// get menu to display UNLESS still in 'first y press' scenario
+		if (y_press_prev_frame && no_LHS_press())
+        {
+			if (first_y) first_y = false; // no longer in first y press scenario
+			else if (activeMenu)
+			{
+				// menu open => wanna unpause
+				menu.unPause();
+			}
+			else
+			{
+				menu.Pause();
+			}
+			y_press_prev_frame = false; // no longer pressing 'y'
+		}
 	}
 
 	// remove anchors

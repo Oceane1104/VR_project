@@ -42,6 +42,14 @@ public class MenuCard : MonoBehaviour
         child2.GetComponent<SpriteRenderer>().enabled = true;
     }
 
+    void disEnable()
+    {
+        Transform child1 = gameObject.transform.Find("QuitTxt");
+        Transform child2 = gameObject.transform.Find("Restart");
+        child1.GetComponent<SpriteRenderer>().enabled = false;
+        child2.GetComponent<SpriteRenderer>().enabled = false;
+    }
+
     void toggleBackground()
     {
         foreach(GameObject g in allObj)
@@ -70,6 +78,27 @@ public class MenuCard : MonoBehaviour
         enable();
         GameObject.Find("GameOverTxt").GetComponent<SpriteRenderer>().enabled = true;
         GameObject.Find("WinnerTxt").GetComponent<SpriteRenderer>().enabled = true;
+    }
+
+    public void Pause()
+    {
+        Debug.Log("Pausing");
+        toggleActive(true);
+        //toggleBackground();
+        gameObject.SetActive(active);
+        enable();
+        GameObject.Find("PauseTxt").GetComponent<SpriteRenderer>().enabled = true;
+        GameObject.Find("Sounds").GetComponent<GameMusic>().setTicking(false); // pause timer
+    }
+
+    public void unPause()
+    {
+        //toggleBackground();
+        disEnable();
+        GameObject.Find("PauseTxt").GetComponent<SpriteRenderer>().enabled = false;
+        GameObject.Find("Sounds").GetComponent<GameMusic>().setTicking(true); // continue timer
+        gameObject.SetActive(active);
+        toggleActive(false);
     }
 
     public void toggleActive(bool act = false)

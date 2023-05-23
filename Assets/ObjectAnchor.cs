@@ -92,7 +92,7 @@ public class ObjectAnchor : MonoBehaviour
 		if (parent && parent.GetComponent<Rigidbody>())
         {
 			parent.GetComponent<Rigidbody>().isKinematic = false;
-		}  if (GetComponent<Rigidbody>())
+		}  else if (GetComponent<Rigidbody>())
 		{
 			GetComponent<Rigidbody>().isKinematic = false;
 			//Through the object with the velocity of the controller
@@ -143,6 +143,8 @@ public class ObjectAnchor : MonoBehaviour
 			transform.position = hand_controller.transform.position;
 
 		}
+
+		Debug.LogWarningFormat("New posn: {0} vs parent {1}", transform.position, transform.parent.position);
 	}
 
 }
