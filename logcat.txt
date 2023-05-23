@@ -1,0 +1,573 @@
+--------- beginning of system
+--------- beginning of main
+--------- beginning of tracking
+05-23 15:27:39.400  9624  9645 I Unity   : MemoryManager: Using 'Dynamic Heap' Allocator.
+05-23 15:27:39.446  9624  9645 I Unity   : SystemInfo CPU = ARM64 FP ASIMD AES, Cores = 4, Memory = 3808mb
+05-23 15:27:39.446  9624  9645 I Unity   : SystemInfo ARM big.LITTLE configuration: 0 big (mask: 0x0), 4 little (mask: 0xf)
+05-23 15:27:39.446  9624  9645 I Unity   : XR UsableCoreMask: 0xf
+05-23 15:27:39.446  9624  9645 I Unity   : ApplicationInfo com.VR_project04.H02 version 0.1
+05-23 15:27:39.447  9624  9645 I Unity   : Built from '2021.3/staging' branch, Version '2021.3.20f1 (577897200b8b)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Enabled'
+05-23 15:27:41.229  9624  9754 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
+05-23 15:27:45.449  9624  9624 W Unity   : Timeout while trying to pause the Unity Engine.
+05-23 15:27:47.172  9624  9754 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
+05-23 15:27:47.224  9624  9645 E Unity   : DllNotFoundException: Unable to load DLL 'AudioPluginOculusSpatializer'. Tried the load the following dynamic libraries: Unable to load dynamic library 'AudioPluginOculusSpatializer' because of 'Failed to open the requested dynamic library (0x06000000) dlerror() = dlopen failed: library "AudioPluginOculusSpatializer" not found
+05-23 15:27:47.224  9624  9645 E Unity   :   at ONSPAudioSource.OSP_SetGlobalVoiceLimit (System.Int32 VoiceLimit) [0x00000] in <00000000000000000000000000000000>:0 
+05-23 15:27:47.224  9624  9645 E Unity   : 
+05-23 15:27:47.275  9624  9645 I Unity   : Unity v2021.3.20f1, Oculus Utilities v1.82.0, OVRPlugin v1.82.0, SDK v1.0.26.
+05-23 15:27:47.275  9624  9645 I Unity   : OVRManager:InitOVRManager()
+05-23 15:27:47.275  9624  9645 I Unity   : 
+05-23 15:27:47.278  9624  9645 I Unity   : SystemHeadset Oculus_Quest, API OpenXR
+05-23 15:27:47.278  9624  9645 I Unity   : OVRManager:InitOVRManager()
+05-23 15:27:47.278  9624  9645 I Unity   : 
+05-23 15:27:47.279  9624  9645 I Unity   : OpenXR instance 0x100000000000002 session 0x200000000000020
+05-23 15:27:47.279  9624  9645 I Unity   : OVRManager:InitOVRManager()
+05-23 15:27:47.279  9624  9645 I Unity   : 
+05-23 15:27:47.286  9624  9645 I Unity   : OVRPlugin.Media initialized
+05-23 15:27:47.286  9624  9645 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
+05-23 15:27:47.286  9624  9645 I Unity   : OVRManager:InitOVRManager()
+05-23 15:27:47.286  9624  9645 I Unity   : 
+05-23 15:27:47.288  9624  9645 I Unity   : [MRC] SetMrcAudioSampleRate(48000)
+05-23 15:27:47.288  9624  9645 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
+05-23 15:27:47.288  9624  9645 I Unity   : OVRManager:InitOVRManager()
+05-23 15:27:47.288  9624  9645 I Unity   : 
+05-23 15:27:47.290  9624  9645 I Unity   : [MRC] Active InputVideoBufferType:TextureHandle
+05-23 15:27:47.290  9624  9645 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
+05-23 15:27:47.290  9624  9645 I Unity   : OVRManager:InitOVRManager()
+05-23 15:27:47.290  9624  9645 I Unity   : 
+05-23 15:27:47.291  9624  9645 I Unity   : [MRC] ActivateMode: Automatic
+05-23 15:27:47.291  9624  9645 I Unity   : OVRManager:StaticInitializeMixedRealityCapture(OVRMixedRealityCaptureConfiguration)
+05-23 15:27:47.291  9624  9645 I Unity   : OVRManager:InitOVRManager()
+05-23 15:27:47.291  9624  9645 I Unity   : 
+05-23 15:27:47.300  9624  9645 I Unity   : Current display frequency 72, available frequencies [60, 60, 72, 72]
+05-23 15:27:47.300  9624  9645 I Unity   : OVRManager:InitOVRManager()
+05-23 15:27:47.300  9624  9645 I Unity   : 
+05-23 15:27:47.302  9624  9645 W Unity   : Local Dimming feature is not supported
+05-23 15:27:47.302  9624  9645 W Unity   : OVRManager:InitOVRManager()
+05-23 15:27:47.302  9624  9645 W Unity   : 
+05-23 15:27:47.405  9624  9645 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandRight)
+05-23 15:27:47.405  9624  9645 I Unity   : OVRControllerHelper:InitializeControllerModels()
+05-23 15:27:47.405  9624  9645 I Unity   : 
+05-23 15:27:47.408  9624  9645 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandLeft)
+05-23 15:27:47.408  9624  9645 I Unity   : OVRControllerHelper:InitializeControllerModels()
+05-23 15:27:47.408  9624  9645 I Unity   : 
+05-23 15:27:47.441  9624  9645 I Unity   : The current MSAA level is 0, but the recommended MSAA level is 4. Switching to the recommended level.
+05-23 15:27:47.441  9624  9645 I Unity   : OVRManager:Update()
+05-23 15:27:47.441  9624  9645 I Unity   : 
+05-23 15:27:47.441  9624  9645 I Unity   : [OVRManager] HMDAcquired event
+05-23 15:27:47.441  9624  9645 I Unity   : OVRManager:Update()
+05-23 15:27:47.441  9624  9645 I Unity   : 
+05-23 15:27:47.442  9624  9645 I Unity   : [OVRManager] HMDMounted event
+05-23 15:27:47.442  9624  9645 I Unity   : OVRManager:Update()
+05-23 15:27:47.442  9624  9645 I Unity   : 
+05-23 15:27:47.443  9624  9645 I Unity   : [OVRManager] VrFocusAcquired event
+05-23 15:27:47.443  9624  9645 I Unity   : OVRManager:Update()
+05-23 15:27:47.443  9624  9645 I Unity   : 
+05-23 15:27:47.446  9624  9645 I Unity   : [OVRManager] TrackingAcquired event
+05-23 15:27:47.446  9624  9645 I Unity   : OVRManager:Update()
+05-23 15:27:47.446  9624  9645 I Unity   : 
+05-23 15:27:47.447  9624  9645 I Unity   : Recenter event detected
+05-23 15:27:47.447  9624  9645 I Unity   : OVRDisplay:Update()
+05-23 15:27:47.447  9624  9645 I Unity   : OVRManager:Update()
+05-23 15:27:47.447  9624  9645 I Unity   : 
+05-23 15:27:48.053  9624  9645 W Unity   : Ignoring depth surface store action as it is memoryless
+05-23 15:27:48.338  9624  9645 W Unity   : Collided w Terrain w tag Untagged
+05-23 15:27:48.338  9624  9645 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-23 15:27:48.338  9624  9645 W Unity   : 
+05-23 15:27:48.356  9624  9645 W Unity   : Collided w Terrain w tag Untagged
+05-23 15:27:48.356  9624  9645 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-23 15:27:48.356  9624  9645 W Unity   : 
+05-23 15:27:48.375  9624  9645 W Unity   : Collided w Terrain w tag Untagged
+05-23 15:27:48.375  9624  9645 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-23 15:27:48.375  9624  9645 W Unity   : 
+05-23 15:27:48.394  9624  9645 W Unity   : Collided w Terrain w tag Untagged
+05-23 15:27:48.394  9624  9645 W Unity   : AxePosn:OnCollisionEnter(Collision)
+05-23 15:27:48.394  9624  9645 W Unity   : 
+05-23 15:27:52.283  9624  9645 I Unity   : Teleport grabbing/etc...
+05-23 15:27:52.283  9624  9645 I Unity   : HandController:handle_teleport_behavior()
+05-23 15:27:52.283  9624  9645 I Unity   : HandController:Update()
+05-23 15:27:52.283  9624  9645 I Unity   : 
+05-23 15:27:53.411  9624  9645 I Unity   : Teleport grabbing/etc...
+05-23 15:27:53.411  9624  9645 I Unity   : HandController:handle_teleport_behavior()
+05-23 15:27:53.411  9624  9645 I Unity   : HandController:Update()
+05-23 15:27:53.411  9624  9645 I Unity   : 
+05-23 15:27:53.412  9624  9645 W Unity   : Best object is Low-Poly Skull_tutorial_1 w distance 42.93257
+05-23 15:27:53.412  9624  9645 W Unity   : HandController:which_object(Vector3, Boolean)
+05-23 15:27:53.412  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:27:53.412  9624  9645 W Unity   : HandController:Update()
+05-23 15:27:53.412  9624  9645 W Unity   : 
+05-23 15:27:53.412  9624  9645 W Unity   : Regular attaching... Object has parent: True
+05-23 15:27:53.412  9624  9645 W Unity   : ObjectAnchor:attach_to(HandController)
+05-23 15:27:53.412  9624  9645 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-23 15:27:53.412  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:27:53.412  9624  9645 W Unity   : HandController:Update()
+05-23 15:27:53.412  9624  9645 W Unity   : 
+05-23 15:27:53.413  9624  9645 W Unity   : Moving object Low-Poly Skull_tutorial_1 from (3.57, 0.85, -2.31) to (2.13, 1.33, -2.38)
+05-23 15:27:53.413  9624  9645 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-23 15:27:53.413  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:27:53.413  9624  9645 W Unity   : HandController:Update()
+05-23 15:27:53.413  9624  9645 W Unity   : 
+05-23 15:27:53.414  9624  9645 W Unity   : New posn: (5.30, 139.92, 0.34) vs parent (2.13, 1.33, -2.38)
+05-23 15:27:53.414  9624  9645 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-23 15:27:53.414  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:27:53.414  9624  9645 W Unity   : HandController:Update()
+05-23 15:27:53.414  9624  9645 W Unity   : 
+05-23 15:27:53.425  9624  9645 I Unity   : Is attached
+05-23 15:27:53.425  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:53.425  9624  9645 I Unity   : 
+05-23 15:27:53.996  9624  9645 I Unity   : Is attached
+05-23 15:27:53.996  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:53.996  9624  9645 I Unity   : 
+05-23 15:27:54.010  9624  9645 I Unity   : Is attached
+05-23 15:27:54.010  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.010  9624  9645 I Unity   : 
+05-23 15:27:54.108  9624  9645 I Unity   : Is attached
+05-23 15:27:54.108  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.108  9624  9645 I Unity   : 
+05-23 15:27:54.122  9624  9645 I Unity   : Is attached
+05-23 15:27:54.122  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.122  9624  9645 I Unity   : 
+05-23 15:27:54.192  9624  9645 I Unity   : Is attached
+05-23 15:27:54.192  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.192  9624  9645 I Unity   : 
+05-23 15:27:54.205  9624  9645 I Unity   : Is attached
+05-23 15:27:54.205  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.205  9624  9645 I Unity   : 
+05-23 15:27:54.220  9624  9645 I Unity   : Is attached
+05-23 15:27:54.220  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.220  9624  9645 I Unity   : 
+05-23 15:27:54.234  9624  9645 I Unity   : Is attached
+05-23 15:27:54.234  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.234  9624  9645 I Unity   : 
+05-23 15:27:54.415  9624  9645 I Unity   : Is attached
+05-23 15:27:54.415  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.415  9624  9645 I Unity   : 
+05-23 15:27:54.429  9624  9645 I Unity   : Is attached
+05-23 15:27:54.429  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.429  9624  9645 I Unity   : 
+05-23 15:27:54.470  9624  9645 I Unity   : Is attached
+05-23 15:27:54.470  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.470  9624  9645 I Unity   : 
+05-23 15:27:54.484  9624  9645 I Unity   : Is attached
+05-23 15:27:54.484  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.484  9624  9645 I Unity   : 
+05-23 15:27:54.777  9624  9645 I Unity   : Is attached
+05-23 15:27:54.777  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.777  9624  9645 I Unity   : 
+05-23 15:27:54.791  9624  9645 I Unity   : Is attached
+05-23 15:27:54.791  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:54.791  9624  9645 I Unity   : 
+05-23 15:27:55.000  9624  9645 I Unity   : Is attached
+05-23 15:27:55.000  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:55.000  9624  9645 I Unity   : 
+05-23 15:27:55.014  9624  9645 I Unity   : Is attached
+05-23 15:27:55.014  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:55.014  9624  9645 I Unity   : 
+05-23 15:27:55.223  9624  9645 I Unity   : Is attached
+05-23 15:27:55.223  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:55.223  9624  9645 I Unity   : 
+05-23 15:27:55.237  9624  9645 I Unity   : Is attached
+05-23 15:27:55.237  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:55.237  9624  9645 I Unity   : 
+05-23 15:27:56.002  9624  9645 I Unity   : Is attached
+05-23 15:27:56.002  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:56.002  9624  9645 I Unity   : 
+05-23 15:27:56.016  9624  9645 I Unity   : Is attached
+05-23 15:27:56.016  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:56.016  9624  9645 I Unity   : 
+05-23 15:27:56.100  9624  9645 I Unity   : Is attached
+05-23 15:27:56.100  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:56.100  9624  9645 I Unity   : 
+05-23 15:27:56.114  9624  9645 I Unity   : Is attached
+05-23 15:27:56.114  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:56.114  9624  9645 I Unity   : 
+05-23 15:27:56.226  9624  9645 I Unity   : Is attached
+05-23 15:27:56.226  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:56.226  9624  9645 I Unity   : 
+05-23 15:27:56.240  9624  9645 I Unity   : Is attached
+05-23 15:27:56.240  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:56.240  9624  9645 I Unity   : 
+05-23 15:27:56.449  9624  9645 I Unity   : Is attached
+05-23 15:27:56.449  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:56.449  9624  9645 I Unity   : 
+05-23 15:27:56.463  9624  9645 I Unity   : Is attached
+05-23 15:27:56.463  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:56.463  9624  9645 I Unity   : 
+05-23 15:27:56.699  9624  9645 I Unity   : Is attached
+05-23 15:27:56.699  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:56.699  9624  9645 I Unity   : 
+05-23 15:27:56.713  9624  9645 I Unity   : Is attached
+05-23 15:27:56.713  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:56.713  9624  9645 I Unity   : 
+05-23 15:27:56.727  9624  9645 I Unity   : Is attached
+05-23 15:27:56.727  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:56.727  9624  9645 I Unity   : 
+05-23 15:27:56.991  9624  9645 I Unity   : Is attached
+05-23 15:27:56.991  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:56.991  9624  9645 I Unity   : 
+05-23 15:27:57.005  9624  9645 I Unity   : Is attached
+05-23 15:27:57.005  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:57.005  9624  9645 I Unity   : 
+05-23 15:27:57.226  9624  9645 I Unity   : Is attached
+05-23 15:27:57.226  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:57.226  9624  9645 I Unity   : 
+05-23 15:27:57.241  9624  9645 I Unity   : Is attached
+05-23 15:27:57.241  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:57.241  9624  9645 I Unity   : 
+05-23 15:27:57.787  9624  9645 I Unity   : Is attached
+05-23 15:27:57.787  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:57.787  9624  9645 I Unity   : 
+05-23 15:27:57.800  9624  9645 I Unity   : Is attached
+05-23 15:27:57.800  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:57.800  9624  9645 I Unity   : 
+05-23 15:27:57.996  9624  9645 I Unity   : Is attached
+05-23 15:27:57.996  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:57.996  9624  9645 I Unity   : 
+05-23 15:27:58.009  9624  9645 I Unity   : Is attached
+05-23 15:27:58.009  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.009  9624  9645 I Unity   : 
+05-23 15:27:58.065  9624  9645 I Unity   : Is attached
+05-23 15:27:58.065  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.065  9624  9645 I Unity   : 
+05-23 15:27:58.079  9624  9645 I Unity   : Is attached
+05-23 15:27:58.079  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.079  9624  9645 I Unity   : 
+05-23 15:27:58.232  9624  9645 I Unity   : Is attached
+05-23 15:27:58.232  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.232  9624  9645 I Unity   : 
+05-23 15:27:58.246  9624  9645 I Unity   : Is attached
+05-23 15:27:58.246  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.246  9624  9645 I Unity   : 
+05-23 15:27:58.483  9624  9645 I Unity   : Is attached
+05-23 15:27:58.483  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.483  9624  9645 I Unity   : 
+05-23 15:27:58.497  9624  9645 I Unity   : Is attached
+05-23 15:27:58.497  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.497  9624  9645 I Unity   : 
+05-23 15:27:58.511  9624  9645 I Unity   : Is attached
+05-23 15:27:58.511  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.511  9624  9645 I Unity   : 
+05-23 15:27:58.524  9624  9645 I Unity   : Is attached
+05-23 15:27:58.524  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.524  9624  9645 I Unity   : 
+05-23 15:27:58.552  9624  9645 I Unity   : Is attached
+05-23 15:27:58.552  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.552  9624  9645 I Unity   : 
+05-23 15:27:58.566  9624  9645 I Unity   : Is attached
+05-23 15:27:58.566  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.566  9624  9645 I Unity   : 
+05-23 15:27:58.663  9624  9645 I Unity   : Is attached
+05-23 15:27:58.663  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.663  9624  9645 I Unity   : 
+05-23 15:27:58.677  9624  9645 I Unity   : Is attached
+05-23 15:27:58.677  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.677  9624  9645 I Unity   : 
+05-23 15:27:58.788  9624  9645 I Unity   : Is attached
+05-23 15:27:58.788  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.788  9624  9645 I Unity   : 
+05-23 15:27:58.801  9624  9645 I Unity   : Is attached
+05-23 15:27:58.801  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.801  9624  9645 I Unity   : 
+05-23 15:27:58.957  9624  9645 I Unity   : Is attached
+05-23 15:27:58.957  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.957  9624  9645 I Unity   : 
+05-23 15:27:58.971  9624  9645 I Unity   : Is attached
+05-23 15:27:58.971  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.971  9624  9645 I Unity   : 
+05-23 15:27:58.985  9624  9645 I Unity   : Is attached
+05-23 15:27:58.985  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.985  9624  9645 I Unity   : 
+05-23 15:27:58.999  9624  9645 I Unity   : Is attached
+05-23 15:27:58.999  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:58.999  9624  9645 I Unity   : 
+05-23 15:27:59.012  9624  9645 I Unity   : Is attached
+05-23 15:27:59.012  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:59.012  9624  9645 I Unity   : 
+05-23 15:27:59.054  9624  9645 I Unity   : Is attached
+05-23 15:27:59.054  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:27:59.054  9624  9645 I Unity   : 
+05-23 15:27:59.054  9624  9645 I Unity   : Detatching...
+05-23 15:27:59.054  9624  9645 I Unity   : HandController:handle_teleport_behavior()
+05-23 15:27:59.054  9624  9645 I Unity   : HandController:Update()
+05-23 15:27:59.054  9624  9645 I Unity   : 
+05-23 15:28:06.615  9624  9645 I Unity   : Teleport grabbing/etc...
+05-23 15:28:06.615  9624  9645 I Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:06.615  9624  9645 I Unity   : HandController:Update()
+05-23 15:28:06.615  9624  9645 I Unity   : 
+05-23 15:28:07.896  9624  9645 I Unity   : Teleport grabbing/etc...
+05-23 15:28:07.896  9624  9645 I Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:07.896  9624  9645 I Unity   : HandController:Update()
+05-23 15:28:07.896  9624  9645 I Unity   : 
+05-23 15:28:07.897  9624  9645 W Unity   : Best object is Low-Poly Skull_tutorial_2 w distance 43.09327
+05-23 15:28:07.897  9624  9645 W Unity   : HandController:which_object(Vector3, Boolean)
+05-23 15:28:07.897  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:07.897  9624  9645 W Unity   : HandController:Update()
+05-23 15:28:07.897  9624  9645 W Unity   : 
+05-23 15:28:07.898  9624  9645 W Unity   : Regular attaching... Object has parent: False
+05-23 15:28:07.898  9624  9645 W Unity   : ObjectAnchor:attach_to(HandController)
+05-23 15:28:07.898  9624  9645 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-23 15:28:07.898  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:07.898  9624  9645 W Unity   : HandController:Update()
+05-23 15:28:07.898  9624  9645 W Unity   : 
+05-23 15:28:07.898  9624  9645 W Unity   : Moving object Low-Poly Skull_tutorial_2 from (3.57, 0.85, -2.65) to (2.42, 1.32, -2.14)
+05-23 15:28:07.898  9624  9645 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-23 15:28:07.898  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:07.898  9624  9645 W Unity   : HandController:Update()
+05-23 15:28:07.898  9624  9645 W Unity   : 
+05-23 15:28:07.899  9624  9645 W Unity   : New posn: (3.57, 0.85, -2.65) vs parent (2.42, 1.32, -2.14)
+05-23 15:28:07.899  9624  9645 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-23 15:28:07.899  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:07.899  9624  9645 W Unity   : HandController:Update()
+05-23 15:28:07.899  9624  9645 W Unity   : 
+05-23 15:28:07.910  9624  9645 I Unity   : Is attached
+05-23 15:28:07.910  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:07.910  9624  9645 I Unity   : 
+05-23 15:28:07.992  9624  9645 I Unity   : Is attached
+05-23 15:28:07.992  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:07.992  9624  9645 I Unity   : 
+05-23 15:28:08.005  9624  9645 I Unity   : Is attached
+05-23 15:28:08.005  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.005  9624  9645 I Unity   : 
+05-23 15:28:08.243  9624  9645 I Unity   : Is attached
+05-23 15:28:08.243  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.243  9624  9645 I Unity   : 
+05-23 15:28:08.257  9624  9645 I Unity   : Is attached
+05-23 15:28:08.257  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.257  9624  9645 I Unity   : 
+05-23 15:28:08.522  9624  9645 I Unity   : Is attached
+05-23 15:28:08.522  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.522  9624  9645 I Unity   : 
+05-23 15:28:08.536  9624  9645 I Unity   : Is attached
+05-23 15:28:08.536  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.536  9624  9645 I Unity   : 
+05-23 15:28:08.591  9624  9645 I Unity   : Is attached
+05-23 15:28:08.591  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.591  9624  9645 I Unity   : 
+05-23 15:28:08.605  9624  9645 I Unity   : Is attached
+05-23 15:28:08.605  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.605  9624  9645 I Unity   : 
+05-23 15:28:08.675  9624  9645 I Unity   : Is attached
+05-23 15:28:08.675  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.675  9624  9645 I Unity   : 
+05-23 15:28:08.689  9624  9645 I Unity   : Is attached
+05-23 15:28:08.689  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.689  9624  9645 I Unity   : 
+05-23 15:28:08.703  9624  9645 I Unity   : Is attached
+05-23 15:28:08.703  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.703  9624  9645 I Unity   : 
+05-23 15:28:08.745  9624  9645 I Unity   : Is attached
+05-23 15:28:08.745  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.745  9624  9645 I Unity   : 
+05-23 15:28:08.759  9624  9645 I Unity   : Is attached
+05-23 15:28:08.759  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.759  9624  9645 I Unity   : 
+05-23 15:28:08.828  9624  9645 I Unity   : Is attached
+05-23 15:28:08.828  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.828  9624  9645 I Unity   : 
+05-23 15:28:08.842  9624  9645 I Unity   : Is attached
+05-23 15:28:08.842  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.842  9624  9645 I Unity   : 
+05-23 15:28:08.995  9624  9645 I Unity   : Is attached
+05-23 15:28:08.995  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:08.995  9624  9645 I Unity   : 
+05-23 15:28:09.009  9624  9645 I Unity   : Is attached
+05-23 15:28:09.009  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:09.009  9624  9645 I Unity   : 
+05-23 15:28:09.218  9624  9645 I Unity   : Is attached
+05-23 15:28:09.218  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:09.218  9624  9645 I Unity   : 
+05-23 15:28:09.219  9624  9645 I Unity   : Detatching...
+05-23 15:28:09.219  9624  9645 I Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:09.219  9624  9645 I Unity   : HandController:Update()
+05-23 15:28:09.219  9624  9645 I Unity   : 
+05-23 15:28:12.125  9624  9645 I Unity   : Teleport grabbing/etc...
+05-23 15:28:12.125  9624  9645 I Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:12.125  9624  9645 I Unity   : HandController:Update()
+05-23 15:28:12.125  9624  9645 I Unity   : 
+05-23 15:28:12.754  9624  9645 I Unity   : Teleport grabbing/etc...
+05-23 15:28:12.754  9624  9645 I Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:12.754  9624  9645 I Unity   : HandController:Update()
+05-23 15:28:12.754  9624  9645 I Unity   : 
+05-23 15:28:12.754  9624  9645 W Unity   : Best object is Low-Poly Skull_tutorial_2 w distance 43.4538
+05-23 15:28:12.754  9624  9645 W Unity   : HandController:which_object(Vector3, Boolean)
+05-23 15:28:12.754  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:12.754  9624  9645 W Unity   : HandController:Update()
+05-23 15:28:12.754  9624  9645 W Unity   : 
+05-23 15:28:12.755  9624  9645 W Unity   : Regular attaching... Object has parent: False
+05-23 15:28:12.755  9624  9645 W Unity   : ObjectAnchor:attach_to(HandController)
+05-23 15:28:12.755  9624  9645 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-23 15:28:12.755  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:12.755  9624  9645 W Unity   : HandController:Update()
+05-23 15:28:12.755  9624  9645 W Unity   : 
+05-23 15:28:12.756  9624  9645 W Unity   : Moving object Low-Poly Skull_tutorial_2 from (2.47, 0.08, -2.17) to (2.05, 1.35, -2.07)
+05-23 15:28:12.756  9624  9645 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-23 15:28:12.756  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:12.756  9624  9645 W Unity   : HandController:Update()
+05-23 15:28:12.756  9624  9645 W Unity   : 
+05-23 15:28:12.756  9624  9645 W Unity   : New posn: (2.47, 0.08, -2.17) vs parent (2.05, 1.35, -2.07)
+05-23 15:28:12.756  9624  9645 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-23 15:28:12.756  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:12.756  9624  9645 W Unity   : HandController:Update()
+05-23 15:28:12.756  9624  9645 W Unity   : 
+05-23 15:28:12.767  9624  9645 I Unity   : Is attached
+05-23 15:28:12.767  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:12.767  9624  9645 I Unity   : 
+05-23 15:28:13.003  9624  9645 I Unity   : Is attached
+05-23 15:28:13.003  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.003  9624  9645 I Unity   : 
+05-23 15:28:13.018  9624  9645 I Unity   : Is attached
+05-23 15:28:13.018  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.018  9624  9645 I Unity   : 
+05-23 15:28:13.183  9624  9645 I Unity   : Is attached
+05-23 15:28:13.183  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.183  9624  9645 I Unity   : 
+05-23 15:28:13.197  9624  9645 I Unity   : Is attached
+05-23 15:28:13.197  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.197  9624  9645 I Unity   : 
+05-23 15:28:13.239  9624  9645 I Unity   : Is attached
+05-23 15:28:13.239  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.239  9624  9645 I Unity   : 
+05-23 15:28:13.253  9624  9645 I Unity   : Is attached
+05-23 15:28:13.253  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.253  9624  9645 I Unity   : 
+05-23 15:28:13.435  9624  9645 I Unity   : Is attached
+05-23 15:28:13.435  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.435  9624  9645 I Unity   : 
+05-23 15:28:13.449  9624  9645 I Unity   : Is attached
+05-23 15:28:13.449  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.449  9624  9645 I Unity   : 
+05-23 15:28:13.463  9624  9645 I Unity   : Is attached
+05-23 15:28:13.463  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.463  9624  9645 I Unity   : 
+05-23 15:28:13.476  9624  9645 I Unity   : Is attached
+05-23 15:28:13.476  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.476  9624  9645 I Unity   : 
+05-23 15:28:13.490  9624  9645 I Unity   : Is attached
+05-23 15:28:13.490  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.490  9624  9645 I Unity   : 
+05-23 15:28:13.503  9624  9645 I Unity   : Is attached
+05-23 15:28:13.503  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.503  9624  9645 I Unity   : 
+05-23 15:28:13.560  9624  9645 I Unity   : Is attached
+05-23 15:28:13.560  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.560  9624  9645 I Unity   : 
+05-23 15:28:13.574  9624  9645 I Unity   : Is attached
+05-23 15:28:13.574  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.574  9624  9645 I Unity   : 
+05-23 15:28:13.869  9624  9645 I Unity   : Is attached
+05-23 15:28:13.869  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.869  9624  9645 I Unity   : 
+05-23 15:28:13.882  9624  9645 I Unity   : Is attached
+05-23 15:28:13.882  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.882  9624  9645 I Unity   : 
+05-23 15:28:13.952  9624  9645 I Unity   : Is attached
+05-23 15:28:13.952  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.952  9624  9645 I Unity   : 
+05-23 15:28:13.966  9624  9645 I Unity   : Is attached
+05-23 15:28:13.966  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.966  9624  9645 I Unity   : 
+05-23 15:28:13.980  9624  9645 I Unity   : Is attached
+05-23 15:28:13.980  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.980  9624  9645 I Unity   : 
+05-23 15:28:13.994  9624  9645 I Unity   : Is attached
+05-23 15:28:13.994  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:13.994  9624  9645 I Unity   : 
+05-23 15:28:14.008  9624  9645 I Unity   : Is attached
+05-23 15:28:14.008  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:14.008  9624  9645 I Unity   : 
+05-23 15:28:14.091  9624  9645 I Unity   : Is attached
+05-23 15:28:14.091  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:14.091  9624  9645 I Unity   : 
+05-23 15:28:14.092  9624  9645 I Unity   : Detatching...
+05-23 15:28:14.092  9624  9645 I Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:14.092  9624  9645 I Unity   : HandController:Update()
+05-23 15:28:14.092  9624  9645 I Unity   : 
+05-23 15:28:15.471  9624  9645 I Unity   : Teleport grabbing/etc...
+05-23 15:28:15.471  9624  9645 I Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:15.471  9624  9645 I Unity   : HandController:Update()
+05-23 15:28:15.471  9624  9645 I Unity   : 
+05-23 15:28:16.083  9624  9645 I Unity   : Teleport grabbing/etc...
+05-23 15:28:16.083  9624  9645 I Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:16.083  9624  9645 I Unity   : HandController:Update()
+05-23 15:28:16.083  9624  9645 I Unity   : 
+05-23 15:28:16.084  9624  9645 W Unity   : Best object is Low-Poly Skull_tutorial_2 w distance 43.21751
+05-23 15:28:16.084  9624  9645 W Unity   : HandController:which_object(Vector3, Boolean)
+05-23 15:28:16.084  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:16.084  9624  9645 W Unity   : HandController:Update()
+05-23 15:28:16.084  9624  9645 W Unity   : 
+05-23 15:28:16.084  9624  9645 W Unity   : Regular attaching... Object has parent: False
+05-23 15:28:16.084  9624  9645 W Unity   : ObjectAnchor:attach_to(HandController)
+05-23 15:28:16.084  9624  9645 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-23 15:28:16.084  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:16.084  9624  9645 W Unity   : HandController:Update()
+05-23 15:28:16.084  9624  9645 W Unity   : 
+05-23 15:28:16.085  9624  9645 W Unity   : Moving object Low-Poly Skull_tutorial_2 from (2.58, 0.10, -1.97) to (1.65, 1.40, -1.09)
+05-23 15:28:16.085  9624  9645 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-23 15:28:16.085  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:16.085  9624  9645 W Unity   : HandController:Update()
+05-23 15:28:16.085  9624  9645 W Unity   : 
+05-23 15:28:16.086  9624  9645 W Unity   : New posn: (2.58, 0.10, -1.97) vs parent (1.65, 1.40, -1.09)
+05-23 15:28:16.086  9624  9645 W Unity   : ObjectAnchor:teleport_attach_to(HandController)
+05-23 15:28:16.086  9624  9645 W Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:16.086  9624  9645 W Unity   : HandController:Update()
+05-23 15:28:16.086  9624  9645 W Unity   : 
+05-23 15:28:16.097  9624  9645 I Unity   : Is attached
+05-23 15:28:16.097  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.097  9624  9645 I Unity   : 
+05-23 15:28:16.249  9624  9645 I Unity   : Is attached
+05-23 15:28:16.249  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.249  9624  9645 I Unity   : 
+05-23 15:28:16.263  9624  9645 I Unity   : Is attached
+05-23 15:28:16.263  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.263  9624  9645 I Unity   : 
+05-23 15:28:16.472  9624  9645 I Unity   : Is attached
+05-23 15:28:16.472  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.472  9624  9645 I Unity   : 
+05-23 15:28:16.486  9624  9645 I Unity   : Is attached
+05-23 15:28:16.486  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.486  9624  9645 I Unity   : 
+05-23 15:28:16.514  9624  9645 I Unity   : Is attached
+05-23 15:28:16.514  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.514  9624  9645 I Unity   : 
+05-23 15:28:16.528  9624  9645 I Unity   : Is attached
+05-23 15:28:16.528  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.528  9624  9645 I Unity   : 
+05-23 15:28:16.623  9624  9645 I Unity   : Is attached
+05-23 15:28:16.623  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.623  9624  9645 I Unity   : 
+05-23 15:28:16.639  9624  9645 I Unity   : Is attached
+05-23 15:28:16.639  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.639  9624  9645 I Unity   : 
+05-23 15:28:16.651  9624  9645 I Unity   : Is attached
+05-23 15:28:16.651  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.651  9624  9645 I Unity   : 
+05-23 15:28:16.665  9624  9645 I Unity   : Is attached
+05-23 15:28:16.665  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.665  9624  9645 I Unity   : 
+05-23 15:28:16.918  9624  9645 I Unity   : Is attached
+05-23 15:28:16.918  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.918  9624  9645 I Unity   : 
+05-23 15:28:16.932  9624  9645 I Unity   : Is attached
+05-23 15:28:16.932  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:16.932  9624  9645 I Unity   : 
+05-23 15:28:17.001  9624  9645 I Unity   : Is attached
+05-23 15:28:17.001  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:17.001  9624  9645 I Unity   : 
+05-23 15:28:17.016  9624  9645 I Unity   : Is attached
+05-23 15:28:17.016  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:17.016  9624  9645 I Unity   : 
+05-23 15:28:17.253  9624  9645 I Unity   : Is attached
+05-23 15:28:17.253  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:17.253  9624  9645 I Unity   : 
+05-23 15:28:17.267  9624  9645 I Unity   : Is attached
+05-23 15:28:17.267  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:17.267  9624  9645 I Unity   : 
+05-23 15:28:17.810  9624  9645 I Unity   : Is attached
+05-23 15:28:17.810  9624  9645 I Unity   : MoveSkull:Update()
+05-23 15:28:17.810  9624  9645 I Unity   : 
+05-23 15:28:17.810  9624  9645 I Unity   : Detatching...
+05-23 15:28:17.810  9624  9645 I Unity   : HandController:handle_teleport_behavior()
+05-23 15:28:17.810  9624  9645 I Unity   : HandController:Update()
+05-23 15:28:17.810  9624  9645 I Unity   : 
+05-23 15:28:19.897  9624  9645 I Unity   : [OVRManager] HMDUnmounted event
+05-23 15:28:19.897  9624  9645 I Unity   : OVRManager:Update()
+05-23 15:28:19.897  9624  9645 I Unity   : 
