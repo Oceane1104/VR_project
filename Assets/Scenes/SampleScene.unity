@@ -6257,6 +6257,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a23a5c70d25d0d4285d4ba41580803c, type: 3}
   m_PrefabInstance: {fileID: 858145006}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &883086688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5882448671471983631, guid: b8cd161c3c5c62a438ab3cad2334450e, type: 3}
+  m_PrefabInstance: {fileID: 1489482454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &906181842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9857,15 +9862,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5882448671471681583, guid: b8cd161c3c5c62a438ab3cad2334450e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.05
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 5882448671471681583, guid: b8cd161c3c5c62a438ab3cad2334450e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1
+      value: -1.11
       objectReference: {fileID: 0}
     - target: {fileID: 5882448671471681583, guid: b8cd161c3c5c62a438ab3cad2334450e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 49.35
+      value: 49.439
       objectReference: {fileID: 0}
     - target: {fileID: 5882448671471681583, guid: b8cd161c3c5c62a438ab3cad2334450e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9918,6 +9923,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5882448671471681583, guid: b8cd161c3c5c62a438ab3cad2334450e, type: 3}
   m_PrefabInstance: {fileID: 1489482454}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1489482459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883086688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c543198a898be46b434825b8bf36c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graspingRadius: 0.1
+  throwForce: 1
+  floorLimit: 0
+  vel: 0
+  throwDirection: {x: 0, y: 0, z: 0}
+  spears: {fileID: 0}
+  teleportRadius: 1.5
+  can_teleport: 0
+  need_parent: 0
+  objScript: ObjectAnchor
+  hand_controller: {fileID: 0}
+--- !u!65 &1489482460
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883086688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4391462, y: 0.39650625, z: 0.3693933}
+  m_Center: {x: 0.0000002682209, y: 0.19806078, z: 0.00054790825}
 --- !u!1001 &1509881920
 PrefabInstance:
   m_ObjectHideFlags: 0

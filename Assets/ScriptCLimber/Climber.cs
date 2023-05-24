@@ -110,7 +110,7 @@ public class Climber : MonoBehaviour
 			
 
 			//movement += currentHand.Delta * sensitivity;
-			movement.x = (targetPosition.x - transform.position.x);
+			movement.z = (targetPosition.x - transform.position.x);
 			movement.y = (targetPosition.y - transform.position.y);
 			controller.Move(movement * Time.deltaTime);
 			//movement.z = (targetPosition.z - transform.position.z);
