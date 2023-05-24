@@ -21,10 +21,22 @@ public class GameMusic : MonoBehaviour
 
     private float timeLeft = 750f; // minutes for game
     private bool ticking = false; // must be set to when end tutorial
-    // after tutorial ends: set to true
-    // if pause is pressed, etc: set to false & reset to true when you keep going
-    
+                                  // after tutorial ends: set to true
+                                  // if pause is pressed, etc: set to false & reset to true when you keep going
+
+    //private bool isTicking = false;
+
     public void setTicking(bool val) { ticking = val; }
+    //public bool IsTicking
+    //{
+    //    get { return isTicking; }
+    //    set { isTicking = value; }
+    //}
+
+    //public float TimeLeft
+    //{
+    //    get { return timeLeft; }
+    //}
 
     // add/remove time; use function sparingly
     void addTime(float time) { timeLeft += time; }
@@ -63,4 +75,6 @@ public class GameMusic : MonoBehaviour
             backgroundSounds[i].Play();
         }
     }
+
+
 }

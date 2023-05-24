@@ -53,7 +53,6 @@ public class Door_script : MonoBehaviour
             //The half length of the door
             Vector3 size = this.GetComponent<Renderer>().bounds.size;
 
-
             if (TheRotationBase == 0)
             {
                 length = size.x / 2;
@@ -72,7 +71,7 @@ public class Door_script : MonoBehaviour
                 //The path of the door to open it
                 DoorOpen_final = new Vector3(-length, 0, -length);
             }
-            else if (TheRotationBase == -90)
+            else if (TheRotationBase == -90 || TheRotationBase == 270)
             {
                 length = size.z / 2;
                 //The path of the door to open it
@@ -105,7 +104,7 @@ public class Door_script : MonoBehaviour
             {
                 targetRotation_step = Quaternion.Euler(0, TheRotationBase + doorAngleStep, 0);
             }
-            else if (TheRotationBase == -90)
+            else if (TheRotationBase == -90 || TheRotationBase == 270)
             {
                 targetRotation_step = Quaternion.Euler(0, TheRotationBase + doorAngleStep, 0);
             }
@@ -131,11 +130,13 @@ public class Door_script : MonoBehaviour
         } else
         {
             door_not_open = false;
+            Debug.LogWarningFormat("Je bouge mon box collider");
             boxCollider.transform.position = this.transform.position;
             boxCollider.transform.rotation = this.transform.rotation;
             //boxCollider.size = new Vector3(Size_Z, Size_Y, Size_X);
             //boxCollider.center = this.transform.localPosition;
         }
+        
         //The door is now open, we can stop
         return door_not_open;
     }

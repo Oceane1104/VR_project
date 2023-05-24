@@ -23,11 +23,14 @@ public class HandController : MonoBehaviour
 	public Vector3 throwVelocity;
 	public Vector3 currentPosition;
 
+	public bool open_finish1;
+	public bool open_finish2;
+
 	public MenuCard menu;
 
 	//Door script
-	/*public Door_script door_tuto1;
-    public Door_script door_tuto2;*/
+	public Door_script door_tuto1;
+	public Door_script door_tuto2;
 	public bool open_now = false;
 
 	public Vector3[] velocitySamples = new Vector3[5];
@@ -175,7 +178,7 @@ public class HandController : MonoBehaviour
 	protected bool is_tutorial_finish()
 	{
 		if (handType == HandType.RightHand) return OVRInput.Get(OVRInput.Button.Four);
-		return false;
+		else return false;
 	}
 
 	bool only_y_press()
@@ -318,27 +321,57 @@ public class HandController : MonoBehaviour
 			handle_teleport_behavior();
 		}
 
-		if (!open_now && is_tutorial_finish()) // don't keep running this if already open
+		if (is_tutorial_finish())
         {
-			open_now = true;
-			y_press_prev_frame = true; // pressed y already!
-			first_y = true; // first time pressing y
-			/*door_tuto1.open_the_door();
-            door_tuto2.open_the_door();*/
-			GameObject[] doors = GameObject.FindGameObjectsWithTag("tutoDoor");
-			foreach(GameObject door in doors)
-            {
-				door.GetComponent<BreakDoor>().tutoBreak();
-            }
-			Debug.Log("Game begins, start timer...");
-			GameObject.Find("Sounds").GetComponent<GameMusic>().setTicking(true);
-		} 
-		
-		// tutorial is finished but 'y' pressed again
-		// open up menu & pause count
-		// make sure doesn't run upon first 'y' press
-		// make sure only runs on key down AND up!!
-		else if (open_now && only_y_press() && !first_y) // make sure doesn't run if currently on first y-press
+            open_now = true;
+        }
+        if (open_now)
+        {
+            open_finish2 = door_tuto2.open_the_door();
+            open_finish1 = door_tuto1.open_the_door();
+            if (!open_finish1 && !open_finish2) {
+				//set_door_swing_finish(true);
+				//open_now = false;
+				//y_press_prev_frame = true; // pressed y already!
+				//first_y = true; // first time pressing y
+			}
+		}
+        if (!open_now && is_tutorial_finish()) // don't keep running this if already open
+        {
+            open_now = true;
+            y_press_prev_frame = true; // pressed y already!
+            first_y = true; // first time pressing y
+            //open_finish2 = door_tuto2.open_the_door();
+            //open_finish1 = door_tuto1.open_the_door();
+            //if (!open_finish1 && !open_finish2) { open_now = false; }
+            //GameObject[] doors = GameObject.FindGameObjectsWithTag("tutoDoor");
+            //foreach (GameObject door in doors)
+            //{
+            //    door.GetComponent<BreakDoor>().tutoBreak();
+            //}
+            //Debug.Log("Game begins, start timer...");
+            //GameObject.Find("Sounds").GetComponent<GameMusic>().setTicking(true);
+        }
+
+        //      if (is_tutorial_finish())
+        //{
+        //	open_now = true;
+        //}
+        //if (open_now)
+        //{
+        //	open_finish2 = door_tuto2.open_the_door();
+        //	Debug.LogWarningFormat("door2");
+        //	open_finish1 = door_tuto1.open_the_door();
+        //	Debug.LogWarningFormat("door1");
+        //	if (!open_finish1 && !open_finish2) { open_now = false; }
+        //}
+
+
+        // tutorial is finished but 'y' pressed again
+        // open up menu & pause count
+        // make sure doesn't run upon first 'y' press
+        // make sure only runs on key down AND up!!
+        else if (open_now && only_y_press() && !first_y) // make sure doesn't run if currently on first y-press
         {
 			y_press_prev_frame = true; // y pressed down
         }

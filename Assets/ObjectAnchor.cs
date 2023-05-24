@@ -11,6 +11,12 @@ public class ObjectAnchor : MonoBehaviour
     public float floorLimit = 0.0f; // set this to the y-position of your floor for the rigidbody don't go through the floor
     public float vel;
     public Vector3 throwDirection;
+	public Spears_script spears;
+
+	//MISSING
+	//public AudioSource audioSources_throw;
+	//MISSING
+
 	public float teleportRadius = 1.5f;
 	public bool can_teleport = true;
 	public bool need_parent = false;
@@ -28,6 +34,12 @@ public class ObjectAnchor : MonoBehaviour
 	protected Transform initial_transform_parent;
 	void Start()
 	{
+		//if (GetComponent<Rigidbody>().name != "axe" && GetComponent<Rigidbody>().name != "tutoAxe")
+		//      {
+		//	AudioSource[] audioSources_rb = this.GetComponents<AudioSource>();
+		//	audioSources_throw = audioSources_rb[0];
+		//}
+		spears = GetComponent<Spears_script>();
 		initial_transform_parent = transform.parent;
 	}
 
@@ -65,12 +77,29 @@ public class ObjectAnchor : MonoBehaviour
         {
 			transform.SetParent(hand_controller.transform);
 		}
-	}
+        if (spears != null)
+        {
+            //spears.special_attach(hand_controller);
+        }
+    }
 
 	public void detach_from(HandController hand_controller, Vector3 velocity)
 	{
         vel = velocity.magnitude;
         throwDirection = transform.forward;
+
+        //MISSING
+
+        if ((spears != null) && (vel > 2))
+        {
+            spears.make_sound();
+        }
+        //	if (vel > 2 && GetComponent<Rigidbody>().name != "axe" && GetComponent<Rigidbody>().name != "tutoAxe")
+        //{
+        //	Debug.LogWarningFormat("Je fait un son de lancer!");
+        //	audioSources_throw.Play();
+        //}
+        //MISSING
 
         // Make sure that the right hand controller ask for the release
         if (this.hand_controller != hand_controller) return;
@@ -92,6 +121,17 @@ public class ObjectAnchor : MonoBehaviour
 		if (parent && parent.GetComponent<Rigidbody>())
         {
 			parent.GetComponent<Rigidbody>().isKinematic = false;
+			
+
+			// clamp the y-position of the Rigidbody to the floor limit
+			Vector3 clampedPosition = parent.GetComponent<Rigidbody>().position;
+			clampedPosition.y = Mathf.Max(clampedPosition.y, floorLimit);
+			parent.GetComponent<Rigidbody>().position = clampedPosition;
+
+			// stop the Rigidbody's movement when the trigger is released
+			parent.GetComponent<Rigidbody>().velocity = Vector3.zero;
+			parent.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+
 		}  else if (GetComponent<Rigidbody>())
 		{
 			GetComponent<Rigidbody>().isKinematic = false;
@@ -133,7 +173,7 @@ public class ObjectAnchor : MonoBehaviour
 		Debug.LogWarningFormat("Moving object {2} from {0} to {1}", transform.position, hand_controller.transform.position, transform.gameObject.name);
 
 		//transform.position = hand_controller.transform.position;
-		if (transform.parent)
+		if (transform.parent && !(gameObject.CompareTag("ColliderBucket")))
 		{
 			transform.parent.position = hand_controller.transform.position;
 

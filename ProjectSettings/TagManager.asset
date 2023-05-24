@@ -7,6 +7,9 @@ TagManager:
   - blade
   - tutoDoor
   - DoorToBreak
+  - Skull
+  - ColliderBucket
+  - ColliderTriggerBucket
   layers:
   - Default
   - TransparentFX
