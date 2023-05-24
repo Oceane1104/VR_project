@@ -62,6 +62,13 @@ public class HandController : MonoBehaviour
 
 	protected ObjectAnchor special_object_grasped = null;
 
+
+	//Variable Climbing
+	public Climber climber = null;
+	public OVRInput.Controller controller = OVRInput.Controller.None;
+	private GameObject currentPoint = null;
+	public List<GameObject> contactPoints = new List<GameObject>();
+
 	// If "X" is pressed quit game
 	// if "A" is pressed restart game
 
@@ -395,6 +402,20 @@ public class HandController : MonoBehaviour
 			}
 			y_press_prev_frame = false; // no longer pressing 'y'
 		}
+
+		//Climbing
+		if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, controller))
+		{
+			Debug.LogWarning("climbing yes");
+			GrabPoint();
+		}
+
+
+		if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger, controller))
+		{
+			//Debug.LogWarning("Button is released");
+			ReleasePoint();
+		}
 	}
 
 	// remove anchors
@@ -569,5 +590,67 @@ public class HandController : MonoBehaviour
 			object_grasped.detach_from(this, velocity);
 			object_grasped = null;
 		}
+	}
+
+
+	//Climbing
+	public void GrabPoint()
+	{
+		Debug.LogWarning("grabpoint yes");
+		currentPoint = Utility.GetNearest(transform.position, contactPoints);
+		//Debug.LogWarning("current" +currentPoint.transform.position);
+		if (currentPoint)
+		{
+			//Debug.LogWarning("Grabpoint yes");
+			climber.SetHand(this);
+		}
+	}
+
+	public void ReleasePoint()
+	{
+		
+		if (currentPoint)
+		{
+			Debug.LogWarning("ReleasePoint yes");
+			climber.ClearHand();
+		}
+		currentPoint = null;
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		Debug.LogWarningFormat("trigger name{0}",other.gameObject.name);
+		if (other.CompareTag("ClimbingPoint"))
+		{
+			Debug.LogWarning("trigger enter climbing yes");
+			//Debug.LogWarning("Trigger activated");
+			//AddPoint(other.gameObject);
+			contactPoints.Add(other.gameObject);
+		}
+
+	}
+
+
+
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("ClimbingPoint"))
+		{
+			Debug.LogWarning("trigger exit climbing yes");
+			contactPoints.Remove(other.gameObject);
+
+		}
+		//Debug.LogWarning("Trigger desactivated");
+	}
+
+
+	public GameObject GetCurrentPoint()
+	{
+		if (currentPoint != null)
+		{
+			return currentPoint;
+		}
+		else
+			return null;
 	}
 }

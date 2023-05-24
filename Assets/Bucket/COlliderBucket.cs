@@ -20,25 +20,7 @@ public class COlliderBucket : MonoBehaviour
     }
 
 
-    void OnCollisionEnter(Collision collision)
-    {
-        // Si la collision implique le crane
-        if (collision.gameObject.CompareTag("skull"))
-        {
-            // Stocker la position actuelle du crane
-            previousPosition = transform.position;
-        }
-    }
 
-    void OnCollisionStay(Collision collision)
-    {
-        // Si la collision implique l'objet A
-        if (collision.gameObject.CompareTag("skull"))
-        {
-            // Restaurer la position précédente du crane
-            transform.position = previousPosition;
-        }
-    }
 
 
     void OnTriggerEnter(Collider other)
@@ -46,7 +28,7 @@ public class COlliderBucket : MonoBehaviour
         
 
         // Vérifier si l'objet entrant dans le trigger est un crâne et le panier
-        if (other.gameObject.CompareTag("GoodSkull"))
+        if (other.gameObject.CompareTag("Skull"))
         {
             GameObject SkullObject = other.gameObject;
             SkullObject.transform.SetParent(BucketObject);
@@ -59,7 +41,7 @@ public class COlliderBucket : MonoBehaviour
             GetComponent<AudioSource>().clip = clip;
             GetComponent<AudioSource>().Play();
             nombreDeCraneDansPanier++; 
-            Debug.Log("Nombre de crânes dans le panier : " + nombreDeCraneDansPanier);
+            Debug.LogWarningFormat("Nombre de crânes dans le panier :{0}",nombreDeCraneDansPanier);
         }
 
         if (other.gameObject.CompareTag("BadSkull"))
@@ -68,10 +50,7 @@ public class COlliderBucket : MonoBehaviour
             //Add time i.e 5s
         }
 
-            if (nombreDeCraneDansPanier >= 10)
-        {
-            //Porte s'ouvre + musiaue de victoire
-        }
+            
     }
 
 
