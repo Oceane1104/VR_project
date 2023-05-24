@@ -130,13 +130,22 @@ public class Door_script : MonoBehaviour
         } else
         {
             door_not_open = false;
-            Debug.LogWarningFormat("Je bouge mon box collider");
+            //Debug.LogWarningFormat("Je bouge mon box collider");
             boxCollider.transform.position = this.transform.position;
             boxCollider.transform.rotation = this.transform.rotation;
             //boxCollider.size = new Vector3(Size_Z, Size_Y, Size_X);
             //boxCollider.center = this.transform.localPosition;
         }
-        
+        // door open so set val to true in handcontroller
+        if (!door_not_open && gameObject.tag == "tutoDoor")
+        {
+           HandController[] hands = (HandController[])GameObject.FindObjectsOfType(typeof(HandController));
+            foreach (HandController hand in hands)
+            {
+                hand.set_door_swing_finish(true);
+            }
+        }
+
         //The door is now open, we can stop
         return door_not_open;
     }

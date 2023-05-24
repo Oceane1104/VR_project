@@ -39,7 +39,9 @@ public class GameMusic : MonoBehaviour
     //}
 
     // add/remove time; use function sparingly
-    void addTime(float time) { timeLeft += time; }
+    public void addTime(float time) { timeLeft += time; }
+
+    public float getTimeLeft() { return timeLeft; }
 
     // Start is called before the first frame update
     void Start()

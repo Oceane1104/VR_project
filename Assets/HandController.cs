@@ -42,6 +42,9 @@ public class HandController : MonoBehaviour
 	public Vector3 addition;
 	public bool activeMenu = false; // if true instead of grabbing objects, hand used for quit, etc
 
+	bool door_swing_finish = false;
+	public void set_door_swing_finish(bool f) { door_swing_finish = f; }
+
 	[Header("Maximum Distance")]
 	[Range(2f, 30f)]
 	// Max distance of object from player
@@ -371,14 +374,14 @@ public class HandController : MonoBehaviour
         // open up menu & pause count
         // make sure doesn't run upon first 'y' press
         // make sure only runs on key down AND up!!
-        else if (open_now && only_y_press() && !first_y) // make sure doesn't run if currently on first y-press
+        else if (door_swing_finish && only_y_press() && !first_y) // make sure doesn't run if currently on first y-press
         {
 			y_press_prev_frame = true; // y pressed down
         }
 
 		// y used to be pressed but not anymore!
 		// get menu to display UNLESS still in 'first y press' scenario
-		if (y_press_prev_frame && no_LHS_press())
+		if (y_press_prev_frame && no_LHS_press() && door_swing_finish)
         {
 			if (first_y) first_y = false; // no longer in first y press scenario
 			else if (activeMenu)
