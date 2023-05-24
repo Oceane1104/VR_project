@@ -1,0 +1,63 @@
+--------- beginning of system
+--------- beginning of main
+--------- beginning of tracking
+05-24 07:16:55.379  3985  4006 I Unity   : MemoryManager: Using 'Dynamic Heap' Allocator.
+05-24 07:16:55.419  3985  4006 I Unity   : SystemInfo CPU = ARM64 FP ASIMD AES, Cores = 4, Memory = 3808mb
+05-24 07:16:55.419  3985  4006 I Unity   : SystemInfo ARM big.LITTLE configuration: 0 big (mask: 0x0), 4 little (mask: 0xf)
+05-24 07:16:55.419  3985  4006 I Unity   : XR UsableCoreMask: 0xf
+05-24 07:16:55.420  3985  4006 I Unity   : ApplicationInfo com.VR_project04.H02 version 0.1
+05-24 07:16:55.420  3985  4006 I Unity   : Built from '2021.3/staging' branch, Version '2021.3.20f1 (577897200b8b)', Build type 'Release', Scripting Backend 'mono', CPU 'armeabi-v7a', Stripping 'Disabled'
+05-24 07:16:57.667  3985  4119 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
+05-24 07:16:58.225  3985  4178 W Unity   : The referenced script on this Behaviour (Game Object 'OVRPlayerController') is missing!
+05-24 07:16:58.225  3985  4178 W Unity   : The referenced script on this Behaviour (Game Object 'RightControllerAnchor') is missing!
+05-24 07:16:58.225  3985  4178 W Unity   : The referenced script on this Behaviour (Game Object 'LeftControllerAnchor') is missing!
+05-24 07:16:58.228  3985  4178 W Unity   : The referenced script on this Behaviour (Game Object 'skull (2)') is missing!
+05-24 07:16:58.228  3985  4178 W Unity   : The referenced script on this Behaviour (Game Object 'skull (1)') is missing!
+05-24 07:16:58.228  3985  4178 W Unity   : The referenced script on this Behaviour (Game Object 'skull (3)') is missing!
+05-24 07:16:58.228  3985  4178 W Unity   : The referenced script on this Behaviour (Game Object 'skull') is missing!
+05-24 07:16:58.230  3985  4178 W Unity   : The referenced script on this Behaviour (Game Object 'OVRPlayerController') is missing!
+05-24 07:17:02.336  3985  4006 E Unity   : DllNotFoundException: AudioPluginOculusSpatializer assembly:<unknown assembly> type:<unknown type> member:(null)
+05-24 07:17:02.336  3985  4006 E Unity   :   at (wrapper managed-to-native) ONSPAudioSource.OSP_SetGlobalVoiceLimit(int)
+05-24 07:17:02.336  3985  4006 E Unity   :   at ONSPAudioSource.OnBeforeSceneLoadRuntimeMethod () [0x00005] in <19058c926ce54b9a91eaee60bbcf62e2>:0 
+05-24 07:17:02.336  3985  4006 E Unity   : 
+05-24 07:17:02.403  3985  4006 I Unity   : Unity v2021.3.20f1, Oculus Utilities v1.82.0, OVRPlugin v1.82.0, SDK v1.0.26.
+05-24 07:17:02.413  3985  4006 I Unity   : SystemHeadset Oculus_Quest, API OpenXR
+05-24 07:17:02.417  3985  4006 I Unity   : OpenXR instance 0x100000000000002 session 0x200000000000020
+05-24 07:17:02.440  3985  4006 I Unity   : OVRPlugin.Media initialized
+05-24 07:17:02.442  3985  4006 I Unity   : [MRC] SetMrcAudioSampleRate(48000)
+05-24 07:17:02.443  3985  4006 I Unity   : [MRC] Active InputVideoBufferType:TextureHandle
+05-24 07:17:02.444  3985  4006 I Unity   : [MRC] ActivateMode: Automatic
+05-24 07:17:02.478  3985  4006 I Unity   : Current display frequency 72, available frequencies [60, 60, 72, 72]
+05-24 07:17:02.480  3985  4006 W Unity   : Local Dimming feature is not supported
+05-24 07:17:02.530  3985  4006 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandRight)
+05-24 07:17:02.532  3985  4006 I Unity   : OVRControllerHelp: Active controller type: QuestAndRiftS for product Oculus Quest (headset Oculus_Quest, hand HandLeft)
+05-24 07:17:02.548  3985  4006 I Unity   : The current MSAA level is 0, but the recommended MSAA level is 4. Switching to the recommended level.
+05-24 07:17:02.549  3985  4006 I Unity   : [OVRManager] HMDAcquired event
+05-24 07:17:02.549  3985  4006 I Unity   : [OVRManager] HMDMounted event
+05-24 07:17:02.550  3985  4006 I Unity   : [OVRManager] VrFocusAcquired event
+05-24 07:17:02.554  3985  4006 I Unity   : [OVRManager] TrackingAcquired event
+05-24 07:17:02.555  3985  4006 I Unity   : Recenter event detected
+05-24 07:17:02.944  3985  4006 W Unity   : Ignoring depth surface store action as it is memoryless
+05-24 07:17:43.467  3985  4006 I Unity   : [OVRManager] HMDUnmounted event
+05-24 07:17:58.581  3985  4006 I Unity   : [OVRManager] InputFocusLost event
+05-24 07:17:58.586  3985  4006 I Unity   : Unable to process a controller whose SampleRateHz is 0 now.
+05-24 07:17:58.586  3985  4006 I Unity   : Unable to process a controller whose SampleRateHz is 0 now.
+05-24 07:17:58.601  3985  4006 I Unity   : [OVRManager] OnApplicationPause(true)
+05-24 07:18:10.751  3985  4119 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
+05-24 07:18:10.752  3985  4006 I Unity   : [OVRManager] OnApplicationPause(false)
+05-24 07:18:11.250  3985  4006 I Unity   : [OVRManager] HMDMounted event
+05-24 07:18:11.250  3985  4006 I Unity   : [OVRManager] InputFocusAcquired event
+05-24 07:18:11.251  3985  4006 I Unity   : [OVRManager] TrackingLost event
+05-24 07:18:11.582  3985  4006 I Unity   : [OVRManager] InputFocusLost event
+05-24 07:18:11.614  3985  4006 I Unity   : [OVRManager] OnApplicationFocus(false)
+05-24 07:18:12.033  3985  4006 I Unity   : [OVRManager] OnApplicationPause(true)
+05-24 07:18:13.277  3985  4006 I Unity   : [OVRManager] OnApplicationFocus(true)
+05-24 07:18:13.279  3985  4119 W Unity   : [XR] Symmetric Projection is only supported on Quest 2 with Vulkan and Multiview.
+05-24 07:18:13.280  3985  4006 I Unity   : [OVRManager] OnApplicationPause(false)
+05-24 07:18:13.331  3985  4006 I Unity   : Unable to process a controller whose SampleRateHz is 0 now.
+05-24 07:18:13.331  3985  4006 I Unity   : Unable to process a controller whose SampleRateHz is 0 now.
+05-24 07:18:13.385  3985  4006 I Unity   : [OVRManager] TrackingAcquired event
+05-24 07:18:13.394  3985  4006 I Unity   : [OVRManager] InputFocusAcquired event
+05-24 07:18:13.467  3985  4006 I Unity   : Recenter event detected
+05-24 07:18:47.159  3985  4006 I Unity   : [OVRManager] HMDUnmounted event
+05-24 07:19:02.277  3985  4006 I Unity   : [OVRManager] OnApplicationPause(true)
