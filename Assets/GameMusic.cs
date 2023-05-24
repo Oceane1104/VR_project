@@ -26,8 +26,10 @@ public class GameMusic : MonoBehaviour
     
     public void setTicking(bool val) { ticking = val; }
 
+    public float getTimeLeft() { return timeLeft; }
+
     // add/remove time; use function sparingly
-    void addTime(float time) { timeLeft += time; }
+    public void addTime(float time) { timeLeft += time; }
 
     // Start is called before the first frame update
     void Start()

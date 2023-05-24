@@ -1,6 +1,8 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 // C# script for "menu" object
 
@@ -30,6 +32,7 @@ public class MenuCard : MonoBehaviour
         {
             renderer.enabled = false;
         }
+        GameObject.Find("Timer").GetComponent<TMP_Text>().enabled = false;
 
         gameObject.SetActive(false);
     }
@@ -82,11 +85,16 @@ public class MenuCard : MonoBehaviour
 
     public void Pause()
     {
-        Debug.Log("Pausing");
+        float time = GameObject.Find("Sounds").GetComponent<GameMusic>().getTimeLeft();
+        Debug.LogWarningFormat("Pausing. Time left: {0}", time);
         toggleActive(true);
         //toggleBackground();
         gameObject.SetActive(active);
         enable();
+        /*TimeSpan Time = TimeSpan.FromSeconds(time);
+        GameObject.Find("Timer").GetComponent<TMP_Text>().text = Time.ToString("mm\\:ss");
+        GameObject.Find("Timer").GetComponent<TMP_Text>().enabled = true;
+        GameObject.Find("Timer").SetActive(true);*/
         GameObject.Find("PauseTxt").GetComponent<SpriteRenderer>().enabled = true;
         GameObject.Find("Sounds").GetComponent<GameMusic>().setTicking(false); // pause timer
     }
@@ -95,10 +103,13 @@ public class MenuCard : MonoBehaviour
     {
         //toggleBackground();
         disEnable();
+        //GameObject.Find("Timer").GetComponent<TMP_Text>().enabled = false;
         GameObject.Find("PauseTxt").GetComponent<SpriteRenderer>().enabled = false;
         GameObject.Find("Sounds").GetComponent<GameMusic>().setTicking(true); // continue timer
+        //GameObject.Find("Timer").SetActive(false);
         gameObject.SetActive(active);
         toggleActive(false);
+        Debug.LogWarningFormat("Un-pause. Time left: {0}", GameObject.Find("Sounds").GetComponent<GameMusic>().getTimeLeft());
     }
 
     public void toggleActive(bool act = false)
